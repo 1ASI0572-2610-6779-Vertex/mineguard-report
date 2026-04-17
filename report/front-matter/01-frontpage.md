@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/1ASI0572-2610-6779-Vertex/mineguard-report/main/assets/img/UpcLogo.png" alt="Logo de UPC">
+  <img src="report/assets/UpcLogo.png" alt="Logo de UPC">
 </p>
 
 <div align="center">
