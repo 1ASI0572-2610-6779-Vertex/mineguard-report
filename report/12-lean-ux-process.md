@@ -23,3 +23,20 @@ Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ay
 
 
 #### 1.2.2.2. Lean UX Assumptions
+
+#### 1.2.2.3. Lean UX Hypothesis
+
+Creemos que, si MineGuard implementa una red de sensores IoT en puntos críticos de las rutas mineras, será posible detectar incursiones de vehículos no autorizados en tiempo real, reduciendo significativamente el riesgo de colisiones con camiones autónomos.
+
+Creemos que, si MineGuard utiliza protocolos de comunicación junto con procesamiento en el edge, las alertas generadas llegarán de manera casi inmediata tanto al vehículo autónomo como al centro de control, permitiendo una respuesta preventiva oportuna.
+
+Creemos que, si MineGuard  un monitoreo continuo de la posición de vehículos menores, se logrará una identificación más precisa de invasiones de ruta, mejorando la confiabilidad del sistema frente a condiciones adversas del entorno minero.
+
+Creemos que, si MineGuard presenta la información en un dashboard centralizado con visualización clara de alertas, eventos e incidencias, los operadores podrán tomar decisiones más rápidas y efectivas para mantener la continuidad operativa.
+
+Creemos que, si MineGuard clasifica los eventos según niveles de riesgo (bajo, medio, crítico) basándose en variables como distancia, velocidad y trayectoria, se optimizará la priorización de alertas y se evitará la sobrecarga de información en los operadores.
+
+Creemos que, si MineGuard activa alertas visuales y sonoras directamente en los camiones autónomos ante riesgos inminentes, se incrementará la capacidad de respuesta del sistema incluso en escenarios donde la intervención humana es limitada.
+
+#### 1.2.2.4. Lean UX Canvas
+
