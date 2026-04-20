@@ -137,3 +137,30 @@ A partir de un estudio de mercado al cuál nos enfocamos, hemos podido identific
         </tr>
     </div>
 </table>
+
+<h3>2.1.2. Estrategias y tácticas frente a competidores</h3>
+
+**Estrategias de crecimiento y expansión**
+
+- Expansiónd Geográfica:    
+    - Escalamiento Regional: Proyectar la expansión a mercados con problemáticas similares en seguridad de socavón donde la mediana minería requiere soluciones tecnológicas accesibles.
+    - Identificación de Mercados Emergentes: Iniciar el despliegue en los principales corredores mineros del Perú. Priorizar unidades de minería subterránea donde la tecnología IoT y sensores de proximidad tienen impacto crítico.
+
+- Alianzas Estratégicas: 
+    - Partnerships con Proveedores de Maquinaria: Colaborar con distribuidores locales de equipos pesados para ofrecer el sistema de seguridad como un valor agregado
+
+- Ferias Inustriales: 
+    - Presencia en Eventos Clave: Participación activa en ferias de alto impacto como PERUMIN y la Exhibición Tecnológica Minera.
+
+**Estrategias de innovación y diferenciación**
+
+- desarrollo Continuo de Tecnología:
+    - Evolución del Software: Implementar actualidzdacddiddodnes dcodnsdtdantdes en el firmware de los dispositivos para mejorar el recocimiento de patrones mediante machine learning.
+
+- Inversión de desarrollo: 
+    - Mejora de Precisión y funcionalidad: El foco es añadir funciones como el monitoreo de fatiga del operador mediante telemetría, integrándolo a la plataforma central.
+
+**Tácticas Operativas**
+
+- Marketing digital especializado:
+    - Presencia Multimedia: Crear contenido audiovisual que muestre el sistema funcionando en condiciones reales para generar confianza en la robustez del prodructo frente a competidores
