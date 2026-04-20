@@ -111,3 +111,4 @@ Creemos que, si MineGuard activa alertas visuales y sonoras directamente en los 
 
 #### 1.2.2.4. Lean UX Canvas
 
+ <img src="./assets/lean_ux_canvas.png" alt="leanuxcanvas">
