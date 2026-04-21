@@ -167,3 +167,18 @@ Este User Journey Map representa la experiencia de un conductor de vehículo liv
 <br>
 
 ### 2.3.4. Empathy Mapping
+
++ **Segmento 1: Empresas Mineras de Tajo Abierto** 
+
+<p align="center">
+    <img src="assets/Empathy map 1.png" alt="upc-logo" width="850px" height="1300px"/>
+</p>
+
+<br>
+
++ **Segmento 2: Operadores y Conductores de Vehículos Livianos** 
+
+<p align="center">
+    <img src="assets/Empathy map 2.png" alt="upc-logo" width="850px" height="1300px"/>
+</p>
+
