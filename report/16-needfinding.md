@@ -8,11 +8,15 @@
     <img src="assets/Segmento 1 - Raúl Ramírez.png" alt="upc-logo" width="750px" height="900px"/>
 </p>
 
+<br>
+
 + **Segmento 2: Operadores y Conductores de Vehículos Livianos** 
 
 <p align="center">
     <img src="assets/Segmento 2 - Carlos Huamán.png" alt="upc-logo" width="750px" height="900px"/>
 </p>
+
+<br>
 
 ### 2.3.2. User Task Matrix
 
@@ -106,6 +110,8 @@
     </table>
 </div>
 
+<br>
+
 #### Análisis de la Matriz
 
 Al observar las tareas que realizan los supervisores de operaciones mineras y los conductores de vehículos livianos en su entorno natural, sin una solución IoT especializada, se identifican los siguientes puntos clave:
@@ -135,3 +141,29 @@ Al observar las tareas que realizan los supervisores de operaciones mineras y lo
 + Puntos de Dolor Identificados:
 
 La matriz revela que el proceso actual depende en gran medida de la observación humana y la reacción tardía. Tareas como monitorear rutas o mantenerse alerta durante la conducción son críticas pero limitadas por factores humanos como el tiempo de reacción y la visibilidad. Esta situación genera riesgos constantes y evidencia la falta de sistemas inteligentes de alerta temprana, brecha que MineGuard busca cerrar mediante la automatización y el monitoreo en tiempo real.
+
+<br>
+
+### 2.3.3. User Journey Mapping
+
++ **Segmento 1: Empresas Mineras de Tajo Abierto** 
+
+Este User Journey Map representa la experiencia actual de un supervisor de operaciones mineras durante el monitoreo y control de rutas de transporte interno en una operación de tajo abierto. El journey ilustra el recorrido completo del usuario, desde la supervisión general de la operación y la coordinación del tránsito vehicular, hasta la respuesta ante incidentes, el análisis posterior de eventos y la definición de acciones de mejora. Este mapa permite evidenciar las limitaciones del proceso actual, caracterizado por una alta dependencia de la observación humana, reportes tardíos y baja visibilidad en tiempo real de las incursiones en rutas críticas.
+
+<p align="center">
+    <img src="assets/journey map 1.png" alt="upc-logo" width="1200px" height="750px"/>
+</p>
+
+<br>
+
++ **Segmento 2: Operadores y Conductores de Vehículos Livianos** 
+
+Este User Journey Map representa la experiencia de un conductor de vehículo liviano dentro de una operación minera de tajo abierto. El journey describe el recorrido completo del usuario desde el inicio de su jornada, el desplazamiento en rutas compartidas con camiones autónomos, la interacción ante situaciones de riesgo, hasta la finalización de sus actividades. Este mapa evidencia las limitaciones actuales, donde la seguridad depende principalmente de la atención humana, la experiencia del conductor y la comunicación por radio, lo que incrementa el riesgo ante eventos imprevistos.
+
+<p align="center">
+    <img src="assets/journey map 2.png" alt="upc-logo" width="1200px" height="750px"/>
+</p>
+
+<br>
+
+### 2.3.4. Empathy Mapping
