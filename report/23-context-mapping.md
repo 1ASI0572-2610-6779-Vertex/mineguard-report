@@ -1,0 +1,83 @@
+<!--D d-->
+<!--
+1. Shared Kernel (Núcleo Compartido)
+Es un subconjunto del dominio que dos o más equipos acuerdan compartir. Puede ser código o una base de datos.
+2. Customer/Supplier (Cliente/Proveedor)
+Establece una jerarquía donde el Proveedor (Upstream) entrega datos o servicios que el Cliente (Downstream) necesita.
+3. Conformist (Conformista)
+Ocurre cuando el contexto Downstream decide adaptarse ciegamente al modelo del contexto Upstream.
+4. Anti-corruption Layer (ACL - Capa Anticorrupción)
+Es el patrón más defensivo. El contexto Downstream crea una capa de traducción para evitar que los conceptos "ajenos" del proveedor contaminen su propio modelo de dominio.
+-->
+<h2>4.1.2. Context Mapping</h2>
+
+En esta parte, se explican las relaciones entre los 7 bounded contexs identificados de nuestro sistema.
+
+<h3>IAM -> SPM</h3> 
+
+Descripción:
+
+SPM gestiona si el usuario está autenticado para procesar un pago. IAM provee la identidad.
+
+Patrón:
+
+IAM actúa como proveedor de identidad. Subscription usa una **Anti-corruption** Layer para traducir los tokens de identidad.
+
+<h3>IAM -> PPM</h3>
+
+Descripción:
+
+PPM depende del identificador único uuid que genera iam para asociar los datos del perfil al usuario correcto.
+
+Patrón:
+
+Profiles suele ser **Conformist** con IAM, ya que depende totalmente de un usuario creado para poder existir
+
+<h3>SPM -> PPM</h3>
+
+Descripción:
+
+Comparte información sobre el "Estado del cliente". Si un usuario cambia su plan (SPM), esto puede desbloquear preferencias premium.
+
+Patrón:
+
+Relación de **Customer-Supplier**. Si el estado de suscripción cambia a Premium, el contexto de Profiles permite habilitar preferencias extendidas. 
+
+<h3>SDP -> SEM</h3>
+
+Descripción:
+
+La planificación define rutas y horarios; la ejecución debe obedecer este plan
+
+Patrón:
+
+**Customer-Supplier** porque el monitoreo no puede inventarse rutas estas deben seguir un diselo planificadó.
+
+<h3>RAM -> SEM</h3>
+
+Descripción:
+
+Comparten información crítica sobre el estado de ls sensores y vehículos en tiempo real
+
+Patrón:
+
+**Shared Kernel** porque para evitar duplicar código complejo de telemetría, ambos equipos comparten librerías en común que definen los estados del hardware.
+
+<h3>SEM -> DA</h3>
+
+Descripción:
+
+El Dashboard se limita a mostrar los datos tal como la ejecución los genera
+
+Patrón:
+
+**Conformist** porque simplemente se conforma con la estructura de datos que envía el motor de ejecución. 
+
+> Preguntas estratégicas de reflexión:
+
+- Qué pasaría si juntamos IAM con PPM ?
+
+No sería ideal juntarlos, debido a que ambos tienen responsabilidades diferentes. IAM se encarga de la autorizaión, autenticacióon y permisos de los usuarios mientras que la gestión de perfil maneja la información personal de cada tipo de cuenta.
+
+
+
