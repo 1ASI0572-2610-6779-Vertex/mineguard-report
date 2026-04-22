@@ -32,19 +32,19 @@ A partir de un estudio de mercado al cuál nos enfocamos, hemos podido identific
         <td colspan="2">Nombre de la StartUp</td>
         <td>
             <span>MineGuard</span>
-            <img src="./assets/mineguard.png" alt="mineguard Logo">
+            <img src="assets/mineguard.png" alt="mineguard Logo">
         </td>
         <td>
             SS-Trading
-            <img src="./assets/logo3.png" alt="SS-Trading Logo">
+            <img src="assets/logo3.png" alt="SS-Trading Logo">
         </td>
         <td>
             Hunter
-            <img src="./assets/Logo_Hunter.svg" alt="Hunter Logo">
+            <img src="assets/Logo_Hunter.svg" alt="Hunter Logo">
         </td>
         <td>
             Torsa
-            <img src="./assets/logotipo-positivo.svg" alt="Torsa Logo">
+            <img src="assets/logotipo-positivo.svg" alt="Torsa Logo">
         </td>
     </tr>
     <div class="Profile">
