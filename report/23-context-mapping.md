@@ -13,7 +13,7 @@ Es el patrón más defensivo. El contexto Downstream crea una capa de traducció
 
 En esta parte, se explican las relaciones entre los 7 bounded contexs identificados de nuestro sistema.
 
-<h3>IAM -> SPM</h3> 
+<h3>- IAM -> SPM</h3> 
 
 Descripción:
 
@@ -23,17 +23,17 @@ Patrón:
 
 IAM actúa como proveedor de identidad. Subscription usa una **Anti-corruption** Layer para traducir los tokens de identidad.
 
-<h3>IAM -> PPM</h3>
+<h3>- IAM -> PPM</h3>
 
 Descripción:
 
-PPM depende del identificador único uuid que genera iam para asociar los datos del perfil al usuario correcto.
+PPM depende del identificador único uuid que genera iam para asociar los datos del perfil al usuario correcto. Gestiona el perfil y da los roles adecuados para permitir el accso y modificación de perfil 
 
 Patrón:
 
 Profiles suele ser **Conformist** con IAM, ya que depende totalmente de un usuario creado para poder existir
 
-<h3>SPM -> PPM</h3>
+<h3>- SPM -> PPM</h3>
 
 Descripción:
 
@@ -43,37 +43,37 @@ Patrón:
 
 Relación de **Customer-Supplier**. Si el estado de suscripción cambia a Premium, el contexto de Profiles permite habilitar preferencias extendidas. 
 
-<h3>SDP -> SEM</h3>
+<h3>- SDP -> SEM</h3>
 
 Descripción:
 
-La planificación define rutas y horarios; la ejecución debe obedecer este plan
+La planificación define rutas y horarios; la ejecución debe obedecer este plan de forma que se garantiza un proceso eficaz en el tranzporte de los camiones dentro de la mina.
 
 Patrón:
 
 **Customer-Supplier** porque el monitoreo no puede inventarse rutas estas deben seguir un diselo planificadó.
 
-<h3>RAM -> SEM</h3>
+<h3>- RAM -> SEM</h3>
 
 Descripción:
 
-Comparten información crítica sobre el estado de ls sensores y vehículos en tiempo real
+Comparten información crítica sobre el estado de los sensores y vehículos en tiempo real. 
 
 Patrón:
 
 **Shared Kernel** porque para evitar duplicar código complejo de telemetría, ambos equipos comparten librerías en común que definen los estados del hardware.
 
-<h3>SEM -> DA</h3>
+<h3>- SEM -> DA</h3>
 
 Descripción:
 
-El Dashboard se limita a mostrar los datos tal como la ejecución los genera
+El Dashboard se limita a mostrar los datos tal como la ejecución los genera, de forma que se permite ver los detalles del funcionamiento tanto sensores como trabajadores de la empresa.
 
 Patrón:
 
 **Conformist** porque simplemente se conforma con la estructura de datos que envía el motor de ejecución. 
 
-> Preguntas estratégicas de reflexión:
+<h3>>> Preguntas estratégicas de reflexión:</h3>
 
 - Qué pasaría si juntamos IAM con PPM ?
 
