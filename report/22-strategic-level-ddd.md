@@ -8,4 +8,4 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 
 - Bounded Context Canvases Identity and Access Management (IAM)
 
-<img src="assets/IAM.png">
+<img src="assets/iam2.0.png">
