@@ -20,12 +20,11 @@
   
 - ¿Qué tan frecuente sientes que estás expuesto a situaciones de riesgo dentro de la mina?
 - ¿En qué momentos sientes mayor peligro al conducir dentro de la operación?
-- ¿Qué tan claro tienes cuándo estás ingresando a una zona de riesgo o ruta de maquinaria pesada?
 - ¿Qué herramientas o señales utilizas actualmente para evitar accidentes?
 - ¿Alguna vez has estado cerca de un accidente? ¿Qué ocurrió?
 - ¿Qué tan fácil o difícil es mantener la atención mientras conduces en la mina?
 - ¿Qué tipo de alerta te ayudaría más a evitar riesgos (visual, auditiva u otra)?
-- ¿Te incomodaría usar un sistema que te envíe alertas en tiempo real mientras conduces? ¿Por qué?
+- ¿Te gustaria usar un sistema que te envíe alertas en tiempo real mientras conduces? ¿Por qué?
 - ¿Qué características debería tener una herramienta para que realmente la uses sin distracciones?
 - ¿Qué cambiarías del sistema actual de seguridad dentro de la mina?
   
