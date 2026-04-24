@@ -60,6 +60,11 @@ En este escenario, se crea, auténtica, autoriza y gestiona los usuarios que est
 
 <img src="assets/iam_ccd.png">
 
+- Dashboards and Analytics: 
+
+Este bounded permite recopilar, procesar y visualizar la información operativa del sistema. Analizando alertas, identificar patrones de riesgo y tomar decisiones mediante dashboards en tiempo real y análisis históricos.
+
+<img src="assets/EventStorming_Dashboard_and_Analytics.png">
 
 <h3>4.1.1.2. Domain Message Flows Modeling</h3>
 
@@ -70,3 +75,7 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 - Bounded Context Canvases Identity and Access Management (IAM)
 
 <img src="assets/iam2.0.png">
+
+- Bounded Context Canvases Dashboards and Analytics
+
+<img src="assets/BC_Canvases_Dashboards_and_Analytics.png">
