@@ -64,12 +64,12 @@
 
 | **ENTREVISTA 1** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** | nombre |
-| **Edad** | edad |
-| **Departamento** | departamento  |
+| **Nombre entrevistado** | Edgardo Chavez |
+| **Edad** | 56 |
+| **Departamento** | Ánchash  |
 | **Link del video** | `link` |
-| **Foto entrevista** |   <img src="assets/img/interviews/entrevista.png" alt="entrevista_foto" width="500"/>|
-| **Resumen** | resume |
+| **Foto entrevista** |   <img src="assets/img/interviews/entrevista segmento 2 - Edgardo Chavez.png" alt="entrevista_foto" width="500"/>|
+| **Resumen** | Edgardo Chávez es conductor y operador de equipo pesado en minería, una labor de alto riesgo que exige seguir estrictos protocolos de seguridad. Para trabajar, cuenta con un permiso especial (“franja roja”) y debe mantenerse en constante evaluación de su entorno, comunicando cualquier riesgo por radio a la central. Antes de cada operación realiza inspecciones del vehículo, rutas y condiciones climáticas. Además, utiliza sistemas como CAS (anticolisiones) y SAF (monitoreo de somnolencia). Señala que la comunicación es clave ante interrupciones en la ruta y que, hasta ahora, no ha tenido accidentes y se siente seguro con los sistemas actuales. |
 
 | **ENTREVISTA 2** | |
 |------------------|----------------------------|
