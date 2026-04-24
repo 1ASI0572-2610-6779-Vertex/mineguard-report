@@ -73,12 +73,12 @@
 
 | **ENTREVISTA 2** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** | nombre |
-| **Edad** | edad |
-| **Departamento** | departamento  |
-| **Link del video** | `link` |
-| **Foto entrevista** |   <img src="assets/img/interviews/entrevista.png" alt="entrevista_foto" width="500"/>|
-| **Resumen** | resume |
+| **Nombre entrevistado** | Fernando Velasquez Laino |
+| **Edad** | 55 |
+| **Departamento** | Ánchash  |
+| **Link del video** | `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQAxehKHT-yXQqdnxe9suKHxAeHWLyw4jjtExhs6eBjZVDk?e=vKf3t5&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D` |
+| **Foto entrevista** |   <img src="assets/img/interviews/entrevista segmento 2 - Fernando Velasquez.png.png" alt="entrevista_foto" width="500"/>|
+| **Resumen** | Fernando Velázquez es un conductor de mina y operador de maquinaria con más de 25 años de experiencia. Señala que su labor implica una exposición constante a riesgos, especialmente por el manejo de maquinaria pesada y la conducción de vehículos dentro de la mina, donde factores como el cansancio o la falta de monitoreo pueden generar accidentes. Menciona que actualmente algunos equipos ya cuentan con sistemas de monitoreo que emiten alertas y le gustaría que estos dispositivos de detección de alertas fueran más precisos, ya que considera que actualmente las alarmas son demasiado sensibles y se activan ante muchas situaciones que no siempre representan un riesgo real. |
 
 | **ENTREVISTA 3** | |
 |------------------|----------------------------|
@@ -87,6 +87,6 @@
 | **Departamento** | departamento  |
 | **Link del video** | `link` |
 | **Foto entrevista** |   <img src="assets/img/interviews/entrevista.png" alt="entrevista_foto" width="500"/>|
-| **Resumen** | resume |
+| **Resumen** | resumen |
 
 ## 2.2.3. Análisis de entrevistas
