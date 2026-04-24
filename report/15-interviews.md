@@ -35,12 +35,12 @@
 
 | **ENTREVISTA 1** | |
 |------------------|----------------------------|
-| **Nombre entrevistado** | nombre |
-| **Edad** | edad |
-| **Departamento** | departamento  |
-| **Link del video** | `link` |
-| **Foto entrevista** |   <img src="assets/img/interviews/entrevista.png" alt="entrevista_foto" width="500"/>|
-| **Resumen** | resume |
+| **Nombre entrevistado** | Landivar Flores |
+| **Edad** | 34 |
+| **Departamento** | Ancash  |
+| **Link del video** | `[link](https://www.youtube.com/watch?v=joM86iFJ9V0)` |
+| **Foto entrevista** |   <img src="assets/img/interviews/entrevista segmento 1 - Landivar Flores.png" alt="entrevista_foto" width="500"/>|
+| **Resumen** | Landivar Flores explica que la seguridad en minería se basa en una combinación de tecnologías avanzadas (sistemas LiDAR, radar e inteligencia artificial) que procesan datos en tiempo real para alertar sobre riesgos de colisión y fatiga (sistema ADAS). Señala que, aunque existen controles como el sistema CAS, persisten limitaciones críticas como las condiciones climáticas (neblina), la conectividad de red y, sobre todo, el factor humano. Menciona que los accidentes generan un impacto en cascada que afecta desde la operatividad hasta la reputación y licencias de la empresa. Concluye que, si bien se han probado cámaras, la solución más confiable sigue siendo el monitoreo satelital de alta precisión y los sistemas de advertencia integrados en los equipos. |
 
 | **ENTREVISTA 2** | |
 |------------------|----------------------------|
