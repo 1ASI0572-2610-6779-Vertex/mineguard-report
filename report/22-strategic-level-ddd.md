@@ -76,6 +76,12 @@ Este bounded permite recopilar, procesar y visualizar la información operativa 
 
 <img src="assets/EventStorming_Dashboard_and_Analytics.png">
 
+- Subscriptions and Payment Management:
+
+Este bounded permite gestionar los planes de suscripción de los usuarios, procesar los pagos y controlar los estados de cada suscripción. Se encarga de manejar las renovaciones automáticas, garantizar la correcta facturación y facilitar el seguimiento financiero de los cobros recurrentes.
+
+<img src="assets/EventStorming_Subscriptions_and_Payment_Management.png">
+
 <h3>4.1.1.2. Domain Message Flows Modeling</h3>
 
 <h3>4.1.1.3. Bounded Context Canvases</h3>
@@ -89,3 +95,7 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 - Bounded Context Canvases Dashboards and Analytics
 
 <img src="assets/BC_Canvases_Dashboards_and_Analytics.png">
+
+- Subscriptions and Payment Management
+
+<img src="assets/BC_Canvases_Subscriptions_and_Payment_Management.png">
