@@ -28,31 +28,31 @@ Durante este paso, se identifican los puntos donde se presente tráfico o tambi�
 
 En este paso, identificamos los eventos comerciales importantes que nos indica que hay un cambio de contexto o sección en la aplicación.
 
-<img src="assets/Step4.png">
+<img src="assets/step4.png">
 
 **Paso 5: Commands**
 
 Los comandos son representaciones de la consecuencia que generó un evento o varios eventos.
 
-<img src="assets/Step5.png">
+<img src="assets/step5.png">
 
 **Paso 6: Policies**
 
 En este escenario, se muestra que un evento puede provocar la ejecución de un comando manejado por una política.
 
-<img src="assets/Step6.png">
+<img src="assets/step6.png">
 
 **Paso 7: Read Models**
 
 En este escenario, los read models sirven para generar una interfaz de lectura de un evento para que el usuario pueda decidir si ejecutar un comando o no.
 
-<img src="assets/Step7.png">
+<img src="assets/step7.png">
 
 **Paso 8: External Systems**
 
 En esta fase, se identifican los sistemas externos que usará la plataforma móvil para su ejecución eficaz.
 
-<img src="assets/Step8.png">
+<img src="assets/sstep8.png">
 
 **Paso 9: Aggregates**
 
