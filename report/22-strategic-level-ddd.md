@@ -70,13 +70,6 @@ En este escenario, se crea, auténtica, autoriza y gestiona los usuarios que est
 
 <img src="assets/iam_ccd.png">  
 
-- Service Execution and Monitoring: 
-
-Este bounded context se encarga de procesar la telemetría en tiempo real, evaluar riesgos (proximidad, colisión y fatiga) y gestionar el ciclo de vida de las alertas, determinando si deben notificarse, auto-resolverse o escalarse al supervisor.
-
-<img src="assets/EventStorming_Service_Execution_and_Monitoring.jpg">
-
-
 - Dashboards and Analytics: 
 
 Este bounded permite recopilar, procesar y visualizar la información operativa del sistema. Analizando alertas, identificar patrones de riesgo y tomar decisiones mediante dashboards en tiempo real y análisis históricos.
