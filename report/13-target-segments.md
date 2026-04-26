@@ -1,10 +1,10 @@
 ## 1.3. Segmentos Objetivos
-### Segmento #1: Empresas Mineras de Tajo Abierto
+### Segmento #1: Supervisión Corporativa en Minería de Tajo Abierto
 
-Este segmento está conformado por compañías mineras que operan en entornos de tajo abierto y que han incorporado o están en proceso de incorporar flotas de transporte autónomo. Estas empresas buscan optimizar sus operaciones mientras garantizan altos estándares de seguridad industrial.
+Este segmento está conformado por los profesionales y equipos encargados de monitorear, gestionar y asegurar la continuidad operativa y la seguridad en el terreno. Operan desde los Centros de Control y representan el punto de decisión humano frente a las alertas generadas por la flota de transporte y los sensores IoT, siendo responsables de mitigar riesgos en tiempo real.
 
 - Aspectos demográficos:  
-
+    - Roles / Cargos: Supervisores de centro de control, operadores de despacho, gerentes de operaciones, y jefes de Seguridad y Salud Ocupacional.
     - Tipo de organización: Grandes empresas mineras y corporaciones del sector extractivo
     - Ubicación: Zonas mineras, principalmente en regiones con operaciones a gran escala
     - Tamaño: Medianas y grandes empresas con operaciones continuas
@@ -18,6 +18,7 @@ Este segmento está conformado por compañías mineras que operan en entornos de
 
     - Invierten en tecnologías avanzadas para optimizar procesos. Evalúan soluciones basadas en retorno de inversión y reducción de riesgos. 
     - Buscan sistemas confiables, escalables y de baja latencia que se integren con su infraestructura existente.
+    - Utilizan las plataformas para documentar eventos, registrar incidentes y alimentar los módulos de reportes de rendimiento.
 
 ### Segmento #2: Operadores y Conductores de Vehículos Livianos
 
