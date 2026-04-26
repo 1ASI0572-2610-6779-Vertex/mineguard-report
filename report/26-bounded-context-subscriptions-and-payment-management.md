@@ -8,6 +8,7 @@ Se encarga de gestionar las suscripciones de los usuarios y el procesamiento de 
 Contiene la lógica de negocio y las entidades principales relacionadas a suscripciones y pagos.
 
 **Aggregate: Subscription**
+Descripción: Actúa como raíz del agregado y punto central de control del ciclo de vida de la suscripción. Encapsula la lógica de negocio relacionada a activación, cancelación, renovaciones y coordinación de pagos asociados.
 
 |Nombre|Categoría|Descripción|
 |-|-|-|
@@ -43,6 +44,7 @@ Methods
 **Entities**
 
 **Payment**
+Descripción: Representa un intento o registro de transacción económica dentro de una suscripción. Permite rastrear el estado de cada cobro realizado.
 
 |Nombre|Categoría|Descripción|
 |-|-|-|
@@ -60,6 +62,7 @@ Attributes
 ---
 
 **Plan**
+Descripción: Define las condiciones comerciales de una suscripción, incluyendo precio y periodicidad, sirviendo como base para la facturación.
 
 |Nombre|Categoría|Descripción|
 |-|-|-|
@@ -77,6 +80,7 @@ Attributes
 ---
 
 **PaymentMethod**
+Descripción: Representa la forma en la que el usuario realiza los pagos, permitiendo reutilización y validación en múltiples transacciones.
 
 |Nombre|Categoría|Descripción|
 |-|-|-|
@@ -145,6 +149,7 @@ handle(GetPlansQuery)
 **Rest Controllers**
 
 SubscriptionsController
+Descripción: Expone endpoints REST para gestionar el ciclo de vida de las suscripciones, incluyendo creación, cancelación y renovación.
 
 |Método|Ruta|Descripción|
 |-|-|-|
@@ -155,6 +160,7 @@ SubscriptionsController
 |renewSubscription()|POST /api/v1/subscriptions/{id}/renew|Renueva suscripción|
 
 PaymentsController
+Descripción: Maneja las operaciones relacionadas al procesamiento y reintento de pagos dentro de una suscripción.
 
 |Método|Ruta|Descripción|
 |-|-|-|
@@ -162,6 +168,7 @@ PaymentsController
 |retryPayment()|POST /api/v1/subscriptions/{id}/payments/{paymentId}/retry|Reintenta pago|
 
 PlansController
+Descripción: Permite consultar los planes disponibles que pueden ser contratados por los usuarios.
 
 |Método|Ruta|Descripción|
 |-|-|-|
@@ -190,6 +197,7 @@ PlanResourceFromEntityAssembler
 <h3>4.2.1.3. Application Layer</h3>
 
 SubscriptionCommandService
+Descripción: Implementa la lógica de aplicación para ejecutar operaciones que modifican el estado de las suscripciones.
 
 |Método|Descripción|
 |-|-|
@@ -201,6 +209,7 @@ SubscriptionCommandService
 |handle(UpdatePaymentMethodCommand)|Actualiza método de pago|
 
 SubscriptionQueryService
+Descripción: Implementa la lógica para recuperar datos de suscripciones sin alterar el estado del sistema.
 
 |Método|Descripción|
 |-|-|
@@ -213,6 +222,7 @@ SubscriptionQueryService
 <h3>4.2.1.4. Infrastructure Layer</h3>
 
 SubscriptionRepository
+Descripción: Gestiona la persistencia de las suscripciones y permite consultas específicas sobre ellas.
 
 |Método|Tipo de Retorno|Descripción|
 |-|-|-|
@@ -221,6 +231,7 @@ SubscriptionRepository
 |findById|Optional|Busca por ID|
 
 PlanRepository
+Descripción: Provee acceso a los datos de planes disponibles en el sistema.
 
 |Método|Tipo de Retorno|Descripción|
 |-|-|-|
