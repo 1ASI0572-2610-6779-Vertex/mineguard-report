@@ -52,7 +52,7 @@ En este escenario, los read models sirven para generar una interfaz de lectura d
 
 En esta fase, se identifican los sistemas externos que usará la plataforma móvil para su ejecución eficaz.
 
-<img src="assets/sstep8.png">
+<img src="assets/step8.png">
 
 **Paso 9: Aggregates**
 
@@ -119,6 +119,11 @@ Este bounded permite gestionar los planes de suscripción de los usuarios, proce
 
 <img src="assets/flows_modeling_alert_views.png">
 
+**Escenario: Creación de Usuario**
+
+Cuando se crea una nueva cuenta, ya sea de modo conductor o de supervisor, luego de que inicie sesión, se le presentarán los planes de subscripción que tiene la aplicación para distintas funciones, luego de escoger dicho plan se informará a la gestión perfil sobre la creación y sincronización de los datos ingresados previamente en el registro de cuenta.
+
+<img src="assets/scenarioiam.png">
 
 <h3>4.1.1.3. Bounded Context Canvases</h3>
 
