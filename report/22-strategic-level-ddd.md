@@ -89,6 +89,12 @@ Este bounded permite gestionar los planes de suscripción de los usuarios, proce
 
 <img src="assets/EventStorming_Subscriptions_and_Payment_Management.png">
 
+- Service Design and Planing:
+
+Este bounded context se encarga de gestionar la configuración inicial, espacial y de recursos de la mina de forma local antes del inicio de las operaciones. Centraliza la importación de la topografía, el trazado y validación de zonas de riesgo, la definición de permisos de acceso, el registro del padrón de flota y la vinculación de los sensores IoT a los vehículos, garantizando un despliegue operativo seguro y sin puntos ciegos.
+
+<img src="assets/EventStorming_service_design_and_planing.png">
+
 <h3>4.1.1.2. Domain Message Flows Modeling</h3>
 
 **Escenario: Detección y Gestión de Alerta Crítica**
@@ -125,6 +131,19 @@ Cuando se crea una nueva cuenta, ya sea de modo conductor o de supervisor, luego
 
 <img src="assets/scenarioiam.png">
 
+**Escenario: Configuración Inicial de la Mina**
+- El Supervisor utiliza el Centro de Control UI para cargar el mapa topográfico local y registrar los vehículos y conductores iniciales.
+
+- En la misma interfaz, el Supervisor traza las zonas de riesgo y vincula los sensores IoT a la flota operativa.
+
+- El Centro de Control UI agrupa los datos y envía el comando "Publicar Configuración" hacia el contexto de Service Design and Planning.
+
+- El sistema valida la información localmente y publica el evento "Configuración Desplegada" hacia Service Execution and Monitoring para activar el monitoreo.
+
+- En paralelo, el mismo evento se envía hacia Dashboards and Analytics para renderizar los polígonos y recursos en el panel de visualización.
+
+<img src="assets/flows_modeling_initial_configuration_design.png">
+
 <h3>4.1.1.3. Bounded Context Canvases</h3>
 
 En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los bounded context que posee nuesdtro sdisdtema. El desarrollo de aquellos se realizó minuciosamente para comprobar de qué son los bounded context que reflejan el dominio del negocio. De esta manera, se logró formar 7 bounded context, enfocándonos en que cada uno de ellos resuelva la necesidad del usuario.
@@ -145,4 +164,7 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 
 <img src="assets/BC_Canvases_Subscriptions_and_Payment_Management.png">
 
+- Service Design and Planing
+
+<img src="assets/BC_Canvases_Service_Design_and_Planing.png">
 
