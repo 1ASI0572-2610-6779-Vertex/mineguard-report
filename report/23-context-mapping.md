@@ -27,7 +27,7 @@ IAM actúa como proveedor de identidad. Subscription usa una **Anti-corruption**
 
 Descripción:
 
-PPM depende del identificador único uuid que genera iam para asociar los datos del perfil al usuario correcto. Gestiona el perfil y da los roles adecuados para permitir el accso y modificación de perfil 
+PPM depende del identificador único uuid que genera iam para asociar los datos del perfil al usuario correcto. Gestiona el perfil y da los roles adecuados para permitir el acceso y modificación de perfil. 
 
 Patrón:
 
@@ -47,7 +47,7 @@ Relación de **Customer-Supplier**. Si el estado de suscripción cambia a Premiu
 
 Descripción:
 
-La planificación define rutas y horarios; la ejecución debe obedecer este plan de forma que se garantiza un proceso eficaz en el tranzporte de los camiones dentro de la mina.
+La planificación define rutas y horarios; la ejecución debe obedecer este plan de forma que se garantiza un proceso eficaz en el transporte de los camiones dentro de la mina. Además se define los nodos para que los sensores no pierdan el alcanze que se necesita para monitorear a los vehiculos. 
 
 Patrón:
 
@@ -57,7 +57,7 @@ Patrón:
 
 Descripción:
 
-Comparten información crítica sobre el estado de los sensores y vehículos en tiempo real. 
+Comparten información crítica sobre el estado de los sensores por telemetría y vehículos en tiempo real. 
 
 Patrón:
 
@@ -75,9 +75,19 @@ Patrón:
 
 <h3>>> Preguntas estratégicas de reflexión:</h3>
 
-- Qué pasaría si juntamos IAM con PPM ?
+- ¿ Qué pasaría si juntamos IAM con PPM ?
 
-No sería ideal juntarlos, debido a que ambos tienen responsabilidades diferentes. IAM se encarga de la autorizaión, autenticacióon y permisos de los usuarios mientras que la gestión de perfil maneja la información personal de cada tipo de cuenta.
+No sería ideal juntarlos, debido a que ambos tienen responsabilidades diferentes. IAM se encarga de la autorizaión, autenticacióon y permisos de los usuarios mientras que la gdestión de perfil maneja la información personal de cada tipo de cuenta.
 
+- ¿ Qué pasaría si creamos un Shared Service para la Telemetría ?
 
+Actualmente se posee un shared kernel entre RAM y SEM. <br>
+Si el sistema crece, ese kernel compartido podría volverse un cuello de botella para el despliegue. Mover esa funcionaldad a un contexto de shared service permitiría que RAM y SEM escalen de forma independiente.
 
+- ¿Qué pasaría si el Dashboard (DA) deja de ser un Conformist?
+
+Si el Dashboard (DA) deja de ser un Conformist, pasaría de ser un "espectador pasivo" que acepta lo que le den, a tener voz propia sobre cómo quiere recibir y procesar la información, dejar de ser Conformist le da autonomía, pero obliga a trabajar más en la infraestructura de datos.
+
+- ¿Qué pasaría si el Bounded Context de Pagos (SPM) falla? ¿Debería el Dashboard (DA) dejar de mostrar datos en tiempo real, o el sistema de seguridad es lo suficientemente crítico como para ignorar el estado de la suscripción en una emergencia?
+
+El sistema detecta la falla del módulo de pagos y activa un permiso temporal (o "Fail-open"). El Dashboard sigue mostrando la telemetría crítica de SEM, pero quizás se deshabilitaría funciones secundarias como reportes históricos o analítica avanzada.
