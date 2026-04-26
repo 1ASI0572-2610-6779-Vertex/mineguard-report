@@ -84,6 +84,25 @@ Este bounded permite gestionar los planes de suscripción de los usuarios, proce
 
 <h3>4.1.1.2. Domain Message Flows Modeling</h3>
 
+**Escenario: Estado en tiempo real de conductores**
+- El supervisor solicita el estado de los conductores desde el Dashboard UI.
+- El contexto de Dashboards and Analytics recibe la consulta y obtiene datos del contexto Service Execution and Monitoring.
+- Este último envía eventos como DriverStatusUpdated y FatigueDetected.
+- El contexto de Analytics procesa la información y genera LiveDriverData.
+- Finalmente, el Dashboard muestra los datos en tiempo real al supervisor.
+
+<img src="assets/flows_modeling_real_time_status.png">
+
+**Escenario: Visualización de alertas críticas**
+- El supervisor solicita el estado de los conductores desde el Dashboard UI.
+- El contexto de Dashboards and Analytics recibe la consulta y obtiene datos del contexto Service Execution and Monitoring.
+- Este último envía eventos como DriverStatusUpdated y FatigueDetected.
+- El contexto de Analytics procesa la información y genera LiveDriverData.
+- Finalmente, el Dashboard muestra los datos en tiempo real al supervisor.
+
+<img src="assets/flows_modeling_alert_views.png">
+
+
 <h3>4.1.1.3. Bounded Context Canvases</h3>
 
 En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los bounded context que posee nuesdtro sdisdtema. El desarrollo de aquellos se realizó minuciosamente para comprobar de qué son los bounded context que reflejan el dominio del negocio. De esta manera, se logró formar 7 bounded context, enfocándonos en que cada uno de ellos resuelva la necesidad del usuario.
