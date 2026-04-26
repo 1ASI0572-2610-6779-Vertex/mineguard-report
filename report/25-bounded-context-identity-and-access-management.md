@@ -135,7 +135,7 @@ String generateAccessToke(...): Crea y firma un JWT para autenticación
 
 <h3>4.2.1.5. Bounded Context Software Architecture Component Level Diagram</h3>
 
-<img src="assets/iamLgc.png">
+<img src="assets/structurizr-92435-IAMComponentView.png" style="width:350px">
 
 <h3>4.2.1.6. Bounded Context Software Architecture Code Level Diagram</h3>
 
@@ -143,7 +143,7 @@ String generateAccessToke(...): Crea y firma un JWT para autenticación
 
 <h3>4.2.1.6.1 Bounded Context Domain Layer Class Diagram</h3>
 
-<img src="#">
+<img src="assets/structurizr-93565-IAM_Domain.png">
 
 <h3>4.2.1.6.2 Bounded Context Database Design Diagram</h3>
 
