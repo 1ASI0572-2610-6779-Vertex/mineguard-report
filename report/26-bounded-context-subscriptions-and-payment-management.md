@@ -259,3 +259,5 @@ Representa la estructura interna del dominio, incluyendo el agregado Subscriptio
 
 <h4>4.2.1.6.2. Bounded Context Database Design Diagram</h4>
 
+<img src="assets/SPM_database_diagram.png">
+
