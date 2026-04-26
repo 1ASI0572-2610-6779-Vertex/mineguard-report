@@ -236,3 +236,26 @@ Descripción: Provee acceso a los datos de planes disponibles en el sistema.
 |Método|Tipo de Retorno|Descripción|
 |-|-|-|
 |findAll|List|Obtiene todos los planes|
+
+<h3>4.2.1.5. Bounded Context Software Architecture Component Level Diagrams</h3>
+
+**Component Diagram**
+
+Representa la interacción entre los usuarios (Driver y Supervisor), la aplicación web y el componente de Subscriptions and Payment Management, mostrando cómo se gestionan las suscripciones dentro del sistema.
+
+<img src="assets/SPM_component_diagram.png">
+
+---
+
+<h3>4.2.1.6. Bounded Context Software Architecture Code Level Diagrams</h3>
+
+<h4>4.2.1.6.1. Bounded Context Domain Layer Class Diagrams</h4>
+
+Representa la estructura interna del dominio, incluyendo el agregado Subscription, entidades relacionadas como Payment, Plan y PaymentMethod, así como sus relaciones y responsabilidades dentro del sistema.
+
+<img src="assets/SPM_code_diagram.png">
+
+---
+
+<h4>4.2.1.6.2. Bounded Context Database Design Diagram</h4>
+
