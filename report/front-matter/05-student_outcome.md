@@ -1,0 +1,18 @@
+
+
+## Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 5**
+
+Criterio: : La capacidad de funcionar efectivamente en un
+equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de
+colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+
+| Criterio específico | Acciones realizadas    | Conclusiones    |
+|---------------------|  ----------------------|-----------------|
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta                |**- TB1:**<br> **Rodrigo Alaya Cabrera:** Durante el desarrollo de esta entrega, trabajé en equipo aportando liderazgo colaborativo, brindando soporte a mis compañeros para asegurar que la interfaz fuera coherente.  <br> **Gordon Salas Gabriel Fernando:** lideré la definición de los diagramas de contenedores y componentes, asegurando la coherencia del diseño estructural. también ayudé a una mejor comunicación del proyecto<br> **Melgarejo Gomez Marcia Victoria:** Tomé la iniciativa para organizar la estructura del documento principal, asegurando que todos supiéramos qué parte nos tocaba redactar para que la propuesta tuviera sentido.<br> **Renato Sebastian Rubber Zegarra Lopez:** Me aseguré de que el flujo de trabajo no se detuviera, ayudando a coordinar los tiempos de entrega entre los compañeros para que nadie se retrasara. <br> **Russell Stephen Romero Qwistgaard**: Me enfoqué en liderar la revisión de los avances, dando feedback constructivo a mis compañeros para mejorar la calidad de lo que estábamos armando juntos. <br> **Gonzales Alvarado Javier Sebastian:** Me encargué de liderar la toma de decisiones cuando el grupo estaba dividido, buscando siempre un punto medio que nos permitiera seguir avanzando sin conflictos.  |TB1:El liderazgo compartido permitió que el equipo de 7 personas no dependiera de una sola cabeza, agilizando la toma de decisiones técnicas en hardware y software de forma paralela sin cuellos de botella.|
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos |**- TB1:**<br> **Rodrigo Alaya Cabrera :** Me encargué de armar el cronograma inicial, dividiendo los objetivos grandes en tareas semanales para que los 7 supiéramos qué hacer cada día.  <br> **Gordon Salas Gabriel Fernando:** Me aseguré de que las herramientas de comunicación (Discord/WhatsApp) estuvieran organizadas, para que la información llegara a todos por igual y nadie se sintiera excluido. <br> **Melgarejo Gomez Marcia Victoria:** Trabajé en la planificación de los hitos de entrega, verificando constantemente que estuviéramos cumpliendo con los requisitos que pedía la rúbrica ABET. <br> **Renato Sebastian Rubber Zegarra Lopez:** Me encargué de documentar los acuerdos que tomábamos en cada reunión, para que siempre hubiera un registro claro de las metas y no perdiéramos el enfoque. <br> **Russell Stephen Romero Qwistgaard:** Organicé los archivos y las carpetas compartidas para que cualquier integrante pudiera encontrar la información rápido, sin perder tiempo preguntando dónde estaba cada cosa. <br> **Gonzales Alvarado Javier Sebastian:** Fui el "reloj" del equipo, recordando suavemente las fechas de entrega internas para que no se nos acumulara el trabajo al final de la semana. <br>|TB1:La planificación estructurada permitió cumplir con los hitos del proyecto (como la telemetría en tiempo real). La inclusión de diversas perspectivas aseguró una solución más robusta para la seguridad minera, logrando una integración exitosa entre los componentes de Edge Computing y la interfaz móvil.|
+
+
