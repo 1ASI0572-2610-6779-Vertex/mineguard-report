@@ -2,7 +2,7 @@
 
 En este bounded context se gestionan los recursos y activos operativos de MineGuard, permitiendo administrar la información de la topografía, las zonas de riesgo, la flota de vehículos y los sensores IoT asociados a la operación. Su finalidad es mantener una configuración confiable y consistente antes y durante el despliegue operativo, de modo que el contexto de ejecución pueda consumir datos válidos para el monitoreo en tiempo real.
 
-### 4.2.6.1. Domain Layer.
+### 4.2.6.1. Domain Layer
 
 El Domain Layer del bounded context Resource and Asset Management modela el núcleo del negocio relacionado con la administración de recursos físicos y lógicos del sistema. Este contexto permite registrar activos, validar su consistencia, asociarlos entre sí y mantener la información necesaria para que otros bounded contexts, especialmente Service Execution and Monitoring, operen con una base confiable.
 
@@ -170,7 +170,7 @@ ONLINE, OFFLINE, DEGRADED, UNKNOWN
 | ConfigurationConsistencyService | Garantizar que la configuración sea coherente. | Valida relaciones entre mapas, zonas, vehículos y sensores antes de publicar. |
 | ResourcePublishingService | Publicar la configuración operativa a otros contextos. | Emite eventos o comandos hacia Service Execution and Monitoring cuando la configuración es aprobada. |
 
-### 4.2.6.2. Interface Layer.
+### 4.2.6.2. Interface Layer
 
 La Interface Layer del bounded context Resource and Asset Management actúa como punto de entrada entre el usuario supervisor y la lógica del sistema. Su función principal es recibir solicitudes desde la aplicación web, validar los datos básicos y enviarlos a los servicios correspondientes.
 
@@ -219,7 +219,7 @@ La Application Layer del bounded context Resource and Asset Management gestiona 
 | Sensor asignado | SensorAssignedToVehicleEventHandler | Sincroniza la asignación entre sensor y vehículo. |
 | Configuración publicada | OperationalConfigurationPublishedEventHandler | Notifica a otros contextos que la configuración ha sido validada y publicada. |
 
-### 4.2.6.4. Infrastructure Layer.
+### 4.2.6.4. Infrastructure Layer
 
 La Infrastructure Layer del bounded context Resource and Asset Management se encarga de implementar las dependencias técnicas necesarias para el funcionamiento del sistema. Principalmente gestiona el acceso a la base de datos mediante repositorios y la comunicación con otros bounded contexts como Service Execution and Monitoring.
 
@@ -289,11 +289,11 @@ Cada servicio utiliza su respectivo repositorio para acceder a la persistencia d
 
 Además, este bounded context se relaciona con Service Execution and Monitoring, del cual comparte estructuras para mantener sincronizada la información de flota, sensores y zonas operativas.
 
-## Placeholder
+<img src="assets/C4_BC_resource_and_asset_management.png">
 
-### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams.
+### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams.
+#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del bounded context Resource and Asset Management representa la estructura principal del dominio. Se identifica el agregado OperationalAssetRegistry, el cual agrupa mapas, zonas, vehículos, sensores y asignaciones para mantener una configuración operativa consistente.
 
@@ -303,9 +303,9 @@ También se incluyen value objects como AssetType, AssetStatus, ZoneType, GeoCoo
 
 Las relaciones principales del diagrama muestran que OperationalAssetRegistry contiene múltiples mapas, zonas, vehículos, sensores y asignaciones. Además, SensorAsset depende de ConnectionStatus y GeoCoordinate, mientras que RiskZone depende de ZoneType y de la geometría definida sobre la topografía.
 
-## Placeholder
+<img src="assets/Class_diagram_BC_resource_and_asset_management.png">
 
-#### 4.2.6.6.2. Bounded Context Database Design Diagram.
+#### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 El modelo entidad-relación correspondiente al bounded context Resource and Asset Management se relaciona con tablas como OperationalAssetRegistry, TopographyMaps, RiskZones, Vehicles, Sensors y AssetAssignments.
 
@@ -319,4 +319,4 @@ Las tablas Vehicles y Sensors almacenan la información de la flota operativa y 
 
 En conjunto, este submodelo permite mantener una base de datos coherente para la preparación operativa, la validación de configuración y la sincronización con el contexto de ejecución.
 
-## Placeholder
+<img src="assets/ERD_BC_resource_and_asset_management.png">
