@@ -32,7 +32,7 @@
 
 
 Para cada segmento se registraron 3 entrevistas. A continuación se muestra la recolección de datos obtenida tras realizar cada entrevista presencial y virtual.  
-Se puede ver el video consolidado con todas las entrevistas realizadas en el siguiente enlace: [Ver video en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQA3yj36FQ3cQZibPgEXO8pUAe0SWU15GACTjV4ieAImlMA?e=3xOIya&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
+Se puede ver el video consolidado con todas las entrevistas realizadas en el siguiente enlace: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQA3yj36FQ3cQZibPgEXO8pUAeQzHeklGhclsgVKfOoNdoU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Qcuu47`.
 
 **Segmento #1: Supervisión Corporativa en Minería de Tajo Abierto**
 
