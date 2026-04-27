@@ -47,3 +47,47 @@
 | US37               | Exportación de datos              | *Como* supervisor *quiero* exportar datos del dashboard *para* realizar análisis externo.                              | Escenario 1: Exportación exitosa <br> *Dado que* existen datos en el sistema <br> *Cuando* el supervisor solicita exportar <br> *Entonces* se genera un archivo en formato Excel o CSV <br><br> Escenario 2: Error en exportación <br> *Dado que* ocurre un fallo en el sistema <br> *Cuando* se intenta exportar <br> *Entonces* se muestra un mensaje de error                                                      | EP08                          |
 | US38               | Insights automáticos              | *Como* supervisor *quiero* recibir recomendaciones basadas en datos *para* mejorar la seguridad.                       | Escenario 1: Insight generado <br> *Dado que* el sistema detecta patrones de riesgo <br> *Cuando* el supervisor accede al dashboard <br> *Entonces* muestra recomendaciones como zonas de alto riesgo o conductores que requieren evaluación <br><br> Escenario 2: Sin patrones <br> *Dado que* no existen patrones relevantes <br> *Cuando* se analiza la información <br> *Entonces* no se muestran recomendaciones | EP08                          |
 
+### 3.1.1. Technical Stories
+
+| Código | Technical Story | Descripción técnica | Módulo principal | Relación con User Stories |
+|--------|-----------------|--------------------|------------------|---------------------------|
+| TS01 | Gestión de autenticación de conductores y supervisores | Implementar el proceso de inicio de sesión, validación de credenciales, emisión de sesión y control de acceso por rol. | IAM / Seguridad | US01, US14, US28 |
+| TS02 | Asociación conductor-vehículo | Desarrollar la lógica para vincular un conductor con un vehículo disponible antes de iniciar la operación. | Gestión de Recursos | US02 |
+| TS03 | Consulta y administración de zonas restringidas | Implementar la persistencia y visualización de zonas restringidas, con soporte para consulta previa a la conducción y validación de reglas de acceso. | Resource and Asset Management | US03, US08, US12 |
+| TS04 | Registro de desempeño operativo del conductor | Implementar el almacenamiento de eventos operativos, métricas de comportamiento y datos necesarios para la consulta histórica del conductor. | Analytics / Monitoring | US04, US23 |
+| TS05 | Ingesta y procesamiento de telemetría IoT | Implementar la recepción de datos de sensores, su normalización y publicación interna para análisis en tiempo real. | Service Execution and Monitoring | US05, US06, US07, US16 |
+| TS06 | Motor de detección de proximidad y colisión | Desarrollar la lógica de análisis espacial y temporal para detectar proximidad riesgosa y posibles colisiones entre vehículos. | Service Execution and Monitoring | US05, US06, US08, US09, US24 |
+| TS07 | Detección de fatiga mediante sensores biométricos | Implementar reglas de análisis sobre señales biométricas para identificar patrones compatibles con fatiga o somnolencia. | Service Execution and Monitoring | US07, US20 |
+| TS08 | Orquestación de alertas críticas | Desarrollar el mecanismo que crea, prioriza, actualiza y cierra alertas críticas, incluyendo estados de atención y falsa alarma. | Alert Management | US06, US10, US13, US24 |
+| TS09 | Notificaciones multicanal | Implementar el envío de alertas y avisos al vehículo, al supervisor y al dashboard mediante canales diferenciados. | Comunicación e Integración | US05, US06, US11, US13, US21 |
+| TS10 | Gestión de recursos operativos | Implementar el alta, actualización, consulta y control de estado de conductores, vehículos y sensores dentro del sistema. | Resource and Asset Management | US14, US15, US16, US17 |
+| TS11 | Vinculación y monitoreo de sensores | Desarrollar la funcionalidad para registrar sensores, supervisar su estado y mantener trazabilidad de su asociación con vehículos o activos. | Resource and Asset Management | US15, US16, US17 |
+| TS12 | Historial de eventos y auditoría operativa | Implementar el registro persistente de eventos, alertas, respuestas y acciones del supervisor para su consulta posterior. | Analytics / Persistencia | US10, US18, US19, US22 |
+| TS13 | Generación de reportes y métricas | Desarrollar la agregación de datos históricos para producir reportes de alertas, fatiga, frecuencia de eventos y comportamiento. | Dashboard and Analytics | US18, US19, US20, US23 |
+| TS14 | Recomendaciones de acción al conductor | Implementar la lógica que traduce una alerta crítica en una recomendación operativa clara para el conductor. | Alert UX / Cabina | US21 |
+| TS15 | Confirmación de respuesta del conductor | Desarrollar el mecanismo que detecta la reacción del conductor ante una alerta y registra si la acción fue cumplida o no. | Monitoring / Analytics | US22, US23 |
+| TS16 | Visualización operativa en tiempo real | Implementar los componentes de consulta y renderizado para mostrar zonas, vehículos, alertas y estado operativo al supervisor. | Dashboard and Analytics | US08, US09, US10, US13 |
+| TS17 | Gestión de contenido informativo y landing page | Implementar la capa pública de presentación, incluyendo módulos informativos, testimonios, formularios de contacto y registro para empresas. | Presencia Digital | US25, US26, US27, US28, US29, US30 |
+| TS18 | Integración entre módulos y eventos de dominio | Implementar el intercambio de eventos y contratos de datos entre los módulos de autenticación, recursos, monitoreo, analítica y visualización. | Integración / Arquitectura | Todas las user stories |
+
+### 3.1.2. Matriz de trazabilidad técnica
+
+| Epic | Technical Stories asociadas | Objetivo técnico principal |
+|------|-----------------------------|----------------------------|
+| EP01 Gestión de Conductores | TS01, TS02, TS03, TS04 | Control de acceso, asociación operativa y consulta de información previa a la conducción. |
+| EP02 Sistema de Alertas Inteligentes | TS05, TS06, TS07, TS08, TS09, TS14 | Captura y procesamiento de eventos para emitir alertas oportunas y accionables. |
+| EP03 Centro de Control | TS08, TS09, TS12, TS13, TS15, TS16 | Supervisión en tiempo real, gestión de incidentes y visualización operativa. |
+| EP04 Gestión de Recursos | TS01, TS02, TS10, TS11, TS18 | Administración consistente de usuarios, vehículos y sensores. |
+| EP05 Reportes y Análisis | TS04, TS12, TS13, TS15 | Consolidación histórica, indicadores y evaluación de comportamiento. |
+| EP07 Presencia Digital e Informativa | TS17, TS18 | Exposición pública del sistema y canal inicial de contacto con empresas interesadas. |
+
+### 3.1.3. Criterios técnicos transversales
+
+| Criterio | Descripción |
+|---------|-------------|
+| Trazabilidad | Cada technical story debe poder relacionarse con una o más user stories y con un módulo técnico concreto. |
+| Separación de responsabilidades | La lógica de autenticación, monitoreo, análisis, recursos e integración debe mantenerse desacoplada. |
+| Consistencia de datos | Los eventos, estados y registros deben conservar coherencia entre módulos y capas. |
+| Escalabilidad | El diseño debe permitir crecer en número de usuarios, sensores, alertas y eventos sin degradar el sistema. |
+| Observabilidad | Las operaciones críticas deben dejar trazas para auditoría, seguimiento y diagnóstico. |
+| Reutilización | Los contratos, validaciones y componentes comunes deben reutilizarse cuando corresponda para evitar duplicidad. |
