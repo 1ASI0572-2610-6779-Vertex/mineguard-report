@@ -2,7 +2,7 @@
 
 ### 2.3.1. User Personas
 
-+ **Segmento 1: Empresas Mineras de Tajo Abierto** 
++ **Segmento 1: Supervisión Corporativa en Minería de Tajo Abierto** 
 
 <p align="center">
     <img src="assets/Segmento 1 - Raúl Ramírez.png" alt="upc-logo" width="750px" height="900px"/>
@@ -146,7 +146,7 @@ La matriz revela que el proceso actual depende en gran medida de la observación
 
 ### 2.3.3. User Journey Mapping
 
-+ **Segmento 1: Empresas Mineras de Tajo Abierto** 
++ **Segmento 1: Supervisión Corporativa en Minería de Tajo Abierto** 
 
 Este User Journey Map representa la experiencia actual de un supervisor de operaciones mineras durante el monitoreo y control de rutas de transporte interno en una operación de tajo abierto. El journey ilustra el recorrido completo del usuario, desde la supervisión general de la operación y la coordinación del tránsito vehicular, hasta la respuesta ante incidentes, el análisis posterior de eventos y la definición de acciones de mejora. Este mapa permite evidenciar las limitaciones del proceso actual, caracterizado por una alta dependencia de la observación humana, reportes tardíos y baja visibilidad en tiempo real de las incursiones en rutas críticas.
 
@@ -168,7 +168,7 @@ Este User Journey Map representa la experiencia de un conductor de vehículo liv
 
 ### 2.3.4. Empathy Mapping
 
-+ **Segmento 1: Empresas Mineras de Tajo Abierto** 
++ **Segmento 1: Supervisión Corporativa en Minería de Tajo Abierto** 
 
 <p align="center">
     <img src="assets/Empathy map 1.png" alt="upc-logo" width="850px" height="1300px"/>
