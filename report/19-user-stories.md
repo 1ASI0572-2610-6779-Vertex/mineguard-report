@@ -47,7 +47,8 @@
 | US37               | Exportación de datos              | *Como* supervisor *quiero* exportar datos del dashboard *para* realizar análisis externo.                              | Escenario 1: Exportación exitosa <br> *Dado que* existen datos en el sistema <br> *Cuando* el supervisor solicita exportar <br> *Entonces* se genera un archivo en formato Excel o CSV <br><br> Escenario 2: Error en exportación <br> *Dado que* ocurre un fallo en el sistema <br> *Cuando* se intenta exportar <br> *Entonces* se muestra un mensaje de error                                                      | EP08                          |
 | US38               | Insights automáticos              | *Como* supervisor *quiero* recibir recomendaciones basadas en datos *para* mejorar la seguridad.                       | Escenario 1: Insight generado <br> *Dado que* el sistema detecta patrones de riesgo <br> *Cuando* el supervisor accede al dashboard <br> *Entonces* muestra recomendaciones como zonas de alto riesgo o conductores que requieren evaluación <br><br> Escenario 2: Sin patrones <br> *Dado que* no existen patrones relevantes <br> *Cuando* se analiza la información <br> *Entonces* no se muestran recomendaciones | EP08                          |
 
-### 3.1.1. Technical Stories
+## 3.2. Technical Stories
+### 3.2.1. Technical Stories del proyecto
 
 | Código | Technical Story | Descripción técnica | Módulo principal | Relación con User Stories |
 |--------|-----------------|--------------------|------------------|---------------------------|
@@ -70,7 +71,7 @@
 | TS17 | Gestión de contenido informativo y landing page | Implementar la capa pública de presentación, incluyendo módulos informativos, testimonios, formularios de contacto y registro para empresas. | Presencia Digital | US25, US26, US27, US28, US29, US30 |
 | TS18 | Integración entre módulos y eventos de dominio | Implementar el intercambio de eventos y contratos de datos entre los módulos de autenticación, recursos, monitoreo, analítica y visualización. | Integración / Arquitectura | Todas las user stories |
 
-### 3.1.2. Matriz de trazabilidad técnica
+### 3.2.2. Matriz de trazabilidad técnica
 
 | Epic | Technical Stories asociadas | Objetivo técnico principal |
 |------|-----------------------------|----------------------------|
@@ -81,7 +82,7 @@
 | EP05 Reportes y Análisis | TS04, TS12, TS13, TS15 | Consolidación histórica, indicadores y evaluación de comportamiento. |
 | EP07 Presencia Digital e Informativa | TS17, TS18 | Exposición pública del sistema y canal inicial de contacto con empresas interesadas. |
 
-### 3.1.3. Criterios técnicos transversales
+### 3.2.3. Criterios técnicos transversales
 
 | Criterio | Descripción |
 |---------|-------------|
