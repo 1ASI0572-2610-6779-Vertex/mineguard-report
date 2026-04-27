@@ -164,11 +164,11 @@ Responsabilidades
 
 En este diagrama se refleja la descomposición estructural del contenedor backend para el diseño de la mina. El bloque principal es el `ServiceDesignController`, el cual recibe solicitudes HTTP locales desde la interfaz de usuario. Este controlador orquesta las operaciones invocando a tres servicios de aplicación principales: `GeofenceService` , `ResourceManagementService` y `SensorSetupService` .
 
-Cada servicio utiliza su respectivo repositorio para abstraer el acceso a la base de datos MySQL local, donde se consolidan las zonas de riesgo y los recursos operativos. Finalmente, se evidencia la comunicación asíncrona hacia el contexto de *Service Execution and Monitoring* mediante la publicación de eventos de dominio.
+Cada servicio utiliza su respectivo repositorio para abstraer el acceso a la base de datos MySQL local, donde se consolidan las zonas de riesgo y los recursos operativos. Finalmente, se evidencia la comunicación asíncrona hacia el contexto de *Service Execution and Monitoring* mediante la publicación de event de dominio.
 
 <img src="report\assets\ComponentDiagram_ServiceDesign.png">
 
-### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams.
+### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
 
 #### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams.
 
