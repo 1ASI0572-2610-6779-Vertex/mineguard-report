@@ -77,6 +77,13 @@ Este bounded context se encarga de procesar la telemetría en tiempo real, evalu
 <img src="assets/EventStorming_Service_Execution_and_Monitoring.jpg">
 
 
+- Profile and Preference Management: 
+
+Este bounded context se encarga se encarga de gestionar los perfiles de usuario y sus preferencias para personalizar cómo cada usuario interactúa con el sistema MineGuard.
+
+<img src="assets/EventStorming_profile_preference_management.jpg">
+
+
 - Dashboards and Analytics: 
 
 Este bounded permite recopilar, procesar y visualizar la información operativa del sistema. Analizando alertas, identificar patrones de riesgo y tomar decisiones mediante dashboards en tiempo real y análisis históricos.
@@ -155,6 +162,10 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 - Bounded Context Canvas Service Execution and Monitoring
 
 <img src="assets/BC_Canvases_Service_Execution_and_Monitoring.jpg">
+
+- Bounded Context Canvas Profile and Preferences Management
+
+<img src="assets/BC_Canvases_profile_preference_management.jpg">
 
 - Bounded Context Canvases Dashboards and Analytics
 
