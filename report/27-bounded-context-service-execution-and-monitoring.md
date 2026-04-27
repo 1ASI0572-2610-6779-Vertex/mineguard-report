@@ -83,14 +83,14 @@ Attributes
 
 Endpoints
 
-| Ruta                        | Método | Descripción                                                       |
-| --------------------------- | ------ | ----------------------------------------------------------------- |
-| /api/v1/alerts              | GET    | Obtiene todas las alertas registradas.                           |
-| /api/v1/alerts/active       | GET    | Obtiene las alertas activas.                                     |
-| /api/v1/alerts/{id}         | GET    | Obtiene una alerta por su ID.                                    |
-| /api/v1/alerts              | POST   | Crea una nueva alerta.                                           |
-| /api/v1/alerts/{id}/resolve | PUT    | Marca una alerta como resuelta automáticamente.                  |
-| /api/v1/alerts/{id}/attend  | PUT    | Marca una alerta como atendida por el supervisor.                |
+| Ruta                                   | Método | Descripción                                                       |
+| -------------------------------------- | ------ | ----------------------------------------------------------------- |
+| /api/v1/monitoring/alert              | GET    | Obtiene todas las alertas registradas.                            |
+| /api/v1/monitoring/alert/active       | GET    | Obtiene las alertas activas.                                      |
+| /api/v1/monitoring/alert/{id}         | GET    | Obtiene una alerta por su ID.                                     |
+| /api/v1/monitoring/alert              | POST   | Crea una nueva alerta.                                            |
+| /api/v1/monitoring/alert/{id}/resolve | PUT    | Marca una alerta como resuelta automáticamente.                   |
+| /api/v1/monitoring/alert/{id}/attend  | PUT    | Marca una alerta como atendida por el supervisor.                 |
 
 **Consumer: SensorDataConsumer**
 
