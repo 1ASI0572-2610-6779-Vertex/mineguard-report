@@ -135,8 +135,8 @@ La Application Layer del bounded context Dashboard and Analytics gestiona los fl
 | Consultar alertas críticas      | DashboardQueryService.handle(GetCriticalAlertsQuery)     | Obtiene las alertas críticas filtradas por supervisor, severidad y rango de fechas.                    |
 | Consultar métricas de desempeño | DashboardQueryService.handle(GetPerformanceMetricsQuery) | Obtiene métricas relacionadas con desempeño, riesgo, fatiga y viajes.                                  |
 | Consultar resumen del dashboard | DashboardQueryService.handle(GetDashboardSummaryQuery)   | Genera una vista resumida del estado general del sistema.                                              |
-                    |
 
+                    
 **Application Services**
 
 | Service                   | Descripción                                                                                          |
