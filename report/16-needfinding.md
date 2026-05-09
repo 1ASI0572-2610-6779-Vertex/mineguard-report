@@ -25,7 +25,7 @@
     <thead>
         <tr>
         <th rowspan="2">Tareas</th>
-        <th colspan="2">Empresas Mineras </th>
+        <th colspan="2">Empresas Mineras</th>
         <th colspan="2">Operadores y Conductores</th>
         </tr>
         <tr>
@@ -37,24 +37,24 @@
     </thead>
     <tbody>
         <tr>
-        <td>Monitorear rutas de transporte interno</td>
+        <td>Supervisar el tránsito interno en la operación minera</td>
         <td>Alta</td>
         <td>Alta</td>
         <td>Baja</td>
         <td>Media</td>
         </tr>
         <tr>
-        <td>Identificar zonas de riesgo</td>
+        <td>Reconocer zonas de riesgo dentro de la mina</td>
         <td>Media</td>
-        <td>Baja</td>
         <td>Alta</td>
-        <td>Media</td>
+        <td>Alta</td>
+        <td>Alta</td>
         </tr>
         <tr>
-        <td>Detectar posibles incursiones en rutas</td>
-        <td>Media</td>
+        <td>Verificar el cumplimiento de rutas autorizadas</td>
         <td>Alta</td>
-        <td>Baja</td>
+        <td>Alta</td>
+        <td>Media</td>
         <td>Alta</td>
         </tr>
         <tr>
@@ -66,7 +66,7 @@
         </tr>
         <tr>
         <td>Coordinar acciones ante incidentes</td>
-        <td>Media</td>
+        <td>Alta</td>
         <td>Alta</td>
         <td>Baja</td>
         <td>Media</td>
@@ -79,7 +79,7 @@
         <td>Alta</td>
         </tr>
         <tr>
-        <td>Evitar ingresar a rutas restringidas</td>
+        <td>Evitar ingresar a zonas restringidas</td>
         <td>Baja</td>
         <td>Alta</td>
         <td>Alta</td>
@@ -88,13 +88,13 @@
         <tr>
         <td>Mantener atención al entorno durante el desplazamiento</td>
         <td>Baja</td>
-        <td>Alta</td>
+        <td>Media</td>
         <td>Alta</td>
         <td>Alta</td>
         </tr>
         <tr>
-        <td>Cumplir protocolos de seguridad</td>
-        <td>Media</td>
+        <td>Cumplir protocolos de seguridad minera</td>
+        <td>Alta</td>
         <td>Alta</td>
         <td>Alta</td>
         <td>Alta</td>
@@ -102,9 +102,9 @@
         <tr>
         <td>Reportar incidentes o situaciones de riesgo</td>
         <td>Media</td>
+        <td>Alta</td>
         <td>Media</td>
-        <td>Media</td>
-        <td>Media</td>
+        <td>Alta</td>
         </tr>
     </tbody>
     </table>
@@ -114,33 +114,33 @@
 
 #### Análisis de la Matriz
 
-Al observar las tareas que realizan los supervisores de operaciones mineras y los conductores de vehículos livianos en su entorno natural, sin una solución IoT especializada, se identifican los siguientes puntos clave:
+Al observar las tareas que realizan los supervisores de operaciones mineras y los conductores de vehículos livianos en su entorno natural de trabajo, se identifican diferentes responsabilidades y prioridades relacionadas con la seguridad y continuidad operativa dentro de la mina.
 
 + Tareas con mayor carga (Frecuencia e Importancia):
 
-    + Para las empresas mineras, las tareas más críticas son el monitoreo constante de rutas, la reacción ante situaciones de peligro y el cumplimiento de protocolos de seguridad. Estas actividades son esenciales para garantizar la continuidad operativa y prevenir incidentes graves.
+    + Para las empresas mineras, las tareas más críticas son supervisar el tránsito interno, coordinar acciones ante incidentes y garantizar el cumplimiento de protocolos de seguridad. Estas actividades son fundamentales para mantener el control operativo y reducir riesgos dentro de la operación minera.
 
-    + Para los conductores, las tareas más relevantes son conducir respetando rutas establecidas, mantener atención constante al entorno y reaccionar ante peligros. Estas tareas son altamente frecuentes debido a su exposición directa a riesgos en campo.
+    + Para los conductores, las tareas más relevantes son conducir respetando rutas establecidas, mantener atención constante al entorno y reaccionar rápidamente ante situaciones de peligro. Estas actividades son altamente frecuentes debido a la exposición directa a riesgos en campo.
 
 + Principales Contradicciones:
 
-    + Las tareas de las empresas mineras son estratégicas y de supervisión (monitorear, coordinar, analizar riesgos).
+    + Las empresas mineras tienen un enfoque más estratégico y de supervisión, priorizando la coordinación y control de la operación.
 
-    + Las tareas de los conductores son operativas y de ejecución (conducir, reaccionar, mantenerse alerta).
+    + Las empresas mineras tienen un enfoque más estratégico y de supervisión, priorizando la coordinación y control de la operación.
 
-    + Mientras las empresas buscan control y visibilidad global, los conductores necesitan respuestas inmediatas sin distracción.
+    + Mientras los supervisores necesitan visibilidad general de toda la operación, los conductores requieren información inmediata y clara para actuar rápidamente sin perder concentración.
 
 + Principales Coincidencias:
 
-    + Ambos segmentos coinciden en la alta importancia de reaccionar ante situaciones de peligro.
+    + Ambos segmentos consideran crítica la capacidad de reaccionar ante situaciones de peligro.
 
-    + Ambos consideran fundamental el cumplimiento de protocolos de seguridad para evitar accidentes.
+    + Existe una alta prioridad en el cumplimiento de protocolos de seguridad para prevenir accidentes.
 
-    + Existe una alineación clara en la prioridad de prevenir incidentes antes de que ocurran.
+    + Tanto supervisores como conductores buscan reducir riesgos y mejorar la seguridad durante las operaciones diarias.
 
 + Puntos de Dolor Identificados:
 
-La matriz revela que el proceso actual depende en gran medida de la observación humana y la reacción tardía. Tareas como monitorear rutas o mantenerse alerta durante la conducción son críticas pero limitadas por factores humanos como el tiempo de reacción y la visibilidad. Esta situación genera riesgos constantes y evidencia la falta de sistemas inteligentes de alerta temprana, brecha que MineGuard busca cerrar mediante la automatización y el monitoreo en tiempo real.
+La matriz evidencia que muchas de las tareas críticas dependen de la atención humana, la comunicación manual y la capacidad de reacción de los trabajadores. Factores como la fatiga, la visibilidad limitada, los puntos ciegos y la necesidad de coordinar acciones en tiempo real aumentan la complejidad de las operaciones y dificultan la prevención temprana de incidentes. Estos hallazgos permitieron identificar necesidades y oportunidades de mejora que serán consideradas durante el proceso de Needfinding.
 
 <br>
 
