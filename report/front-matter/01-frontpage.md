@@ -11,7 +11,7 @@
 
 ---
 
-**Periodo:** 202601  
+**Periodo:** 202610  
 **1ASI0572 |** Desarrollo de Soluciones IoT   
 **NRC:** 6779  
 **Docente:** Angel Augusto Velasquez Nuñez  
@@ -61,7 +61,7 @@
 <br/>
 <br/>
 
-**Abril - 2026**
+**Mayo - 2026**
 
 </div>
 
