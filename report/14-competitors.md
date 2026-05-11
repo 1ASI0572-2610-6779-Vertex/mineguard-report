@@ -32,7 +32,7 @@ A partir de un estudio de mercado al cuál nos enfocamos, hemos podido identific
         <td colspan="2">Nombre de la StartUp</td>
         <td>
             <span>MineGuard</span>
-            <img src="assets/mineguard.png" alt="mineguard Logo">
+            <img src="assets/JtLogoMG.jpeg" alt="mineguard Logo">
         </td>
         <td>
             SS-Trading
