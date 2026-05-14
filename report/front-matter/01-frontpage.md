@@ -18,7 +18,7 @@
 
 <br>
 
-# Informe del Trabajo Final
+# Informe del Trabajo Parcial
 
 **Startup:** Vertex  
 **Producto:** Mineguard  
