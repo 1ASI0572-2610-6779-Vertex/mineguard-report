@@ -215,7 +215,8 @@ Cada servicio utiliza su respectivo repositorio para acceder a la persistencia d
 
 Además, este bounded context se relaciona con Service Execution and Monitoring, del cual obtiene datos de viajes, incidentes y alertas para procesarlos y mostrarlos al supervisor.
 
-<img src="assets/C4_BC_dashboard_and_analytics.png">
+![C4_Dashboard](../report/assets/C4_BC_dashboard_and_analytics.png)
+
 
 ### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams.
 #### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams.
@@ -230,8 +231,8 @@ También se incluyen queries como GetLiveDriverStatusQuery, GetCriticalAlertsQue
 
 Las relaciones principales del diagrama muestran que DashboardReport contiene múltiples métricas y múltiples alertas. Además, Metric depende de MetricType, mientras que AlertSummary depende de AlertType y Severity.
 
+![Class_Dashboard](../report/assets/Class_diagram_BC_dashboard_and_analytics.png)
 
-<img src="assets/Class_diagram_BC_dashboard_and_analytics.png">
 
 #### 4.2.7.6.2. Bounded Context Database Design Diagram.
 
@@ -245,4 +246,7 @@ Además, estas tablas se relacionan con entidades externas como Drivers, Vehicle
 
 En conjunto, este submodelo permite almacenar y consultar información analítica relevante para que los supervisores puedan tomar decisiones basadas en datos sobre fatiga, alertas, riesgo operativo y desempeño de los conductores.
 
-<img src="assets/ERD_BC_dashboard_and_analytics.png">
+
+![Erd_Dashboard](../report/assets/ERD_BC_dashboard_and_analytics.png)
+
+
