@@ -231,7 +231,7 @@ También se incluyen queries como GetLiveDriverStatusQuery, GetCriticalAlertsQue
 
 Las relaciones principales del diagrama muestran que DashboardReport contiene múltiples métricas y múltiples alertas. Además, Metric depende de MetricType, mientras que AlertSummary depende de AlertType y Severity.
 
-![Class_Dashboard](../report/assets/Class_BC_dashboard_and_analytics.png)
+![Class_Dashboard](../report/assets/dashboard_class.png)
 
 
 #### 4.2.7.6.2. Bounded Context Database Design Diagram.
