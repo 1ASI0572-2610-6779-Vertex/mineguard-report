@@ -26,11 +26,11 @@ El logotipo se empleará principalmente en su versión sobre fondos oscuros, ali
 
 _Logo:_
 
-![logo](./report/assets/mineguard-logo-final.png)
+![logo](./assets/mineguard-logo-final.png)
 
 _Isotipo:_
 
-![isotipo](./report/assets/mineguard-logo-final-2.png)
+![isotipo](./assets/mineguard-logo-final-2.png)
 
 **Paleta de colores:**
 
@@ -40,7 +40,7 @@ La identidad visual se basa en una combinación de azul, amarillo y tonos oscuro
 * Fondos y textos: el negro `#131313` se utiliza como fondo principal para reducir fatiga visual en pantallas de monitoreo continuo, mientras que el blanco `#FFFFFF` se aplica en tipografía principal e íconos sobre fondo oscuro, asegurando alta legibilidad.
 * Colores secundarios: tonos derivados del azul y del amarillo se reservan para estados de hover, indicadores de estado (operativo, advertencia, crítico) y llamadas a la acción.
 
-![color palette](./report/assets/paleta-de-colores.png)
+![color palette](./assets/paleta-de-colores.png)
 
 **Tipografía:**
 
@@ -50,7 +50,7 @@ La tipografía principal será Poppins, elegida por su carácter geométrico, su
 * Se hará uso de la variante Bold 700 para destacar información crítica, alertas y métricas operativas clave.
 * La variante Regular 400 se reserva para texto descriptivo, etiquetas y contenido secundario.
 
-![typography](./report/assets/mineguard-tipografia.png)
+![typography](./assets/mineguard-tipografia.png)
 
 **Tono y lenguaje:**
 
