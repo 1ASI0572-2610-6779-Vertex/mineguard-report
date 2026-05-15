@@ -211,7 +211,7 @@ El diseño físico sigue la guía de estilos IoT de Mineguard: carcasa compacta 
  
 La siguiente figura muestra el circuito del Driver Safety Wearable simulado en Wokwi, compuesto por el ESP32 DevKit V1, el potenciómetro (SP-203), la pantalla LCD 20×4 I2C, el buzzer activo, el LED NeoPixel WS2812B y el botón de pánico.
  
-![Simulación Wokwi – Driver Safety Wearable](assets\driver-safety-warable.png)
+![Simulación Wokwi – Driver Safety Wearable](assets/driver-safety-warable.png)
 
 ### Flujo de interacción
 
@@ -277,7 +277,7 @@ En Wokwi, el sensor HC-SR04 funciona de forma nativa: se puede arrastrar el obje
  
 La siguiente figura muestra el circuito del **Mining Route Proximity Node** simulado en Wokwi, compuesto por el ESP32 DevKit V1, el sensor ultrasónico HC-SR04, el buzzer activo y el LED NeoPixel WS2812B.
  
-![Simulación Wokwi – Mining Route Proximity Node](assets\Mining-route-proximity-node.png)
+![Simulación Wokwi – Mining Route Proximity Node](assets/Mining-route-proximity-node.png)
 
 
 ### Flujo de interacción
