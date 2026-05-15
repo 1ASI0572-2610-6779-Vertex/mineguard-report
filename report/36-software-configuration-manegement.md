@@ -393,6 +393,6 @@ En esta sección se especifica la configuración de despliegue definida para los
 + **C4 Deployment Diagram:**
 
 <p align="center">
-    <img src="assets/deployment-diagram-c4.png" alt="deployment-diagram-c4" width="1200px" height="750px"/>
+    <img src="assets/FinalDeploymentView.png" alt="deployment-diagram-c4" width="800px" height="750px"/>
 </p>
 
