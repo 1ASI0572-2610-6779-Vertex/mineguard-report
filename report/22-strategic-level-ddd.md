@@ -7,56 +7,59 @@ A continuación se mostrará los 9 pasos del Event Storming realizados en el Mir
 
 **Paso 1: Unstructured Exploration**
 
-En este paso se realiza una lluvia de ideas relacionado a los eventos que posiblemente posea el sistema.
+En este paso se realiza una lluvia de ideas relacionado a los eventos que posiblemente posea el sistema. Aquí mapeamos la amplitud de la lógica de negocio, desde el registro de sensores hasta la detección de ritmo cardiaco y alertas de proximidad.
 
 <img src="assets/Step1.png">
 
 **Paso 2: Timelines**
 
-En esta fase, los eventos identificados se ordenan de manera secuenial y se agrupan entre los tipos de usuario.
+En esta fase, los eventos identificados se ordenan de manera secuenial y se agrupan entre los tipos de usuario. Esta estructura permite visualizar el flujo de trabajo de extremo a extremo y entender la interdependencia entre ambos roles.
 
 <img src="assets/Step2.png">
 
 **Paso 3: Paint Points**
 
-Durante este paso, se identifican los puntos donde se presente tráfico o también llamado cuellos de botella para poseer un plan para poder mejorar y actualizar aquellos puntos y así ofrecer una mejor experiencia a nuestros usuarios.
+Durante este paso, se identifican los puntos donde se presente tráfico o también llamado cuellos de botella para poseer un plan para poder mejorar y actualizar aquellos puntos y así ofrecer una mejor experiencia a nuestros usuarios. 
+
+Se detectaron fricciones críticas en la validación de credenciales, la comunicación inmediata ante alertas de pulso y la sincronización del registro de vehículos. Estos puntos son prioridades para la implementación de mecanismos de resiliencia y alta disponibilidad.
 
 <img src="assets/Step3.png">
 
 
 **Paso 4: Pivotal Points**
 
-En este paso, identificamos los eventos comerciales importantes que nos indica que hay un cambio de contexto o sección en la aplicación.
+En este paso, identificamos los eventos comerciales importantes que nos indica que hay un cambio de contexto o sección en la aplicación. Eventos como "Conductor Logueado" o "Ruta Establecida" actúan como disparadores que activan diferentes subdominios del sistema, permitiendo una separación clara entre la gestión administrativa y la telemetría en tiempo real.
 
 <img src="assets/step4.png">
 
 **Paso 5: Commands**
 
-Los comandos son representaciones de la consecuencia que generó un evento o varios eventos.
+Los comandos son representaciones de la consecuencia que generó un evento o varios eventos. El comando Vincular unidad es la acción del Supervisor que resulta en el evento Vehículo vinculado al conductor. Esto define la interfaz de interacción (API/UI) que el sistema debe soportar para procesar las solicitudes de los usuarios.
 
 <img src="assets/step5.png">
 
 **Paso 6: Policies**
 
-En este escenario, se muestra que un evento puede provocar la ejecución de un comando manejado por una política.
+En este escenario, se muestra que un evento puede provocar la ejecución de un comando manejado por una política. Por ejemplo, ante un evento de "Exceso de velocidad detectado", la política dispara automáticamente un comando de "Notificar a Supervisor" y "Generar alerta sonora", garantizando una respuesta autónoma sin intervención humana constante. 
+
 
 <img src="assets/step6.png">
 
 **Paso 7: Read Models**
 
-En este escenario, los read models sirven para generar una interfaz de lectura de un evento para que el usuario pueda decidir si ejecutar un comando o no.
+En este escenario, los read models sirven para generar una interfaz de lectura de un evento para que el usuario pueda decidir si ejecutar un comando o no. Estos modelos representan proyecciones de datos que alimentan los dashboards del supervisor y la vista del conductor, facilitando una interacción informada y eficiente con el sistema.
 
 <img src="assets/step7.png">
 
 **Paso 8: External Systems**
 
-En esta fase, se identifican los sistemas externos que usará la plataforma móvil para su ejecución eficaz.
+En esta fase, se identifican los sistemas externos que usará la plataforma móvil para su ejecución eficaz. Se definieron fronteras con servicios de Pasarela de Pagos (Stripe) para suscripciones, servicios de Geolocalización (GPS/Maps) para el rastreo de rutas.
 
 <img src="assets/step8.png">
 
 **Paso 9: Aggregates**
 
-En este paso, con los eventos y comandos realizados, entonces ya se puede comenzar a juntar conceptos relacionados en un grupo, o mejor dicho en un bounded context.
+Con los eventos y comandos realizados, entonces ya se puede comenzar a juntar conceptos relacionados en un grupo, o mejor dicho en un bounded context. 
 
 <h3>4.1.1.1. Candidate Context Discovery</h3>
 

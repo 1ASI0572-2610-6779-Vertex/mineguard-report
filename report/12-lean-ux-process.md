@@ -2,13 +2,15 @@
 
 #### 1.2.2.1. Lean UX Problem Statement
 
-El propósito de MineGuard es brindar a las empresas mineras una solución tecnológica preventiva que permita monitorear en tiempo real las rutas de transporte autónomo y detectar incursiones no autorizadas de vehículos menores, con el fin de reducir riesgos de colisión crítica, proteger vidas humanas y garantizar la continuidad operativa.
+El estado actual de las operaciones mineras automatizadas se ha enfocado principalmente en mejorar la productividad y eficiencia del transporte mediante el uso de camiones autónomos de alto tonelaje. Sin embargo, las rutas mineras continúan siendo compartidas con camionetas de supervisión, mantenimiento y vehículos de apoyo, generando riesgos constantes de invasión de rutas y posibles colisiones.
 
-El problema se presenta en operaciones mineras de gran escala, donde los camiones autónomos de alto tonelaje recorren rutas internas establecidas compartiendo entorno con camionetas de supervisión, vehículos de mantenimiento y unidades de apoyo. Debido al tamaño, peso e inercia de estos vehículos autónomos, una maniobra de frenado o reacción inmediata ante un obstáculo inesperado no siempre es posible.
+Lo que los productos y servicios existentes no logran abordar es la falta de un sistema inteligente capaz de anticipar en tiempo real incursiones peligrosas de vehículos menores dentro de rutas autónomas críticas, permitiendo actuar preventivamente antes de que ocurra un accidente.
 
-Hemos observado que esta situación genera riesgos constantes de accidentes graves, daños materiales de alto costo, paralización de operaciones y exposición del personal en campo. Además, evidencia una falta de sistemas inteligentes de alerta temprana que permitan anticipar invasiones de ruta y actuar antes de que ocurra una colisión. Esta brecha entre la automatización del transporte minero y la seguridad dinámica del entorno representa una necesidad crítica dentro de la industria. 
+Nuestro producto buscará cubrir esta necesidad mediante una estrategia basada en IoT y monitoreo en tiempo real, permitiendo detectar la proximidad de vehículos menores en zonas restringidas, generar alertas tempranas y fortalecer la seguridad operativa en entornos mineros automatizados.
 
-Y ante esta problemática nos surge la siguiente pregunta: ¿Cómo podríamos ayudar a las operaciones mineras a prevenir colisiones entre vehículos autónomos y unidades menores mediante una solución IoT inteligente, rápida y confiable?
+Nuestro enfoque inicial estará dirigido a empresas mineras de gran escala que utilicen sistemas de transporte autónomo en operaciones de extracción y acarreo.
+
+Sabremos que la solución es exitosa cuando observemos una reducción de riesgos e incidentes de colisión en rutas autónomas, una respuesta más rápida ante invasiones de ruta y una mejora en la percepción de seguridad por parte del personal operativo.
 
 + **Domain:** Seguridad industrial minera y monitoreo inteligente de transporte autónomo.
 
