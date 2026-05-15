@@ -130,3 +130,48 @@ Dispositivos integrados en los carros mineros y unidades de alerta auxiliares:
 * Pantallas embarcadas: cuando aplique, mantienen la tipografía Poppins en variante Bold con tamaños amplios para lectura rápida desde la cabina.
 * Jerarquía de alertas: la información crítica siempre ocupa la zona central de la pantalla y se acompaña de refuerzo sonoro definido por el sistema.
 * Contraste: se garantiza contraste alto entre texto e iconografía sobre fondo oscuro para asegurar visibilidad en condiciones de polvo, vibración e iluminación variable propias de la operación minera.
+
+### 5.2. Information Architecture
+
+La arquitectura de la información establece la estructura, organización y jerarquía de los contenidos y funcionalidades dentro de la plataforma MineGuard. Su propósito es garantizar que los usuarios encuentren la información de manera clara, intuitiva y eficiente, optimizando la experiencia de navegación y reduciendo fricciones en el uso, aspecto crítico en un sistema de mitigación de colisiones donde la rapidez de lectura puede impactar directamente la seguridad operacional.
+
+A través de esta sección, se definen los flujos de interacción, los esquemas de navegación y la disposición lógica de los elementos, lo que permite mantener consistencia en la experiencia digital tanto en la plataforma web de supervisión y administración como en los dispositivos móviles utilizados en campo. Una arquitectura de la información bien diseñada no solo facilita la usabilidad, sino que también refuerza la identidad y los objetivos estratégicos del producto, especialmente en un entorno minero donde la información debe ser interpretada con precisión y bajo presión.
+
+#### 5.2.1. Organization Systems
+
+Esquemas de organización aplicados:
+
+* Jerárquico: La interfaz refleja un esquema jerárquico de varios niveles. Las cards de KPIs (Alertas Críticas, Eventos Fatiga, Vehículos Activos, Conductores en Campo) actúan como entradas resumidas que conducen a vistas detalladas; la lista de "Conductores en Riesgo" enlaza al reporte completo de cada conductor; y el registro de alertas en vivo permite acceder, desde cada fila, al detalle individual del evento. El propio sidebar mantiene esta lógica al agrupar los ítems bajo cabeceras de categoría (OPERACIONES, INTELIGENCIA).
+* Secuencial: Los procesos críticos siguen un flujo lineal. La atención de una alerta crítica desde el Centro de Control sigue un orden definido (identificación, evaluación, acción, resolución); el cambio obligatorio de contraseña para supervisores, el reenvío de avisos administrativos y los procesos de registro de nuevos activos o conductores también siguen pasos validados que no pueden omitirse.
+* Matricial: El registro de alertas en vivo y la vista de incidentes utilizan filtros dependientes combinables (nivel: Crítico / Advertencia; categoría: Proximidad/Colisión, Fatiga, Botón de Emergencia; ruta; conductor; rango temporal), permitiendo cruzar criterios para análisis específicos. La gestión de la flota opera bajo la misma lógica al filtrar conductores por tipo de operador y vehículo asignado.
+
+Esquemas de categorización aplicados:
+
+* Cronológico: La información de alertas e incidentes se organiza mostrando los registros más recientes primero (por ejemplo, "Hace 2 min", "Hace 15 min", "Hace 30 min"), facilitando el acceso inmediato a la información operacional actualizada.
+* Alfabético: Los listados de conductores, vehículos y activos registrados se ordenan por nombre o identificador, permitiendo búsquedas rápidas dentro de la flota.
+* Tópicos: Las opciones del sidebar se agrupan en bloques temáticos (OPERACIONES e INTELIGENCIA para el rol Supervisor; OPERACIONES para el rol Administrador), donde cada ítem corresponde a una funcionalidad concreta del sistema.
+* Audiencia: Las secciones y funcionalidades se adaptan según el rol del usuario. El Supervisor accede a vistas operativas en tiempo real (Centro de Control, Mapa en Vivo, Gestión de Alertas), el Administrador accede a vistas de gobierno del sistema (Resumen del Sistema, Gestión de Roles, Auditoría y Activos), y el Conductor accede únicamente a la información relacionada con su equipo y turno desde el dispositivo móvil.
+* Geográfico: La información operativa se organiza también por ubicación dentro de la operación minera. El Mapa en Vivo muestra rutas y posición en tiempo real de los vehículos (Ruta A, Ruta B, etc.), permitiendo filtrar y consultar la actividad de la flota según su distribución espacial en el yacimiento.
+
+#### 5.2.2. Labeling Systems
+
+El sistema de etiquetado se diseñó con enfoque en simplicidad, consistencia y precisión operacional, utilizando palabras cortas y familiares para los usuarios del sector minero. Se priorizó la claridad en la asociación entre etiqueta y contenido, evitando tecnicismos innecesarios pero respetando la terminología propia de la industria.
+
+* **Menú principal (sidebar – Supervisor):** agrupado en dos categorías. OPERACIONES contiene Centro de Control, Mapa en Vivo, Gestión de Alertas, Flota y Conductores. INTELIGENCIA contiene Reportes y Analítica.
+* **Menú principal (sidebar – Administrador):** agrupado bajo OPERACIONES y contiene Resumen del Sistema, Gestión de Roles, Auditoría y Activos.
+* **Menú principal (navegación móvil – Conductor):** acceso simplificado a Inicio, Alertas, Mi Equipo y Turno, priorizando la consulta rápida desde la cabina del vehículo.
+
+Las etiquetas funcionan como puntos de entrada semánticos, permitiendo que los usuarios identifiquen rápidamente la funcionalidad:
+
+* **Centro de Control:** Vista principal del Supervisor con KPIs operacionales (alertas críticas, eventos de fatiga, vehículos activos, conductores en campo), tendencia de incidentes, conductores en riesgo y registro de alertas en vivo.
+* **Mapa en Vivo:** Monitoreo en tiempo real de las rutas y posición de cada vehículo dentro de la operación.
+* **Gestión de Alertas:** Administración detallada de alertas activas, en seguimiento y resueltas, con sus categorías (Proximidad/Colisión, Fatiga, Botón de Emergencia) y niveles de severidad (Crítico, Advertencia).
+* **Flota y Conductores:** Gestión integral de los vehículos registrados y de los conductores asignados a cada equipo.
+* **Reportes y Analítica:** Análisis estadístico, tendencias operacionales e indicadores de seguridad consolidados para apoyo a la toma de decisiones.
+* **Resumen del Sistema:** Vista principal del Administrador con la salud operativa del sistema (estado de hardware, cuentas bloqueadas, activos en base) y los avisos administrativos pendientes.
+* **Gestión de Roles:** Administración de cuentas de usuario, asignación de roles y control de permisos dentro de la plataforma.
+* **Auditoría y Activos:** Registro de auditoría del sistema y gestión de los activos técnicos (sensores, vehículos y dispositivos) inventariados.
+* **Inicio:** Pantalla principal del Conductor con el estado actual de su turno y de su equipo asignado.
+* **Alertas:** Notificaciones activas asociadas al vehículo del conductor.
+* **Mi Equipo:** Detalle del vehículo asignado al conductor, con telemetría y estado de seguridad.
+* **Turno:** Información del turno en curso, bitácora y eventos asociados al conductor.
