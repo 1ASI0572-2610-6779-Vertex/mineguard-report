@@ -166,7 +166,7 @@ En este diagrama se refleja la descomposición estructural del contenedor backen
 
 Cada servicio utiliza su respectivo repositorio para abstraer el acceso a la base de datos MySQL local, donde se consolidan las zonas de riesgo y los recursos operativos. Finalmente, se evidencia la comunicación asíncrona hacia el contexto de *Service Execution and Monitoring* mediante la publicación de event de dominio.
 
-<img src="report\assets\ComponentDiagram_ServiceDesign.png">
+<img src="report/assets/ComponentDiagram_ServiceDesign.png">
 
 ### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
 
@@ -176,7 +176,7 @@ El siguiente diagrama UML representa la estructura táctica del dominio. Se iden
 
 El diagrama detalla los atributos, métodos y el scope correspondiente para cada clase, así como la multiplicidad y dirección de las relaciones. Además, se incluye la interfaz `ServiceDesignCommandService` y los comandos que mutan el estado del dominio al configurar la mina.
 
-<img src="report\assets\DomainClassDiagram_ServiceDesign.png">
+<img src="report/assets/DomainClassDiagram_ServiceDesign.png">
 
 #### 4.2.5.6.2. Bounded Context Database Design Diagram.
 
@@ -184,4 +184,4 @@ Este diagrama de base de datos representa el submodelo de persistencia exclusivo
 
 Asimismo, gestiona la flota operativa relacionando la tabla maestra `Drivers` con `Vehicles`, y asegurando la trazabilidad del hardware al vincular cada vehículo con un `Sensor` específico. Finalmente, la tabla `ZonePermission` actúa como un componente clave para la seguridad, cruzando la autorización de un conductor con una zona geográfica determinada. Este diseño relacional garantiza que toda la configuración previa a la operación esté validada y estructurada correctamente.
 
-<img src="report\assets\DatabaseDiagram_ServiceDesign.jpeg">
+<img src="report/assets/DatabaseDiagram_ServiceDesign.jpeg">
