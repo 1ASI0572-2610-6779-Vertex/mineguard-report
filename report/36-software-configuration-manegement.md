@@ -374,4 +374,25 @@ En esta sección se especifica la configuración de despliegue definida para los
         ```console
         npm run build
         ```
-    6. 
+    6. Configurar el directorio de publicación generado por Angular:
+        ```console
+        dist/mineguard-webapp
+        ```
+    7. Ejecutar el despliegue desde Netlify.
+    8. Verificar que la aplicación web se publique correctamente y que la URL generada permita acceder al frontend.
+
++ **Products Not Deployed in This Delivery:**
+
+    Los Web Services aún no serán desplegados en esta entrega. Para futuras iteraciones, se propone evaluar plataformas como Render, Railway o Azure App Service para desplegar el backend desarrollado en Java con Spring Boot. Esta decisión queda sujeta a evaluación según facilidad de integración, costos, compatibilidad con MySQL y requerimientos del curso.
+
+    La Base de Datos tampoco será desplegada en esta entrega. Se utilizará MySQL como sistema de gestión de base de datos y se evaluará posteriormente una opción en la nube, evitando una configuración local para el entorno final del proyecto.
+
+    La Mobile Application y la Embedded Application no serán desplegadas en esta entrega. Estos productos se mantienen como parte de la arquitectura general de MineGuard, pero su publicación será abordada en una etapa posterior del desarrollo.
+
+
++ **C4 Deployment Diagram:**
+
+<p align="center">
+    <img src="assets/deployment-diagram-c4.png" alt="deployment-diagram-c4" width="1200px" height="750px"/>
+</p>
+
