@@ -187,7 +187,10 @@ Responsabilidades
 - Gestionar conexión a la base de datos.
 - Aplicar migraciones y configuración ORM.
 
-### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.  
+
+El diagrama ilustra el procesamiento de telemetría en tiempo real. Los datos ingresan por el Telemetry Ingestion Component, se analizan en el Risk Evaluation Engine para detectar peligros y, de existir riesgo, el Alert Management Component gestiona la notificación a los usuarios, mientras que el Data Persistence Component registra todo el historial en la base de datos.
+
 <img src="assets/C4_BC_service_execution_monitoring.png">
 
 ### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
