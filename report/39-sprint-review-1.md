@@ -8,8 +8,7 @@
 | Sprint Planning Background | Primera entrega integrada del producto, enfocada en la presentación pública de la propuesta de valor y en la base operativa inicial de MineGuard para monitoreo y acceso. |
 | Date | 2026-05-14 |
 | Prepared By | Alaya Cabrera Rodrigo |
-| Attendees (to planning meeting) | Alaya Cabrera Rodrigo/Jorge Enrique Guevara Tejada/Gordon Salas Gabriel Fernando/Melgarejo Gomez Marcia Victoria/Renato Sebastian Rubber Zegarra Lopez/Russell Stephen Romero Qwistgaard/Gonzales Alvarado Javier Sebastian
- |
+| Attendees (to planning meeting) | Alaya Cabrera Rodrigo/Jorge Enrique Guevara Tejada/Gordon Salas Gabriel Fernando/Melgarejo Gomez Marcia Victoria/Renato Sebastian Rubber Zegarra Lopez/Russell Stephen Romero Qwistgaard/Gonzales Alvarado Javier Sebastian |
 | Sprint 0 Review Summary | No aplica. |
 | Sprint 0 Retrospective Summary | No aplica. |
 | Sprint Goal & User Stories | Consolidar la primera versión visible del producto, habilitando el landing page de presentación comercial y la base funcional mínima de la web application para acceso, monitoreo y alertas. |
