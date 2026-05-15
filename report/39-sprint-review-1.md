@@ -155,5 +155,5 @@ Durante el Sprint 1 el equipo trabajó en dos líneas paralelas. La primera se c
 
 La evidencia de commits muestra una evolución progresiva del producto, desde la base técnica y la estructura visual hasta la integración de módulos funcionales de negocio. También se observa trabajo de corrección y refinamiento, especialmente en responsive design, overflow handling y soporte de secciones informativas. En conjunto, el sprint dejó una base sólida para continuar con módulos de mayor profundidad operativa en los siguientes ciclos.
 
-![insights_landing.png](../report/assets/insights/insight4.png)
-![insights_webapp.png](../report/assets/insights/insight5.png)
+![insights_landing.png](../report/assets/insigths/insight4.png)
+![insights_webapp.png](../report/assets/insigths/insight5.png)
