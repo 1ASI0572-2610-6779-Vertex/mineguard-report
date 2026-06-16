@@ -1,6 +1,6 @@
-## 6.2.2. Sprint 2
+### 6.2.2. Sprint 2
 
-### 6.2.2.1. Sprint Planning 2
+#### 6.2.2.1. Sprint Planning 2
 
 En esta sección se presenta el resumen de la reunión de Sprint Planning correspondiente al Sprint 2 del proyecto MineGuard. Durante esta sesión, el equipo revisó los resultados obtenidos en el Sprint anterior, analizó oportunidades de mejora identificadas en la retrospectiva y definió el alcance funcional y técnico para la nueva iteración.
 
@@ -9,7 +9,7 @@ El objetivo principal de esta reunión fue priorizar los User Stories y tareas q
 | Sprint # | Sprint 2 |
 |---|---|
 | **Sprint Planning Background** |  |
-| **Date** | 2026-06-XX |
+| **Date** | 2026-05-28 |
 | **Time** | 08:00 PM |
 | **Location** | Virtual Meeting (Google Meet / Discord) |
 | **Prepared By** | Rodrigo Alaya |
@@ -21,7 +21,7 @@ El objetivo principal de esta reunión fue priorizar los User Stories y tareas q
 | **Sprint n Velocity** | 278 Story Points |
 | **Sum of Story Points** | 278 Story Points |
 
-### 6.2.2.2. Aspect Leaders and Collaborators
+#### 6.2.2.2. Aspect Leaders and Collaborators
 
 Durante el Sprint 2 del proyecto MineGuard, el equipo identificó un conjunto de aspectos clave con el objetivo de organizar responsabilidades y mejorar la eficiencia de la colaboración durante el desarrollo. Estos aspectos representan los principales dominios funcionales y técnicos abordados en el Sprint, incluyendo la integración de telemetría y sensores, el procesamiento de eventos, la gestión de alertas, los servicios backend, la visualización de dashboards y los controles de seguridad.
 
@@ -38,7 +38,7 @@ Con el fin de optimizar la coordinación y brindar mayor claridad en la distribu
 | Romero, Russell                     | RussellUPC   | C                              | C                             | C                       | C                     | C                       | C                             | **L**                         |
 
 
-### 6.2.2.3. Sprint Backlog 2
+#### 6.2.2.3. Sprint Backlog 2
 
 Durante el desarrollo del Sprint 2 del proyecto MineGuard, se definió y gestionó el Sprint Backlog con el objetivo de implementar funcionalidades clave orientadas al monitoreo inteligente de seguridad minera mediante dispositivos IoT, servicios backend y aplicaciones web y móviles. Este Sprint se enfocó principalmente en la integración de sensores para detección de fatiga, proximidad y ubicación, así como en la generación de alertas críticas, gestión de recursos y visualización de información operativa en tiempo real.
 
@@ -201,13 +201,13 @@ Link Trello: 'https://trello.com/invite/b/6a18738fdcc14f1067d4613c/ATTIdca68ff30
 | Sprint 2 | TS51 | As an edge developer, I want the edge service to buffer telemetry records in local memory when Wi-Fi is disconnected so that no critical data or alerts are lost while the vehicle passes through connectivity blind spots. | TS51-003 | Resend buffered telemetry once the Wi-Fi connection is restored. | Resend buffered telemetry once the Wi-Fi connection is restored. | 5 | Javier Gonzales | Done |
 
 
-### 6.2.2.4. Development Evidence for Sprint Review
+#### 6.2.2.4. Development Evidence for Sprint Review
 
 Durante el desarrollo del Sprint 2 del proyecto MineGuard, se realizaron avances iniciales en la implementación de los principales componentes de la solución, alineados con el alcance funcional definido para este Sprint. Estos avances incluyen la estructuración y configuración de repositorios para los servicios backend, la integración inicial de dispositivos IoT para captura de telemetría, así como la preparación de componentes de visualización y gestión de alertas.
 
 A continuación, se presenta la evidencia de desarrollo registrada en los repositorios relacionados con la solución.
 
-### 6.2.2.5. Execution Evidence for Sprint Review
+#### 6.2.2.5. Execution Evidence for Sprint Review
 
 Durante el desarrollo del Sprint 2 del proyecto MineGuard, el equipo logró avances significativos en la consolidación e integración de los principales componentes de la solución. En este Sprint se alcanzó la evolución de la Web Application (v2) y la Landing Page (v2), fortaleciendo la visualización de información operativa, la navegación y la presentación comercial de la solución.
 
@@ -217,8 +217,8 @@ Finalmente, se consolidó un Prototype (v1) que integra estos componentes, permi
 
 A continuación, se presentan capturas de las principales vistas implementadas y un enlace al video demostrativo que evidencia la navegación, interacción y funcionamiento alcanzado en este Sprint.
 
-### 6.2.2.6. Services Documentation Evidence for Sprint Review
+#### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
-### 6.2.2.7. Software Deployment Evidence for Sprint Review
+#### 6.2.2.7. Software Deployment Evidence for Sprint Review
 
-### 6.2.2.8. Team Collaboration Insights during Sprint
+#### 6.2.2.8. Team Collaboration Insights during Sprint
