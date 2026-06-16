@@ -12,7 +12,7 @@ El objetivo principal de esta reunión fue priorizar los User Stories y tareas q
 | **Date** | 2026-06-XX |
 | **Time** | 08:00 PM |
 | **Location** | Virtual Meeting (Google Meet / Discord) |
-| **Prepared By** | Javier Gonzales |
+| **Prepared By** | Rodrigo Alaya |
 | **Attendees (to planning meeting)** | Rodrigo Alaya / Jorge Guevara / Gabriel Gordon / Russell Romero / Marcia Melgarejo / Renato Zegarra / Javier Gonzales |
 | **Sprint n−1 Review Summary** | Durante el Sprint 1 se definió la arquitectura base de MineGuard y se establecieron los primeros componentes funcionales de la solución, incluyendo la Landing Page inicial, la estructura del sistema frontend y la definición de los flujos de monitoreo y alertas. |
 | **Sprint n−1 Retrospective Summary** | El equipo identificó la necesidad de mejorar la descomposición de User Stories en tareas más claras, fortalecer la distribución de responsabilidades y optimizar la trazabilidad del trabajo en Trello para mejorar la coordinación interna. |
