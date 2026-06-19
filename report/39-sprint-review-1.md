@@ -1,6 +1,7 @@
-## 6.2.1. Sprint 1
+## 6.2. Landing Page, Services & Applications Implementation.
+### 6.2.1. Sprint 1
 
-### 6.2.1.1. Sprint Planning 1
+#### 6.2.1.1. Sprint Planning 1
 
 | Field | Value |
 |---|---|
@@ -31,7 +32,7 @@
 
 
 
-### 6.2.1.2. Aspect Leaders and Collaborators
+#### 6.2.1.2. Aspect Leaders and Collaborators
 
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page | IAM / Auth | Monitoring / Alerts | Analytics / Dashboard | Resources / Planning |
 |---|---|---|---|---|---|---|
@@ -44,7 +45,7 @@
 | Gonzales Alvarado Javier Sebastian | WoodsDos | C |  |  | C |  |
 
 
-### 6.2.1.3. Sprint Backlog 1
+#### 6.2.1.3. Sprint Backlog 1
 
 En este sprint se priorizó la entrega del landing page público y la base operativa de la aplicación web. El backlog se organizó para que el trabajo visible del producto y la lógica mínima de acceso, monitoreo y alertas quedaran listos para revisión.
 
@@ -60,7 +61,7 @@ En este sprint se priorizó la entrega del landing page público y la base opera
 | Sprint 1 | US16 | Monitoreo de sensores | Como supervisor quiero visualizar el estado de los sensores para asegurar su correcto funcionamiento. | 5 | TK08 | Web App: monitoreo de sensores | Mostrar estado de sensores y su disponibilidad operativa. | 8 |  | Done |
 
 
-### 6.2.1.4. Development Evidence for Sprint Review
+#### 6.2.1.4. Development Evidence for Sprint Review
 
 En este sprint se consolidaron dos frentes de trabajo. En el landing page se avanzó desde la navegación y la propuesta de valor hasta secciones informativas, footer, suscripción y ajustes responsive. En la web application se construyó la base técnica con configuración inicial, IAM, dashboard, monitoring, analytics, resources y planning.
 
@@ -107,7 +108,7 @@ En este sprint se consolidaron dos frentes de trabajo. En el landing page se ava
 
 ![webappPicture.png](../report/assets/webappPicture.png)
 
-### 6.2.1.5. Execution Evidence for Sprint Review
+#### 6.2.1.5. Execution Evidence for Sprint Review
 
 En esta sección deben insertarse las capturas de las vistas principales implementadas durante el Sprint 1. Para este sprint, las evidencias visuales mínimas sugeridas son:
 
@@ -121,7 +122,7 @@ En esta sección deben insertarse las capturas de las vistas principales impleme
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQBHgmq8mmaLTIVOJdzcH6V8AU_hHsDqC7EfKRFUE62LxZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ka50P7
 
 
-### 6.2.1.6. Services Documentation Evidence for Sprint Review
+#### 6.2.1.6. Services Documentation Evidence for Sprint Review
 
 La documentación de servicios de este sprint se organizó a partir de los recursos del `db.json`, enfocándose en autenticación, monitoreo, alertas, tablero y datos comerciales. La documentación OpenAPI puede agruparse por módulos de negocio y por tipo de consumo.
 
@@ -137,7 +138,7 @@ La documentación de servicios de este sprint se organizó a partir de los recur
 | Dashboard & Analytics | `/dashboardSummary`, `/dashboardTrend`, `/dashboardRiskDrivers`, `/dashboardRecentAlerts`, `/analyticsFatigueBars`, `/analyticsIncidentDistribution`, `/analyticsHistoryRows`, `/analyticsInsights` | GET | Soporta la visualización ejecutiva y analítica del sprint. |
 
 
-### 6.2.1.7. Software Deployment Evidence for Sprint Review
+#### 6.2.1.7. Software Deployment Evidence for Sprint Review
 
 En este sprint se dejó preparada la base de despliegue de los productos del alcance: landing page, web application y mock service/documented API. El objetivo de esta sección es mostrar cómo se publican y validan los artefactos construidos a partir de los repositorios.
 
@@ -148,7 +149,7 @@ En este sprint se dejó preparada la base de despliegue de los productos del alc
 | Services / Mock API | Preparado para documentación y consumo | https://mineguard-api-wmr0.onrender.com |
 
 
-### 6.2.1.8. Team Collaboration Insights during Sprint
+#### 6.2.1.8. Team Collaboration Insights during Sprint
 
 Durante el Sprint 1 el equipo trabajó en dos líneas paralelas. La primera se centró en el landing page, donde se desarrollaron la navegación, la propuesta de valor, la explicación de funcionamiento, las secciones informativas, la suscripción, el footer y los ajustes responsive. La segunda línea se enfocó en la web application, comenzando por la configuración del frontend, la base de IAM, el dashboard, el monitoreo, las analíticas, los recursos de flota y la lógica de planificación.
 
