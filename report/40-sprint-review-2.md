@@ -252,6 +252,17 @@ A continuación, se presenta la evidencia de desarrollo registrada en los reposi
 
 + **Mobile App:**
 
+| Repository         | Branch                 | Commit Id | Commit Message                                                   | Commit Message Body                                                     | Commited on (Date) |
+|--------------------|------------------------|-----------|------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------|
+| MineGuard-MobileApp | develop               | 4695bd4   | chore: initialize repository                                     | Initial setup of the mobile application repository                      | 19/06/2026         |
+| MineGuard-MobileApp | develop               | caa587b   | feat(mobile-app): scaffold Flutter IoT safety app with DDD bounded-context architecture | Created Flutter base project following DDD architecture       | 19/06/2026         |
+| MineGuard-MobileApp | develop               | 45cefe0   | feat(mobile): Base architecture configuration, interceptors and DDD repositories | Added core architecture, HTTP interceptors and repositories   | 19/06/2026         |
+| MineGuard-MobileApp | develop               | d6c27aa   | fix: fixed endpoints                                             | Corrected API endpoints for backend communication                       | 20/06/2026         |
+| MineGuard-MobileApp | feature/iam_endpoints | 5a4e2e5   | feat(): Add fix auth sign in                                     | Added authentication fixes for sign-in workflow                         | 20/06/2026         |
+| MineGuard-MobileApp | feature/iam_endpoints | a3f607b   | Merge pull request #1 from feature/iam_endpoints                | Integrated IAM endpoints and authentication fixes into develop          | 20/06/2026         |
+| MineGuard-MobileApp | feature/iam_endpoints | 82aaf16   | fix(): Fix repository auth                                       | Fixed authentication repository logic and token handling                | 20/06/2026         |
+| MineGuard-MobileApp | feature/iam_endpoints | b4b3a65   | Merge pull request #2 from feature/iam_endpoints                | Final integration of IAM endpoint fixes into develop                    | 20/06/2026         |
+
 
 
 + **Edge Service:**
