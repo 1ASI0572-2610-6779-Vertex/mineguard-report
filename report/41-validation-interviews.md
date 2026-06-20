@@ -257,7 +257,7 @@ Como recomendación, sugirió incorporar mensajes más descriptivos que indiquen
     <strong>Edad:</strong> 48 años <br>
     <strong>Distrito:</strong> Carhuaz, Áncash <br>
     <strong>Cargo:</strong> Operador de Maquinaria <br>
-    <strong>Momento que inicia:</strong> [11:02] <br>
+    <strong>Momento que inicia:</strong> [00:02] <br>
     <strong>Duración:</strong> [09:57]
   </td>
   <td>
@@ -285,7 +285,7 @@ Como observación, señaló que la aplicación debe mantener un equilibrio adecu
     <strong>Edad:</strong> 52 años <br>
     <strong>Distrito:</strong> Huaraz, Áncash <br>
     <strong>Cargo:</strong> Operador de Maquinaria Pesada <br>
-    <strong>Momento que inicia:</strong> [21:15] <br>
+    <strong>Momento que inicia:</strong> [00:15] <br>
     <strong>Duración:</strong> [10:38]
   </td>
   <td>
