@@ -361,7 +361,8 @@ Configuración de dispositivos IoT.
 Integración con sistemas externos de monitoreo.
 Gestión de infraestructura tecnológica.
 Funcionalidades futuras relacionadas con análisis predictivo.
-ESCALA DE SEVERIDAD
+
+#### Escala de severidad
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
