@@ -552,7 +552,6 @@ Durante el Sprint 2 del proyecto MineGuard se consolidaron avances clave en la e
 
 ![website-evidence-03](../report/assets/evidence-sprint2/web-site-evidence-3.png)
 
-+ **Web App:**
 
 + **Web Service:**
 
@@ -617,7 +616,7 @@ En este sprint se dejó preparada la base de despliegue de los productos del alc
 |---|---|---|
 | Landing Page | Desplegado | https://1asi0572-2610-6779-vertex.github.io/mineguard-website/ |
 | Web Application | Desplegado | https://mineguard-iot.netlify.app/ |
-| Web Service | Preparado para ejecución/publicación | https://marquerite-unimprovised-roselia.ngrok-free.dev/swagger-ui.html |
+| Web Service | Preparado para ejecución/publicación | https://mineguard-webservice.onrender.com/swagger-ui/index.html# |
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 
@@ -635,7 +634,7 @@ En este sprint se dejó preparada la base de despliegue de los productos del alc
 
 + **Mobile App:**
 
-![mobile-insight](../report/assets/insights-sprint2/)
+![mobile-insight](../report/assets/insights-sprint2/mobile-i.png)
 
 + **Edge Service:**
 
