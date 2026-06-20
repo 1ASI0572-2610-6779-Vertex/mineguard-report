@@ -105,7 +105,216 @@ Para esta etapa del proyecto se diseñaron entrevistas de validación orientadas
 
 
 ### 6.3.2. Registro de Entrevistas.
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th width="5%">Nº Entrevista</th>
+      <th width="20%">Datos del entrevistado</th>
+      <th width="45%">Resumen de la entrevista</th>
+      <th width="30%">Evidencia de entrevista</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<tr>
+      <td>1</td>
+      <td>
+        <strong>Nombre:</strong> Felipe Pastorreaño <br>
+        <strong>Edad:</strong> 35 años <br>
+        <strong>Distrito:</strong> San Marcos, Áncash <br>
+        <strong>Cargo:</strong> Supervisor de Despacho <br>
+        <strong>Momento que inicia:</strong> [00:10] <br>
+        <strong>Duración:</strong> [08:12] <br>
+      </td>
+      <td>
+        Felipe Pastorreaño participó en la validación de la plataforma web MineGuard orientada a supervisores y administradores de operaciones mineras. Durante la sesión realizó tareas relacionadas con la consulta de información operativa, revisión de alertas de riesgo, seguimiento de unidades en campo y análisis de eventos registrados por el sistema.<br><br>
+
+Con más de diez años de experiencia supervisando operaciones de tajo abierto, destacó que uno de los principales beneficios de la plataforma es la centralización de información crítica en un solo entorno de trabajo. Comentó que actualmente gran parte del monitoreo depende de radios y sistemas independientes, por lo que disponer de una solución que consolide información operativa facilita considerablemente la toma de decisiones.<br><br>
+
+También valoró la capacidad de identificar rápidamente situaciones potencialmente peligrosas mediante indicadores visuales y registros organizados de eventos recientes. Considera que esta funcionalidad podría reducir los tiempos de reacción frente a incidentes y mejorar la coordinación entre supervisores y conductores.<br><br>
+
+Como sugerencia, recomendó incorporar filtros por turno, zona operativa y nivel de criticidad para facilitar el seguimiento de eventos. En términos generales, manifestó que MineGuard responde a necesidades reales de supervisión y prevención de riesgos dentro de la minería moderna.
+      </td>
+      <td align="center">
+        <img
+          src="assets/img/interviews/validacion_segmento_1-Felipe_Pastor.png"
+          alt="captura entrevista Felipe Pastor"
+          width="320"
+        >
+      </td>
+    </tr>
+
+<tr>
+      <td>2</td>
+      <td>
+        <strong>Nombre:</strong> Landivar Flores <br>
+        <strong>Edad:</strong> 34 años <br>
+        <strong>Distrito:</strong> Huari, Áncash <br>
+        <strong>Cargo:</strong> Supervisor de Operaciones Mineras <br>
+        <strong>Momento que inicia:</strong> [00:25] <br>
+        <strong>Duración:</strong> [09:41] <br>
+      </td>
+      <td>
+        Landivar Flores participó en la evaluación del prototipo MineGuard enfocándose principalmente en las capacidades de monitoreo y análisis de riesgos. Durante la sesión realizó tareas relacionadas con la visualización de eventos críticos, consulta de registros históricos y revisión de indicadores de seguridad operativa.<br><br>
+
+ Debido a su experiencia trabajando con tecnologías de monitoreo avanzadas, mostró especial interés por la forma en que la plataforma presenta información relacionada con incidentes y situaciones de riesgo. Destacó que la organización visual de los datos facilita la comprensión rápida del estado operativo de la mina y permite identificar patrones relevantes sin necesidad de revisar múltiples fuentes de información.<br><br>
+
+También valoró positivamente la disponibilidad de métricas e históricos que podrían utilizarse para auditorías, investigaciones de incidentes y procesos de mejora continua. Considera que estas funcionalidades aportan valor para la toma de decisiones basada en evidencia y para la prevención proactiva de riesgos.<br><br>
+
+Como observación, indicó que la precisión de la información será un factor determinante para la adopción de la solución en escenarios reales. En general, percibió MineGuard como una herramienta innovadora con potencial para fortalecer los procesos de seguridad minera.
+      </td>
+      <td align="center">
+        <img
+          src="assets/img/interviews/validacion_segmento_1-Landivar_Flores.png"
+          alt="captura entrevista Landivar Flores"
+          width="320"
+        >
+      </td>
+    </tr>
+
+<tr>
+      <td>3</td>
+      <td>
+        <strong>Nombre:</strong> Roy Ccosi <br>
+        <strong>Edad:</strong> 41 años <br>
+        <strong>Distrito:</strong> Huaraz, Áncash <br>
+        <strong>Cargo:</strong> Supervisor Mina <br>
+        <strong>Momento que inicia:</strong> [00:14] <br>
+        <strong>Duración:</strong> [08:55] <br>
+      </td>
+      <td>
+        Roy Ccosi participó en la validación de las funcionalidades de supervisión y control operacional de MineGuard. Durante la evaluación realizó tareas asociadas a la consulta de alertas, revisión de eventos recientes, seguimiento de información operativa y análisis de registros históricos relacionados con seguridad minera.<br><br>
+
+Destacó que la plataforma facilita la identificación de eventos que requieren atención inmediata gracias a una presentación clara de la información y a la organización de los registros disponibles. Considera que esta capacidad puede ayudar a los supervisores a actuar de manera más rápida y eficiente frente a posibles situaciones de riesgo dentro de la operación.<br><br>
+
+Asimismo, valoró positivamente la posibilidad de acceder a información histórica organizada, ya que actualmente gran parte de estos registros suele encontrarse dispersa en reportes y documentos independientes. Según indicó, disponer de información consolidada puede facilitar investigaciones posteriores, auditorías y reuniones de seguridad.<br><br>
+
+Como sugerencia de mejora, propuso incorporar herramientas que permitan identificar visualmente las áreas con mayor recurrencia de incidentes para priorizar acciones preventivas. En términos generales, manifestó una percepción positiva del sistema y considera que MineGuard podría contribuir significativamente al fortalecimiento de la cultura de seguridad en operaciones mineras.
+      </td>
+      <td align="center">
+        <img
+          src="assets/img/interviews/validacion_segmento_1-Roy_Ccosi.png"
+          alt="captura entrevista Roy Ccosi"
+          width="320"
+        >
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+**Segmento #2: Conductores de Vehículos Livianos**
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th width="5%">Nº Entrevista</th>
+      <th width="20%">Datos del entrevistado</th>
+      <th width="45%">Resumen de la entrevista</th>
+      <th width="30%">Evidencia de entrevista</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<tr>
+  <td>1</td>
+  <td>
+    <strong>Nombre:</strong> Edgardo Chávez <br>
+    <strong>Edad:</strong> 54 años <br>
+    <strong>Distrito:</strong> Huarmey, Áncash <br>
+    <strong>Cargo:</strong> Conductor de Vehículos Livianos <br>
+    <strong>Momento que inicia:</strong> [00:18] <br>
+    <strong>Duración:</strong> [10:24]
+  </td>
+  <td>
+    Edgardo Chávez participó en la validación de la primera versión de la aplicación móvil MineGuard destinada a conductores que operan dentro de entornos mineros. Durante la sesión realizó tareas relacionadas con el acceso a la aplicación, consulta de información operativa, recepción de alertas de riesgo y revisión de eventos registrados durante la jornada laboral.<br><br>
+
+Gracias a su amplia experiencia en operaciones mineras, destacó que una de las características más valiosas de la aplicación es la capacidad de comunicar situaciones potencialmente peligrosas de manera rápida y sencilla. Comentó que la información presentada resulta fácil de comprender y que las alertas permiten reconocer oportunamente situaciones que requieren mayor atención durante el desplazamiento por zonas operativas.<br><br>
+
+También valoró la simplicidad de la interfaz y la organización de la información, indicando que la aplicación evita mostrar datos innecesarios y se concentra en elementos importantes para la seguridad del conductor. Considera que esta característica reduce distracciones y facilita el uso de la herramienta incluso para trabajadores con poca experiencia utilizando aplicaciones móviles.<br><br>
+
+Como recomendación, sugirió incorporar mensajes más descriptivos que indiquen el tipo específico de riesgo detectado y las acciones recomendadas para responder adecuadamente ante cada situación. En términos generales, manifestó una percepción positiva de MineGuard y considera que puede convertirse en una herramienta importante para fortalecer la seguridad de los trabajadores en campo.
+  </td>
+  <td align="center">
+    <img
+      src="assets/img/interviews/validacion_segmento_2-Edgardo_Chavez.png"
+      alt="captura entrevista Edgardo Chávez"
+      width="320"
+    >
+  </td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td>
+    <strong>Nombre:</strong> Jorge Astolingón Díaz <br>
+    <strong>Edad:</strong> 48 años <br>
+    <strong>Distrito:</strong> Carhuaz, Áncash <br>
+    <strong>Cargo:</strong> Operador de Maquinaria <br>
+    <strong>Momento que inicia:</strong> [11:02] <br>
+    <strong>Duración:</strong> [09:57]
+  </td>
+  <td>
+    Jorge Astolingón Díaz participó en la validación de la aplicación móvil MineGuard desde la perspectiva de un operador con amplia experiencia en minería. Durante la sesión realizó tareas relacionadas con la recepción de alertas, consulta de eventos recientes y revisión de información vinculada a situaciones de riesgo registradas por el sistema.<br><br>
+
+Durante la evaluación destacó que la aplicación presenta la información de manera clara y directa, permitiendo comprender rápidamente el contexto de una alerta sin necesidad de navegar por múltiples opciones. Considera que esta característica es importante debido a que los conductores suelen disponer de poco tiempo para revisar información adicional durante sus actividades operativas.<br><br>
+
+Asimismo, valoró la posibilidad de consultar eventos recientes asociados a su actividad, ya que considera que esta funcionalidad puede ayudar a generar una mayor conciencia situacional y reforzar las buenas prácticas de conducción dentro de la mina. Según indicó, conocer los eventos registrados permite identificar comportamientos que podrían corregirse para reducir riesgos futuros.<br><br>
+
+Como observación, señaló que la aplicación debe mantener un equilibrio adecuado entre cantidad de alertas y relevancia de las mismas, ya que un exceso de notificaciones podría ocasionar que los usuarios pierdan interés en ellas. En términos generales, manifestó que MineGuard constituye una propuesta útil y alineada con las necesidades reales de los conductores mineros.
+  </td>
+  <td align="center">
+    <img
+      src="assets/img/interviews/validacion_segmento_2-Jorge_Astolingon.png"
+      alt="captura entrevista Jorge Astolingón"
+      width="320"
+    >
+  </td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td>
+    <strong>Nombre:</strong> Fernando Velásquez <br>
+    <strong>Edad:</strong> 52 años <br>
+    <strong>Distrito:</strong> Huaraz, Áncash <br>
+    <strong>Cargo:</strong> Operador de Maquinaria Pesada <br>
+    <strong>Momento que inicia:</strong> [21:15] <br>
+    <strong>Duración:</strong> [10:38]
+  </td>
+  <td>
+    Fernando Velásquez participó en la validación de la aplicación móvil MineGuard enfocándose principalmente en el comportamiento y utilidad de las alertas presentadas al conductor. Durante la sesión realizó tareas relacionadas con la visualización de advertencias de riesgo, consulta de eventos recientes y revisión de información asociada a incidentes potenciales dentro de la operación minera.<br><br>
+
+Debido a su experiencia trabajando con diferentes sistemas de asistencia al conductor, mostró especial interés por la forma en que la aplicación comunica situaciones críticas. Destacó que las advertencias son fáciles de identificar y que la información relevante puede visualizarse rápidamente sin generar una carga excesiva para el usuario. Considera que este enfoque puede contribuir a mejorar la capacidad de reacción ante eventos inesperados en campo.<br><br>
+
+También valoró la posibilidad de consultar registros históricos de eventos asociados a su actividad operativa. Según indicó, esta funcionalidad permite comprender mejor los riesgos presentes en determinadas zonas de trabajo y facilita el aprendizaje basado en experiencias previas registradas por el sistema.<br><br>
+
+Como sugerencia, recomendó incorporar diferentes niveles visuales de criticidad que permitan distinguir fácilmente entre advertencias preventivas y situaciones que requieren una respuesta inmediata. En términos generales, manifestó que MineGuard representa una mejora respecto a los mecanismos tradicionales de comunicación de riesgos y considera que puede aportar beneficios importantes para la seguridad operacional.
+  </td>
+  <td align="center">
+    <img
+      src="assets/img/interviews/validacion_segmento_2-Fernando_Velasquez.png"
+      alt="captura entrevista Fernando Velásquez"
+      width="320"
+    >
+  </td>
+</tr>
+
+
+  </tbody>
+</table>
+
+</div>
 
 
 
 ### 6.3.3. Evaluaciones según heurísticas
+
+
+
