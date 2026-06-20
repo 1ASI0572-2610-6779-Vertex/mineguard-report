@@ -193,7 +193,146 @@ Durante el desarrollo del Sprint 2 del proyecto MineGuard, se realizaron avances
 
 A continuación, se presenta la evidencia de desarrollo registrada en los repositorios relacionados con la solución.
 
-#### 6.2.2.5. Execution Evidence for Sprint Review
++ **Web Service:**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| mineguard-web-service | feature/iam | 289a8df | feat | initial commit of webservice | 2026-05-29 |
+| mineguard-web-service | feature/iam | f6ed4bf | feat(iam) | added domain layer | 2026-05-29 |
+| mineguard-web-service | feature/iam | 17302e6 | feat(iam) | added infrastructure layer | 2026-06-02 |
+| mineguard-web-service | feature/iam | 754aee8 | feat(iam) | added application layer | 2026-06-02 |
+| mineguard-web-service | feature/iam | 19ec571 | feat(iam) | added interfaces layer | 2026-06-03 |
+| mineguard-web-service | feature/planning | b3a2a43 | feat(planning) | add planning domain | 2026-06-09 |
+| mineguard-web-service | feature/planning | a865822 | feat(planning) | add planning infrastructure | 2026-06-11 |
+| mineguard-web-service | feature/planning | 48dc454 | feat(planning) | add planning application | 2026-06-11 |
+| mineguard-web-service | feature/planning | cf70fd1 | feat(planning) | add planning interfaces | 2026-06-12 |
+| mineguard-web-service | feature/monitoring | 3ee88f3 | feat(monitoring) | add monitoring application | 2026-06-14 |
+| mineguard-web-service | feature/monitoring | 121f7aa | feat(monitoring) | add monitoring domain | 2026-06-14 |
+| mineguard-web-service | feature/monitoring | 61994ee | feat(monitoring) | add monitoring infrastructure | 2026-06-14 |
+| mineguard-web-service | feature/monitoring | aa92836 | feat(monitoring) | add monitoring interfaces | 2026-06-14 |
+| mineguard-web-service | develop | d7e3f43 | feat(assets) | add asset bounded context with vehicle inventory, driver management, trips, and catalog summary services | 2026-06-14 |
+| mineguard-web-service | develop | 6e9fbea | fix(iam) | add administrator role | 2026-06-15 |
+| mineguard-web-service | develop | aebfcd5 | feat() | add profile and preference management endpoints | 2026-06-15 |
+| mineguard-web-service | develop | 3e37dde | merge() | Merge pull request #5 from feature/monitoring | 2026-06-16 |
+| mineguard-web-service | develop | 9d45550 | feat() | Add bc Analytics | 2026-06-17 |
+| mineguard-web-service | develop | eb1c101 | fix | fix structure files | 2026-06-18 |
+| mineguard-web-service | develop | 82c148d | fix() | change directory | 2026-06-18 |
+| mineguard-web-service | develop | 804b896 | feat(assets) | add driver create/update command side with REST endpoint | 2026-06-19 |
+| mineguard-web-service | develop | 030205f | merge() | pull request #7 from feature/assets | 2026-06-19 |
+| mineguard-web-service | develop | 7094217 | fix | fix endpoints monitoring BC | 2026-06-19 |
+| mineguard-web-service | develop | 6072537 | merge | Merge branch 'feature/monitoring' into develop | 2026-06-19 |
+
+
++ **Web App (v2):**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| mineguard-web-app | chore/update-layout | 83be73c | chore | update layout design | 2026-05-29 |
+| mineguard-web-app | feature/sdp | dbb29fc | feat | added service and design bd | 2026-05-29 |
+| mineguard-web-app | feature/sdp | ca9990e | chore | updated route form | 2026-06-02 |
+| mineguard-web-app | feature/sdp | 58c4ce0 | updated | updated routes design | 2026-06-02 |
+| mineguard-web-app | develop | 841d77f | feat | initial style improvements | 2026-06-07 |
+| mineguard-web-app | develop | 5d7dca8 | fix | correct layout functions | 2026-06-07 |
+| mineguard-web-app | develop | 9482c31 | feat | fix the design of the bounded assets and sidebar behavior | 2026-06-12 |
+| mineguard-web-app | develop | c994c23 | feat | improve reports tab, main presentation and dashboard in both views | 2026-06-12 |
+| mineguard-web-app | develop | 078999b | feat | improves components and animations of the alerts manager tab | 2026-06-16 |
+| mineguard-web-app | develop | 2105b15 | feat | improved appearance and style of interactive and live maps | 2026-06-16 |
+| mineguard-web-app | develop | b9c0ccd | feat | improve admin view for System Overview and User Management tabs | 2026-06-16 |
+| mineguard-web-app | develop | 9eaddfb | feat | improve admin view for Audit & Assets tab | 2026-06-16 |
+| mineguard-web-app | develop | d7a2e0d | feat | correcting routes and environment for backend connection fixes | 2026-06-17 |
+| mineguard-web-app | develop | 2cc39de | feat | implementation of forgot password and sending emails with credentials | 2026-06-17 |
+| mineguard-web-app | develop | 2434085 | feat | improvement of ID creation function in bounded IAM context | 2026-06-17 |
+
++ **Landing Page:**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| mineguard-website | feat/sections-overhaul | af813a5 | feat | include company registration form | 2026-06-17 |
+| mineguard-website | feat/sections-overhaul | b7f4a89 | feat | implements testimonial carousel US-SW-027 | 2026-06-19 |
+
++ **Mobile App:**
+
+
+
++ **Edge Service:**
+
++ **Embbeded App:**
+
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+
++ **Unit Test Record 01**
+
+Se implementó el Unit Test **HeartRateReadingTest** con el objetivo de validar la lógica de negocio de la clase **HeartRateReading**, encargada de analizar las lecturas de frecuencia cardíaca provenientes de dispositivos IoT (smart-band) para detectar posibles riesgos de fatiga en operarios mineros.Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real del estado físico de los trabajadores.
+
+Los comportamientos validados fueron:
+
+- Clasificación de una frecuencia cardíaca normal.
+- Identificación de una frecuencia cardíaca baja como posible riesgo de fatiga.
+- Identificación de una frecuencia cardíaca alta como posible riesgo de fatiga.
+
+Ruta del test:
+
+```plaintext
+src/test/java/com/mineguard/platform/monitoring/domain/model/aggregates/HeartRateReadingTest.java
+```
+
+![unit-test-01](../report/assets/unitest/ut1.png)
+
++ **Unit Test Record 02**
+
+Se implementó el Unit Test **HeartRateIngestionServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **HeartRateIngestionServiceImpl**, encargada de procesar las lecturas de frecuencia cardíaca enviadas por dispositivos IoT, autenticar el dispositivo y generar alertas automáticas en caso de detectar anomalías.
+
+Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real del estado físico de los trabajadores.
+
+Los comportamientos validados fueron:
+
+- Registro correcto de lecturas cardíacas normales.
+- Generación de alertas automáticas cuando se detecta una frecuencia cardíaca anormal.
+- Validación del flujo de autenticación del dispositivo mediante API Key.
+
+Ruta del test:
+
+```plaintext
+src/test/java/com/mineguard/platform/monitoring/application/internal/commandservices/HeartRateIngestionServiceImplTest.java
+```
+
++ **Unit Test Record 03**
+
+Se implementó el Unit Test **VehicleCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **VehicleCommandServiceImpl**, encargada de gestionar la creación y actualización de vehículos dentro del sistema de monitoreo y control de activos mineros.
+
+Este test se relaciona con la **User Story US004**, orientada a la administración y actualización de vehículos operativos dentro de la mina.
+
+Los comportamientos validados fueron:
+
+- Registro correcto de nuevos vehículos en el sistema.
+- Actualización correcta de información de vehículos existentes.
+- Persistencia de cambios realizados sobre vehículos registrados.
+
+Ruta del test:
+
+```plaintext
+src/test/java/com/mineguard/platform/assets/application/internal/commandservices/VehicleCommandServiceImplTest.java
+```
+
++ **Unit Test Record 04**
+
+Se implementó el Unit Test **AlertCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **AlertCommandServiceImpl**, encargada de gestionar acciones sobre alertas críticas generadas por el sistema de monitoreo, como resolver alertas o clasificarlas como falsas alarmas.
+
+Este test se relaciona con la **User Story US008**, orientada a la gestión y resolución de alertas operacionales dentro de la mina.
+
+Los comportamientos validados fueron:
+
+- Resolución correcta de alertas activas.
+- Clasificación de alertas como falsas alarmas.
+- Registro de auditoría de las acciones ejecutadas sobre alertas.
+
+Ruta del test:
+
+```plaintext
+src/test/java/com/mineguard/platform/monitoring/application/internal/commandservices/AlertCommandServiceImplTest.java
+
+#### 6.2.2.6. Execution Evidence for Sprint Review
 
 Durante el desarrollo del Sprint 2 del proyecto MineGuard, el equipo logró avances significativos en la consolidación e integración de los principales componentes de la solución. En este Sprint se alcanzó la evolución de la Web Application (v2) y la Landing Page (v2), fortaleciendo la visualización de información operativa, la navegación y la presentación comercial de la solución.
 
@@ -203,8 +342,8 @@ Finalmente, se consolidó un Prototype (v1) que integra estos componentes, permi
 
 A continuación, se presentan capturas de las principales vistas implementadas y un enlace al video demostrativo que evidencia la navegación, interacción y funcionamiento alcanzado en este Sprint.
 
-#### 6.2.2.6. Services Documentation Evidence for Sprint Review
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
-#### 6.2.2.7. Software Deployment Evidence for Sprint Review
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
-#### 6.2.2.8. Team Collaboration Insights during Sprint
+#### 6.2.2.9. Team Collaboration Insights during Sprint
