@@ -467,13 +467,8 @@ A continuación, se presenta la evidencia de desarrollo registrada en los reposi
 
 #### 6.2.2.6. Execution Evidence for Sprint Review
 
-Durante el desarrollo del Sprint 2 del proyecto MineGuard, el equipo logró avances significativos en la consolidación e integración de los principales componentes de la solución. En este Sprint se alcanzó la evolución de la Web Application (v2) y la Landing Page (v2), fortaleciendo la visualización de información operativa, la navegación y la presentación comercial de la solución.
+Durante el Sprint 2 del proyecto MineGuard se consolidaron avances clave en la evolución de la **Web Application (v2)** y la **Landing Page (v2)**, mejorando la visualización operativa, navegación y presentación comercial de la solución. Además, se implementaron las primeras versiones funcionales del **Web Service (v1)**, **Mobile App (v1)**, **Edge Service (v1)** y **Embedded App (v1)**, permitiendo integrar la captura de datos, procesamiento de eventos y generación de alertas en un prototipo funcional. A continuación, se presentan capturas de las principales vistas implementadas y el enlace al video demostrativo correspondiente.
 
-Asimismo, se implementaron las primeras versiones funcionales de componentes críticos como el Web Service (v1) para la gestión de recursos y procesamiento de telemetría, la Mobile App (v1) para interacción del supervisor y conductor, el Edge Service (v1) para el filtrado y procesamiento local de datos, y la Embedded App (v1) desplegada sobre dispositivos IoT para la captura de señales de proximidad, ubicación y fatiga.
-
-Finalmente, se consolidó un Prototype (v1) que integra estos componentes, permitiendo validar el flujo principal de captura de datos, análisis de eventos y generación de alertas críticas dentro del entorno simulado de operación minera.
-
-A continuación, se presentan capturas de las principales vistas implementadas y un enlace al video demostrativo que evidencia la navegación, interacción y funcionamiento alcanzado en este Sprint.
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
@@ -515,5 +510,12 @@ Durante el Sprint 2 del proyecto MineGuard se consolidó la documentación de lo
 | Create Subscription | POST | Registra nueva empresa minera (suscripción). | `/api/v1/subscriptions` | Body: company data | `201 Created` crea tenant y admin. | `/swagger-ui/index.html#/Subscriptions` |
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
+
+En este sprint se dejó preparada la base de despliegue de los productos del alcance: landing page, web application y mock service/documented API. El objetivo de esta sección es mostrar cómo se publican y validan los artefactos construidos a partir de los repositorios.
+
+| Artifact | Deployment Status | URL / Environment |
+|---|---|---|
+| Landing Page | Preparado para despliegue estático | https://1asi0572-2610-6779-vertex.github.io/mineguard-website/ |
+| Web Application | Preparado para ejecución/publicación | https://mineguard-iot.netlify.app/ |
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint
