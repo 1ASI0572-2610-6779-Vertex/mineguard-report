@@ -256,7 +256,71 @@ A continuación, se presenta la evidencia de desarrollo registrada en los reposi
 
 + **Edge Service:**
 
+| Repository        | Branch              | Commit Id | Commit Message                                                   | Commit Message Body                                           | Commited on (Date) |
+|-------------------|---------------------|-----------|------------------------------------------------------------------|---------------------------------------------------------------|--------------------|
+| MineGuard-EdgeService | feature/iam        | dc5ded2   | Initial commit                                                   | Initial repository setup for Edge Service foundation          | 16/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 2fa389f   | feat: added domain layer                                         | Added domain entities and business rules for IAM module       | 16/06/2026         |
+| MineGuard-EdgeService | feature/iam        | e90ca50   | feat: added infrastructure layer                                 | Added persistence and external service integration            | 16/06/2026         |
+| MineGuard-EdgeService | feature/iam        | a7745c9   | feat: added application layer                                    | Added use cases and application services                      | 16/06/2026         |
+| MineGuard-EdgeService | feature/iam        | ab83efd   | feat: added interface layer                                      | Added REST controllers and API contracts                      | 16/06/2026         |
+| MineGuard-EdgeService | feature/iam        | e011f1e   | Merge pull request #1 from feature/iam                           | Integrated IAM base architecture into develop branch          | 16/06/2026         |
+| MineGuard-EdgeService | feature/iam        | d80b83d   | feat: add application layer                                      | Refined application layer for device authentication workflow  | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 534077e   | feat: add domain layer                                           | Added IAM entities for authentication and authorization       | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | c586035   | feat: add infrastructure layer                                   | Added repositories and adapters for IAM persistence           | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 4a77c73   | feat: add interfaces layer                                       | Added API endpoints and DTOs                                  | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 9a3ac50   | fix: Add iam services                                            | Implemented IAM services and fixed integration issues         | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 68d270e   | feat: Add iam entities                                           | Added new IAM entities for device and user authentication     | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 601d0cd   | Merge pull request #2 from feature/iam                           | Integrated IAM entities and services into develop             | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | f7d5418   | feat(iam): add infrastructure and interfaces layers for device authentication | Added infrastructure and interface layers for auth module | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | 89d5328   | Merge branch 'develop' into feature/iam                          | Synced latest changes from develop branch                     | 19/06/2026         |
+| MineGuard-EdgeService | feature/iam        | d1b7745   | merge(): pull request #3 from feature/iam                        | Merged device authentication implementation into develop      | 19/06/2026         |
+| MineGuard-EdgeService | feature/monitoring | 2cb7c5d   | feat(): add monitoring features to edge                          | Added monitoring module for sensor and edge status tracking   | 20/06/2026         |
+| MineGuard-EdgeService | feature/monitoring | ffacab4   | Merge pull request #4 from feature/monitoring                    | Integrated monitoring features into develop                   | 20/06/2026         |
+| MineGuard-EdgeService | feature/monitoring | a854a87   | Feature: Update monitoring                                       | Updated monitoring logic and telemetry reporting              | 20/06/2026         |
+| MineGuard-EdgeService | feature/monitoring | 6b37066   | Merge pull request #5 from feature/monitoring                    | Final integration of monitoring module into main branch       | 20/06/2026         |
+
 + **Embbeded App:**
+
+| Repository          | Branch                   | Commit Id | Commit Message                                               | Commit Message Body                                               | Commited on (Date) |
+|---------------------|--------------------------|-----------|--------------------------------------------------------------|-------------------------------------------------------------------|--------------------|
+| MineGuard-EmbeddedApp | main                   | ed0d22f   | Initial commit                                               | Initial setup for embedded application repository                 | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/buzzer-actuator | 94c2fae   | Feat(): Add buzzer and actuator                              | Added buzzer module and actuator logic for emergency alerts       | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/buzzer-actuator | 4d378e1   | Merge pull request #1 from feature/buzzer-actuator           | Integrated buzzer and actuator module into main                   | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/collision-sensor| 44d3b8d   | feat(collision-sensor): add collision sensor logic and command handler | Added collision detection and event handling logic      | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/collision-sensor| 58d4b56   | merge(): pull request #2 from feature/collision-sensor       | Integrated collision sensor functionality into main               | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/lcd-display     | 5896e8c   | feat: LCD display and LED modules                            | Added LCD display visualization and LED status indicators         | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/lcd-display     | 0cd3446   | Merge pull request #3 from feature/lcd-display               | Integrated LCD and LED modules into main                          | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/mineguard-device| b6927bb   | feat: add mineguard device                                   | Added base MineGuard device structure and initialization          | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/mineguard-device| 8d44b68   | Merge pull request #4 from feature/mineguard-device          | Integrated MineGuard device core into main                        | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/pulse-sensor    | 7ee3336   | feat: added pulse sensor                                     | Added pulse sensor for miner health monitoring                    | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/pulse-sensor    | 05322af   | doc: updated readme file                                     | Updated documentation for pulse sensor integration                | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/pulse-sensor    | 7903019   | doc: update README                                           | Improved setup and usage instructions                             | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/pulse-sensor    | 56e290e   | Merge pull request #5 from feature/pulse-sensor              | Integrated pulse sensor module into main                          | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/emergency-button| 333a116   | Feature: Created EmergencyButton and EventHandler            | Added emergency button functionality and event-driven handler     | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/gps-sensor      | ce675e1   | Feature: Created GPSSensor                                   | Added GPS sensor for location tracking                            | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/gps-sensor      | 7d6518f   | Merge pull request #6 from feature/gps-sensor                | Integrated GPS sensor module into main                            | 20/06/2026         |
+| MineGuard-EmbeddedApp | feature/emergency-button| 83e838c   | Merge pull request #7 from feature/emergency-button          | Final integration of emergency button module into main            | 20/06/2026         |
+
++ **Prototype:**
+
+| Repository       | Branch                  | Commit Id | Commit Message                                              | Commit Message Body                                                | Commited on (Date) |
+|------------------|-------------------------|-----------|-------------------------------------------------------------|--------------------------------------------------------------------|--------------------|
+| MineGuard-Prototype | main                 | 53a97ca   | Initial commit                                              | Initial setup for MineGuard prototype repository                   | 20/06/2026         |
+| MineGuard-Prototype | feature/mineguard-device | ea22f93 | feat: add mineguard device and pulse sensor                 | Added initial MineGuard hardware structure with pulse sensor       | 20/06/2026         |
+| MineGuard-Prototype | feature/mineguard-device | beb5b6b | Merge pull request #1 from feature/mineguard-device         | Integrated base MineGuard device and pulse sensor into main        | 20/06/2026         |
+| MineGuard-Prototype | feature/buzzer-actuator | a272762 | feat(): add buzzer and actuator                             | Added buzzer and actuator modules for emergency alerts             | 20/06/2026         |
+| MineGuard-Prototype | feature/buzzer-actuator | fae814c | Merge pull request #2 from feature/buzzer-actuator          | Integrated buzzer and actuator module into main                    | 20/06/2026         |
+| MineGuard-Prototype | feature/collision-sensor | e489365 | feat(collision-sensor): add collision sensor logic and command handler | Added collision sensor and event handling logic         | 20/06/2026         |
+| MineGuard-Prototype | feature/collision-sensor | 29deb60 | merge(): pull request #3 from feature/collision-sensor      | Integrated collision sensor module into main                       | 20/06/2026         |
+| MineGuard-Prototype | feature/gps-sensor    | a2cc297   | Feature: Created GPSSensor and gps-neo6m.chip              | Added GPS tracking module with Neo-6M integration                  | 20/06/2026         |
+| MineGuard-Prototype | feature/gps-sensor    | 6745116   | Merge pull request #4 from feature/gps-sensor              | Integrated GPS module into main                                    | 20/06/2026         |
+| MineGuard-Prototype | feature/led-lcd-&-heart-rate | a8a3a3c | feat: added led and lcd                              | Added LED and LCD modules for device visualization                 | 20/06/2026         |
+| MineGuard-Prototype | feature/led-lcd-&-heart-rate | 2172bb5 | feat: added heart-rate sensor                        | Added heart-rate sensor for miner health monitoring                | 20/06/2026         |
+| MineGuard-Prototype | feature/led-lcd-&-heart-rate | 0f1071c | doc: update README                                   | Updated documentation for prototype modules                        | 20/06/2026         |
+| MineGuard-Prototype | feature/led-lcd-&-heart-rate | b394cae | Merge pull request #5 from feature/led-lcd-&-heart-rate | Integrated LED, LCD and heart-rate sensor modules into main    | 20/06/2026         |
+| MineGuard-Prototype | feature/emergency     | a25e4c9   | doc: added link of wokwi                                   | Added Wokwi simulation link into repository documentation          | 20/06/2026         |
+| MineGuard-Prototype | feature/emergency     | 539a56d   | feat(): add emergency button prototype flow                | Added emergency button logic and prototype interaction flow        | 20/06/2026         |
+| MineGuard-Prototype | feature/emergency     | c4fbe1e   | Merge pull request #6 from feature/emergency               | Final integration of emergency prototype features into main        | 20/06/2026         |
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
