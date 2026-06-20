@@ -33,7 +33,7 @@ Para esta etapa del proyecto se diseñaron entrevistas de validación orientadas
     | Elemento a validar   | Descripción                                                                                                                                                      |
     | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Landing Page         | Se validará si el conductor comprende cómo MineGuard ayuda a prevenir accidentes y proteger su integridad durante la conducción en zonas de riesgo.              |
-    | Web Application      | Se validará la comprensión de información relacionada con alertas, vehículos, conductores y eventos operativos desde una perspectiva de seguridad del conductor. |
+    | Web Application / Mobile App     | Se validará la comprensión de información relacionada con alertas, vehículos, conductores y eventos operativos desde una perspectiva de seguridad del conductor. |
     | Alertas de seguridad | Se evaluará si los mensajes, niveles de riesgo y acciones sugeridas son fáciles de entender.                                                                     |
     | Utilidad percibida   | Se observará si el usuario considera que la solución puede ayudarlo a reaccionar mejor ante riesgos de colisión, fatiga o proximidad con maquinaria pesada.      |
 
@@ -45,7 +45,6 @@ Para esta etapa del proyecto se diseñaron entrevistas de validación orientadas
     | S2-UF02 | Identificación de beneficios de seguridad         | El usuario explora las secciones informativas del Landing Page y reconoce beneficios relacionados con alertas en tiempo real, prevención de colisiones y reducción de riesgos. |
     | S2-UF03 | Interpretación de una alerta operativa            | El usuario observa una alerta dentro de la Web Application e interpreta su nivel de riesgo, el tipo de evento y la acción que debería tomar un conductor ante esa situación.   |
     | S2-UF04 | Revisión de estado de vehículo o conductor        | El usuario revisa información relacionada con vehículos o conductores para validar si el estado presentado es comprensible y útil para la operación.                           |
-    | S2-UF05 | Evaluación de claridad y distracción              | El usuario evalúa si la información mostrada por el sistema sería clara en un contexto real de trabajo y si las alertas ayudan sin generar distracción excesiva.               |
 
 + Estructura general de la sesión de validación:
 
@@ -53,7 +52,7 @@ Para esta etapa del proyecto se diseñaron entrevistas de validación orientadas
 
     + Introducción: Explicar brevemente el objetivo de la sesión y el contexto de MineGuard. Además de prepara al usuario para la validación.
     + Exploración del Landing Page: El usuario debe navega por el Landing Page y comentar qué entiende de la solución. Con esto validamos la claridad de la propuesta de valor.
-    + Interacción con la Web Application: El usuario realiza los user flows definidos para su segmento. Con el objetivo de validar navegación, comprensión de información y utilidad.
+    + Interacción con la Web Application / Mobile App: El usuario realiza los user flows definidos para su segmento. Con el objetivo de validar navegación, comprensión de información y utilidad.
     + Comentarios finales: El usuario responde preguntas breves sobre claridad, confianza, utilidad y mejoras. De esta manera nosotros poder recoger insights para mejorar la solución.
 
 + **Preguntas guía para el segmento 1: Supervisión Corporativa en Minería de Tajo Abierto**
@@ -93,9 +92,8 @@ Para esta etapa del proyecto se diseñaron entrevistas de validación orientadas
 
     1. Al observar una alerta en pantalla, ¿entiendes inmediatamente qué significa?
     2. ¿La información mostrada sería fácil de entender durante una jornada de trabajo?
-    3. ¿Los colores, niveles de alerta o mensajes permiten reconocer rápidamente el nivel de riesgo?
-    4. ¿La solución parece apoyar al conductor sin generar distracciones?
-    5. ¿Qué cambiarías para que el sistema sea más práctico en campo?
+    3. ¿Es fácil seguir el flujo para registrarte con un carro?
+    4. ¿Qué cambiarías para que el sistema sea más práctico en campo?
 
     Preguntas finales:
 
