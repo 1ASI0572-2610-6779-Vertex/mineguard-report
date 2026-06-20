@@ -472,3 +472,6 @@ Los supervisores expresaron interés en identificar rápidamente las zonas donde
 Incorporar una vista resumida o panel de análisis que destaque visualmente las áreas con mayor concentración de incidentes, facilitando la identificación de patrones y la toma de decisiones preventivas.
 
 
+## 6.4. About the Product
+
+- Link: 'https://www.youtube.com/watch?v=YuU5bkx0RCE'
