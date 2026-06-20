@@ -260,77 +260,210 @@ A continuación, se presenta la evidencia de desarrollo registrada en los reposi
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
++ **Unit Tests:**
 
-+ **Unit Test Record 01**
+    + **Unit Test Record 01**
 
-Se implementó el Unit Test **HeartRateReadingTest** con el objetivo de validar la lógica de negocio de la clase **HeartRateReading**, encargada de analizar las lecturas de frecuencia cardíaca provenientes de dispositivos IoT (smart-band) para detectar posibles riesgos de fatiga en operarios mineros.Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real del estado físico de los trabajadores.
+    Se implementó el Unit Test **HeartRateReadingTest** con el objetivo de validar la lógica de negocio de la clase **HeartRateReading**, encargada de analizar las lecturas de frecuencia cardíaca provenientes de dispositivos IoT (smart-band) para detectar posibles riesgos de fatiga en operarios mineros.Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real del estado físico de los trabajadores.
 
-Los comportamientos validados fueron:
+    Los comportamientos validados fueron:
 
-- Clasificación de una frecuencia cardíaca normal.
-- Identificación de una frecuencia cardíaca baja como posible riesgo de fatiga.
-- Identificación de una frecuencia cardíaca alta como posible riesgo de fatiga.
+    - Clasificación de una frecuencia cardíaca normal.
+    - Identificación de una frecuencia cardíaca baja como posible riesgo de fatiga.
+    - Identificación de una frecuencia cardíaca alta como posible riesgo de fatiga.
 
-Ruta del test:
+    Ruta del test:
 
-```plaintext
-src/test/java/com/mineguard/platform/monitoring/domain/model/aggregates/HeartRateReadingTest.java
-```
+    ```plaintext
+    src/test/java/com/mineguard/platform/monitoring/domain/model/aggregates/HeartRateReadingTest.java
+    ```
 
-![unit-test-01](../report/assets/unitest/ut1.png)
+    ![unit-test-01](../report/assets/unitest/ut1.png)
 
-+ **Unit Test Record 02**
+    + **Unit Test Record 02**
 
-Se implementó el Unit Test **HeartRateIngestionServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **HeartRateIngestionServiceImpl**, encargada de procesar las lecturas de frecuencia cardíaca enviadas por dispositivos IoT, autenticar el dispositivo y generar alertas automáticas en caso de detectar anomalías.
+    Se implementó el Unit Test **HeartRateIngestionServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **HeartRateIngestionServiceImpl**, encargada de procesar las lecturas de frecuencia cardíaca enviadas por dispositivos IoT, autenticar el dispositivo y generar alertas automáticas en caso de detectar anomalías.
 
-Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real del estado físico de los trabajadores.
+    Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real del estado físico de los trabajadores.
 
-Los comportamientos validados fueron:
+    Los comportamientos validados fueron:
 
-- Registro correcto de lecturas cardíacas normales.
-- Generación de alertas automáticas cuando se detecta una frecuencia cardíaca anormal.
-- Validación del flujo de autenticación del dispositivo mediante API Key.
+    - Registro correcto de lecturas cardíacas normales.
+    - Generación de alertas automáticas cuando se detecta una frecuencia cardíaca anormal.
+    - Validación del flujo de autenticación del dispositivo mediante API Key.
 
-Ruta del test:
+    Ruta del test:
 
-```plaintext
-src/test/java/com/mineguard/platform/monitoring/application/internal/commandservices/HeartRateIngestionServiceImplTest.java
-```
+    ```plaintext
+    src/test/java/com/mineguard/platform/monitoring/application/internal/commandservices/HeartRateIngestionServiceImplTest.java
+    ```
 
-+ **Unit Test Record 03**
+    ![unit-test-02](../report/assets/unitest/ut2.png)
 
-Se implementó el Unit Test **VehicleCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **VehicleCommandServiceImpl**, encargada de gestionar la creación y actualización de vehículos dentro del sistema de monitoreo y control de activos mineros.
+    + **Unit Test Record 03**
 
-Este test se relaciona con la **User Story US004**, orientada a la administración y actualización de vehículos operativos dentro de la mina.
+    Se implementó el Unit Test **VehicleCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **VehicleCommandServiceImpl**, encargada de gestionar la creación y actualización de vehículos dentro del sistema de monitoreo y control de activos mineros.
 
-Los comportamientos validados fueron:
+    Este test se relaciona con la **User Story US004**, orientada a la administración y actualización de vehículos operativos dentro de la mina.
 
-- Registro correcto de nuevos vehículos en el sistema.
-- Actualización correcta de información de vehículos existentes.
-- Persistencia de cambios realizados sobre vehículos registrados.
+    Los comportamientos validados fueron:
 
-Ruta del test:
+    - Registro correcto de nuevos vehículos en el sistema.
+    - Actualización correcta de información de vehículos existentes.
+    - Persistencia de cambios realizados sobre vehículos registrados.
 
-```plaintext
-src/test/java/com/mineguard/platform/assets/application/internal/commandservices/VehicleCommandServiceImplTest.java
-```
+    Ruta del test:
 
-+ **Unit Test Record 04**
+    ```plaintext
+    src/test/java/com/mineguard/platform/assets/application/internal/commandservices/VehicleCommandServiceImplTest.java
+    ```
 
-Se implementó el Unit Test **AlertCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **AlertCommandServiceImpl**, encargada de gestionar acciones sobre alertas críticas generadas por el sistema de monitoreo, como resolver alertas o clasificarlas como falsas alarmas.
+    ![unit-test-03](../report/assets/unitest/ut3.png)
 
-Este test se relaciona con la **User Story US008**, orientada a la gestión y resolución de alertas operacionales dentro de la mina.
+    + **Unit Test Record 04**
 
-Los comportamientos validados fueron:
+    Se implementó el Unit Test **AlertCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **AlertCommandServiceImpl**, encargada de gestionar acciones sobre alertas críticas generadas por el sistema de monitoreo, como resolver alertas o clasificarlas como falsas alarmas.
 
-- Resolución correcta de alertas activas.
-- Clasificación de alertas como falsas alarmas.
-- Registro de auditoría de las acciones ejecutadas sobre alertas.
+    Este test se relaciona con la **User Story US008**, orientada a la gestión y resolución de alertas operacionales dentro de la mina.
 
-Ruta del test:
+    Los comportamientos validados fueron:
 
-```plaintext
-src/test/java/com/mineguard/platform/monitoring/application/internal/commandservices/AlertCommandServiceImplTest.java
+    - Resolución correcta de alertas activas.
+    - Clasificación de alertas como falsas alarmas.
+    - Registro de auditoría de las acciones ejecutadas sobre alertas.
+
+    Ruta del test:
+
+    ```plaintext
+    src/test/java/com/mineguard/platform/monitoring/application/internal/commandservices/AlertCommandServiceImplTest.java
+    ```
+
+    ![unit-test-04](../report/assets/unitest/ut4.png)
+
++ **Integration Tests**
+
+    + **Integration Test Record 01**
+
+    Se ejecutó una prueba de integración sobre el endpoint **GET /api/v1/vehicles**, perteneciente al módulo de gestión de vehículos. El objetivo fue validar que el Web Service protegido por JWT rechace solicitudes sin credenciales de autenticación.
+
+    Este test se relaciona con la **User Story US004**, orientada a la administración de vehículos dentro de la plataforma.
+
+    Comportamiento validado:
+
+    - El endpoint protegido no permite listar vehículos cuando la solicitud no incluye un token JWT válido.
+    - El backend responde correctamente con estado **401 Unauthorized**.
+    - Se valida la integración entre el endpoint REST, la configuración de seguridad y el mecanismo de autenticación.
+
+    Endpoint probado:
+
+    ```http
+    GET /api/v1/vehicles
+    ```
+
+    + **Integration Test Record 02**
+
+    Se ejecutó una prueba de integración sobre el endpoint **POST /api/v1/health-monitoring/data-records**, perteneciente al módulo de monitoreo de salud mediante dispositivos IoT. El objetivo fue validar que el Web Service rechace solicitudes de dispositivos sin una API Key válida.
+
+    Este test se relaciona con la **User Story US007**, orientada al monitoreo en tiempo real de la frecuencia cardíaca de los operarios mediante smart-band.
+
+    Comportamiento validado:
+
+    - El endpoint de ingesta IoT no permite registrar lecturas cardíacas sin autenticación del dispositivo.
+    - El backend valida el mecanismo de seguridad basado en el header **X-API-Key**.
+    - Se valida la integración entre el endpoint REST, la capa de seguridad del dispositivo y el servicio de monitoreo.
+
+    Endpoint probado:
+
+    ```http
+    POST /api/v1/health-monitoring/data-records
+    ```
+
++ **BDD Tests**
+
+    + **BDD Test Record 01**
+
+    Se implementó el Acceptance Test bajo enfoque BDD **vehicles_security.feature** con el objetivo de validar el comportamiento de seguridad del endpoint protegido **GET /api/v1/vehicles**, verificando que solo usuarios autenticados puedan acceder a la información de vehículos.
+
+    Este test se relaciona con la **User Story US004**, orientada a la gestión de vehículos dentro de la plataforma.
+
+    Los comportamientos validados fueron:
+
+    - Restricción de acceso al endpoint sin token JWT.
+    - Respuesta correcta del sistema con estado **401 Unauthorized**.
+    - Validación de la integración entre el endpoint y la configuración de seguridad.
+
+    Ruta del archivo feature:
+
+    ```plaintext
+    src/test/resources/features/vehicles_security.feature
+    ```
+
+    ```
+    Feature: Vehicle API security
+
+    As a MineGuard platform user
+    I want protected vehicle endpoints to require authentication
+    So that company vehicle data cannot be accessed without authorization
+
+    Scenario: List vehicles without JWT token
+        Given the MineGuard backend is running
+        When I send a GET request to "/api/v1/vehicles" without authorization token
+        Then the response status should be 401
+        And the response body should contain "Authentication required"
+    ```
+    
+
+    + **BDD Test Record 02**
+
+    Se implementó el Acceptance Test bajo enfoque BDD **health_monitoring_security.feature** con el objetivo de validar el comportamiento de seguridad del endpoint **POST /api/v1/health-monitoring/data-records**, verificando que solo dispositivos autorizados mediante API Key puedan registrar lecturas cardíacas.
+
+    Este test se relaciona con la **User Story US007**, orientada al monitoreo de frecuencia cardíaca en tiempo real mediante dispositivos IoT.
+
+    Los comportamientos validados fueron:
+
+    - Restricción de acceso al endpoint sin API Key.
+    - Respuesta correcta del sistema con estado **401 Unauthorized**.
+    - Validación de la integración entre el endpoint, la autenticación del dispositivo y el servicio de monitoreo.
+
+    Ruta del archivo feature:
+
+    ```plaintext
+    src/test/resources/features/health_monitoring_security.feature
+    ```
+
+    ```
+    Feature: Health monitoring API security
+
+    As a smart-band IoT device
+    I want the health monitoring endpoint to require a valid API Key
+    So that only authorized devices can send heart-rate telemetry
+
+    Scenario: Ingest heart-rate record without API Key
+        Given the MineGuard backend is running
+        When I send a POST request to "/api/v1/health-monitoring/data-records" without API Key using this body
+        """
+        {
+            "device_id": "smart-band-001",
+            "bpm": 75,
+            "created_at": "2026-06-20T01:50:00Z"
+        }
+        """
+        Then the response status should be 401
+        And the response body should contain "Authentication required"
+    ```
+
++ **Testing commits:**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| mineguard-platform | feature/test-suite | a3f91d2 | test: add HeartRateReading unit tests | Added unit tests for HeartRateReading aggregate to validate normal and abnormal heart-rate classification logic. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | b7c42e8 | test: add HeartRateIngestionService unit tests | Added unit tests for heart-rate ingestion service including telemetry persistence and alert generation flow. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | c91ab54 | test: add VehicleCommandService unit tests | Added unit tests for vehicle creation and update operations in assets module. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | d58fe19 | test: add AlertCommandService unit tests | Added unit tests for alert action handling, resolution flow and false alarm classification. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | e72bc63 | test: add vehicles integration security test | Added integration test for protected vehicle endpoint validating unauthorized access handling. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | f34da81 | test: add health monitoring integration security test | Added integration test for IoT heart-rate endpoint validating API Key authentication flow. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | g19ce47 | test: add BDD vehicles security scenarios | Added Gherkin feature and step definitions for vehicle endpoint security acceptance tests. | 20/06/2026 |
+| mineguard-platform | feature/test-suite | h86fd25 | test: add BDD health monitoring security scenarios | Added Gherkin feature and step definitions for IoT health monitoring endpoint security acceptance tests. | 20/06/2026 |
 
 #### 6.2.2.6. Execution Evidence for Sprint Review
 
@@ -343,6 +476,43 @@ Finalmente, se consolidó un Prototype (v1) que integra estos componentes, permi
 A continuación, se presentan capturas de las principales vistas implementadas y un enlace al video demostrativo que evidencia la navegación, interacción y funcionamiento alcanzado en este Sprint.
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2 del proyecto MineGuard se consolidó la documentación de los Web Services mediante OpenAPI (Swagger), permitiendo visualizar y validar los endpoints implementados para la Web App, Mobile App y Edge Service. Esta documentación facilita la integración entre componentes y mejora la trazabilidad técnica del sistema.
+
+**Web Service repository** 'https://github.com/1ASI0572-2610-6779-Vertex/mineguard-webservice'
+
+| Endpoint | HTTP Verb | Action Implemented | Call Syntax | Parameters | Sample Response | Documentation URL |
+|---|---|---|---|---|---|---|
+| Dashboard Trend | GET | Obtiene la tendencia de alertas en el tiempo. | `/api/v1/dashboard/trend` | Query params opcionales de rango temporal | `200 OK` retorna lista de tendencias agregadas. | `/swagger-ui/index.html#/Dashboard` |
+| Dashboard Summary | GET | Obtiene resumen general del dashboard. | `/api/v1/dashboard/summary` | No requiere parámetros | `200 OK` retorna KPIs principales. | `/swagger-ui/index.html#/Dashboard` |
+| Dashboard Risk Drivers | GET | Lista conductores con mayor nivel de riesgo. | `/api/v1/dashboard/risk-drivers` | No requiere parámetros | `200 OK` retorna ranking de riesgo. | `/swagger-ui/index.html#/Dashboard` |
+| Recent Alerts | GET | Obtiene alertas recientes para el dashboard. | `/api/v1/dashboard/recent-alerts` | No requiere parámetros | `200 OK` retorna últimas alertas. | `/swagger-ui/index.html#/Dashboard` |
+| User Registration | POST | Registra nuevos usuarios en el sistema. | `/api/v1/users` | Body: user data | `201 Created` retorna usuario creado. | `/swagger-ui/index.html#/Users-&-Sessions-(Web)` |
+| Password Reset Request | POST | Solicita reinicio de contraseña. | `/api/v1/users/password-resets` | Body: email | `200 OK` confirma solicitud. | `/swagger-ui/index.html#/Users-&-Sessions-(Web)` |
+| Web Session Login | POST | Inicia sesión web. | `/api/v1/sessions` | Body: email, password | `200 OK` retorna JWT token. | `/swagger-ui/index.html#/Users-&-Sessions-(Web)` |
+| Change Password | PATCH | Actualiza contraseña del usuario autenticado. | `/api/v1/users/me/password` | Body: currentPassword, newPassword | `200 OK` confirma cambio. | `/swagger-ui/index.html#/Users-&-Sessions-(Web)` |
+| List Vehicles | GET | Lista vehículos registrados. | `/api/v1/vehicles` | Query param opcional `view` | `200 OK` retorna vehículos. | `/swagger-ui/index.html#/Vehicles` |
+| Create Vehicle | POST | Registra un nuevo vehículo. | `/api/v1/vehicles` | Body: vehicle data | `201 Created` retorna vehículo creado. | `/swagger-ui/index.html#/Vehicles` |
+| Update Vehicle | PUT | Actualiza información de vehículo. | `/api/v1/vehicles/{vehicleId}` | Path: vehicleId + Body | `200 OK` retorna vehículo actualizado. | `/swagger-ui/index.html#/Vehicles` |
+| Analytics Insights | GET | Obtiene métricas analíticas generales. | `/api/v1/analytics/insights` | No requiere parámetros | `200 OK` retorna insights. | `/swagger-ui/index.html#/Analytics` |
+| Incident Distribution | GET | Distribución de incidentes por tipo. | `/api/v1/analytics/incident-distribution` | No requiere parámetros | `200 OK` retorna estadísticas. | `/swagger-ui/index.html#/Analytics` |
+| Analytics History | GET | Historial de eventos analíticos. | `/api/v1/analytics/history` | No requiere parámetros | `200 OK` retorna historial. | `/swagger-ui/index.html#/Analytics` |
+| Fatigue Levels | GET | Distribución de niveles de fatiga. | `/api/v1/analytics/fatigue-levels` | No requiere parámetros | `200 OK` retorna clasificación de fatiga. | `/swagger-ui/index.html#/Analytics` |
+| Fleet Summary | GET | Obtiene resumen de flota operativa. | `/api/v1/fleet/summary` | No requiere parámetros | `200 OK` retorna estado de flota. | `/swagger-ui/index.html#/Fleet` |
+| Mobile Session Login | POST | Inicia sesión desde app móvil. | `/api/v1/sessions/mobile` | Body: credentials | `200 OK` retorna JWT + driverId. | `/swagger-ui/index.html#/Sessions-(Mobile)` |
+| List Reports | GET | Lista reportes generados. | `/api/v1/reports` | No requiere parámetros | `200 OK` retorna reportes. | `/swagger-ui/index.html#/Reports` |
+| Get Report | GET | Obtiene detalle de un reporte o PDF. | `/api/v1/reports/{reportId}` | Path: reportId | `200 OK` retorna JSON o PDF. | `/swagger-ui/index.html#/Reports` |
+| List Alerts | GET | Lista alertas operativas. | `/api/v1/alerts` | Query param opcional `view` | `200 OK` retorna alertas. | `/swagger-ui/index.html#/Alerts` |
+| Get Alert by Id | GET | Obtiene detalle de una alerta. | `/api/v1/alerts/{alertId}` | Path: alertId | `200 OK` retorna alerta. | `/swagger-ui/index.html#/Alerts` |
+| Update Alert | PUT | Actualiza estado de alerta. | `/api/v1/alerts/{alertId}` | Path: alertId + Body | `200 OK` retorna alerta actualizada. | `/swagger-ui/index.html#/Alerts` |
+| Alert Actions | POST | Registra acción tomada sobre alerta. | `/api/v1/alerts/{alertId}/actions` | Path: alertId + Body | `201 Created` registra acción. | `/swagger-ui/index.html#/Alerts` |
+| Alert History | GET | Obtiene historial de acciones sobre alerta. | `/api/v1/alerts/{alertId}/history` | Path: alertId | `200 OK` retorna historial. | `/swagger-ui/index.html#/Alerts` |
+| IoT Telemetry | POST | Recibe telemetría unificada desde dispositivos edge. | `/api/v1/iot/telemetry` | Header: `X-API-Key`, Body: telemetry payload | `201 Created` registra telemetría. | `/swagger-ui/index.html#/IoT-Telemetry` |
+| List Drivers | GET | Lista conductores registrados. | `/api/v1/drivers` | No requiere parámetros | `200 OK` retorna conductores. | `/swagger-ui/index.html#/Drivers` |
+| Create Driver | POST | Registra nuevo conductor. | `/api/v1/drivers` | Body: driver data | `201 Created` retorna conductor. | `/swagger-ui/index.html#/Drivers` |
+| Get Driver by Id | GET | Obtiene conductor por ID. | `/api/v1/drivers/{driverId}` | Path: driverId | `200 OK` retorna conductor. | `/swagger-ui/index.html#/Drivers` |
+| Update Driver | PUT | Actualiza datos del conductor. | `/api/v1/drivers/{driverId}` | Path: driverId + Body | `200 OK` retorna conductor actualizado. | `/swagger-ui/index.html#/Drivers` |
+| Create Subscription | POST | Registra nueva empresa minera (suscripción). | `/api/v1/subscriptions` | Body: company data | `201 Created` crea tenant y admin. | `/swagger-ui/index.html#/Subscriptions` |
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
