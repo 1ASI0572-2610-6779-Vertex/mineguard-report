@@ -316,5 +316,154 @@ Como sugerencia, recomendó incorporar diferentes niveles visuales de criticidad
 
 ### 6.3.3. Evaluaciones según heurísticas
 
+UX Heuristics & Principles Evaluation
+Usability – Inclusive Design – Information Architecture
+
+CARRERA: Ingeniería de Software
+
+CURSO: Desarrollo de Soluciones IoT
+
+SECCIÓN: 2610-6779
+
+PROFESORES: Angel Augusto Velasquez Nuñez
+
+AUDITOR: Grupo MineGuard
+
+CLIENTE(S):
+
+Felipe Pastorreaño
+Landivar Flores
+Roy Ccosi
+Edgardo Chávez
+Jorge Astolingón Díaz
+Fernando Velásquez
+
+APP A EVALUAR:
+MineGuard
+
+Plataforma web para supervisores y administradores de operaciones mineras y aplicación móvil para conductores de vehículos livianos orientada a la prevención de colisiones y gestión de alertas de seguridad.
+
+TAREAS A EVALUAR
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+Inicio de sesión en la plataforma web.
+Consulta de información operativa en tiempo real.
+Revisión de alertas de riesgo generadas por el sistema.
+Visualización de unidades operativas dentro de la operación minera.
+Consulta del historial de eventos e incidentes registrados.
+Revisión de indicadores y métricas de seguridad.
+Recepción y visualización de alertas desde la aplicación móvil.
+Consulta de eventos recientes por parte de los conductores.
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+Administración avanzada de usuarios.
+Configuración de dispositivos IoT.
+Integración con sistemas externos de monitoreo.
+Gestión de infraestructura tecnológica.
+Funcionalidades futuras relacionadas con análisis predictivo.
+ESCALA DE SEVERIDAD
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|--------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser corregido a menos que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir con cierta frecuencia o requiere un esfuerzo adicional para ser superado. Se recomienda corregirlo en futuras versiones. |
+| 3 | Problema mayor: ocurre frecuentemente o afecta significativamente la experiencia del usuario. Debe corregirse con alta prioridad. |
+| 4 | Problema muy grave: impide al usuario continuar utilizando el sistema. Debe corregirse antes del lanzamiento. |
+
+#### Tabla resumen
+
+| # | Problema                                                                                       | Escala de Severidad | Heurística / Principio Violada(o)                            |
+| - | ---------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------ |
+| 1 | No existe una diferenciación visual suficientemente clara entre alertas de distinta criticidad | 3                   | Usabilidad: Visibilidad del estado del sistema               |
+| 2 | La plataforma no permite filtrar eventos por turno o área operativa                            | 2                   | Information Architecture: Is it findable?                    |
+| 3 | Algunas alertas presentan descripciones demasiado generales para los conductores               | 3                   | Usabilidad: Correspondencia entre el sistema y el mundo real |
+| 4 | No se muestra información contextual suficiente sobre el origen de ciertos eventos de riesgo   | 2                   | Information Architecture: Is it understandable?              |
+| 5 | No existe una vista rápida que permita identificar zonas con alta recurrencia de incidentes    | 2                   | Information Architecture: Is it usable?                      |
+
+## Descripción de problemas
+
+### PROBLEMA #1: No existe una diferenciación visual suficientemente clara entre alertas de distinta criticidad
+
+**Severidad:** 3
+
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+
+**Problema:**
+
+Durante las sesiones de validación realizadas con supervisores y conductores, se identificó que las alertas mostradas por la plataforma presentan una apariencia visual muy similar independientemente de su nivel de criticidad. Esto dificulta distinguir rápidamente cuáles representan una situación crítica y cuáles corresponden únicamente a advertencias preventivas. En un entorno minero donde los tiempos de reacción son determinantes para la seguridad operativa, esta situación puede retrasar la toma de decisiones y generar confusión entre los usuarios.
+
+
+**Recomendación:**
+
+Incorporar diferentes niveles visuales mediante iconos, etiquetas, indicadores gráficos y jerarquías visuales que permitan identificar de forma inmediata la gravedad de cada alerta.
+
+
+
+### PROBLEMA #2: La plataforma no permite filtrar eventos por turno o área operativa
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture - Is it findable?
+
+**Problema:**
+
+Durante la validación, los supervisores manifestaron la necesidad de localizar eventos específicos de manera más eficiente. Aunque la plataforma permite consultar información histórica y eventos registrados, actualmente no dispone de filtros avanzados que permitan segmentar los registros por turno, área operativa o nivel de riesgo. Como consecuencia, los usuarios deben revisar manualmente grandes cantidades de información para encontrar eventos relevantes.
+
+
+**Recomendación:**
+
+Agregar filtros avanzados y opciones de búsqueda que permitan localizar eventos específicos según diferentes criterios operativos y necesidades de supervisión.
+
+
+### PROBLEMA #3: Algunas alertas presentan descripciones demasiado generales para los conductores
+
+**Severidad:** 3
+
+**Heurística violada:** Usabilidad - Correspondencia entre el sistema y el mundo real
+
+**Problema:**
+
+Durante la validación de la aplicación móvil, algunos conductores indicaron que determinadas alertas notifican la existencia de un riesgo, pero no proporcionan información suficiente sobre la naturaleza del mismo. Esto genera incertidumbre respecto a las acciones que deben tomar para responder adecuadamente ante la situación detectada. La falta de contexto puede afectar la capacidad de reacción del conductor y disminuir la efectividad de la alerta.
+
+
+**Recomendación:**
+
+Mostrar mensajes más descriptivos que indiquen claramente el tipo de riesgo detectado, la posible causa del evento y las acciones recomendadas para reducir el peligro.
+
+
+
+### PROBLEMA #4: No se muestra información contextual suficiente sobre el origen de ciertos eventos de riesgo
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture - Is it understandable?
+
+**Problema:**
+
+Al revisar algunos eventos registrados por el sistema, los usuarios pueden identificar que ocurrió una alerta, pero no siempre disponen de suficiente contexto para comprender completamente las condiciones que originaron dicho evento. Esta limitación dificulta el análisis posterior de incidentes y la comprensión de las circunstancias que generaron la situación de riesgo.
+
+
+**Recomendación:**
+
+Incorporar información contextual complementaria, como ubicación específica, fecha, hora, unidades involucradas y detalles relevantes que faciliten la interpretación de cada evento registrado.
+
+
+
+### PROBLEMA #5: No existe una vista rápida que permita identificar zonas con alta recurrencia de incidentes
+
+**Severidad:** 2
+
+**Heurística violada:** Information Architecture - Is it usable?
+
+**Problema:**
+
+Los supervisores expresaron interés en identificar rápidamente las zonas donde se concentran eventos recurrentes de riesgo. Actualmente esta información puede obtenerse revisando registros históricos, pero el proceso requiere múltiples consultas y análisis manual. Esto incrementa el tiempo necesario para detectar patrones de riesgo y priorizar acciones preventivas.
+
+
+**Recomendación:**
+
+Incorporar una vista resumida o panel de análisis que destaque visualmente las áreas con mayor concentración de incidentes, facilitando la identificación de patrones y la toma de decisiones preventivas.
 
 
