@@ -469,6 +469,31 @@ A continuación, se presenta la evidencia de desarrollo registrada en los reposi
 
 Durante el Sprint 2 del proyecto MineGuard se consolidaron avances clave en la evolución de la **Web Application (v2)** y la **Landing Page (v2)**, mejorando la visualización operativa, navegación y presentación comercial de la solución. Además, se implementaron las primeras versiones funcionales del **Web Service (v1)**, **Mobile App (v1)**, **Edge Service (v1)** y **Embedded App (v1)**, permitiendo integrar la captura de datos, procesamiento de eventos y generación de alertas en un prototipo funcional. A continuación, se presentan capturas de las principales vistas implementadas y el enlace al video demostrativo correspondiente.
 
++ **Web Site:**
+
+![website-evidence-01](../report/assets/evidence-sprint2/web-site-evidence-1.png)
+
+![website-evidence-02](../report/assets/evidence-sprint2/web-site-evidence-2.png)
+
+![website-evidence-03](../report/assets/evidence-sprint2/web-site-evidence-3.png)
+
++ **Web App:**
+
++ **Web Service:**
+
+![webservice-evidence-01](../report/assets/evidence-sprint2/web-service-evidence-1.png)
+
+![webservice-evidence-02](../report/assets/evidence-sprint2/web-service-evidence-2.png)
+
+![webservice-evidence-03](../report/assets/evidence-sprint2/web-service-evidence-3.png)
+
++ **Mobile App:**
+
++ **Edge Service:**
+
++ **Embedded App:**
+
+
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
