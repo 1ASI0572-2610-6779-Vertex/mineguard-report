@@ -379,7 +379,7 @@ A continuación, se presenta la evidencia de desarrollo registrada en los reposi
 
     Se implementó el Unit Test **VehicleCommandServiceImplTest** con el objetivo de validar la lógica de aplicación de la clase **VehicleCommandServiceImpl**, encargada de gestionar la creación y actualización de vehículos dentro del sistema de monitoreo y control de activos mineros.
 
-    Este test se relaciona con la **User Story US004**, orientada a la administración y actualización de vehículos operativos dentro de la mina.
+    Este test se relaciona con la **User Story US15**, orientada a la administración y actualización de vehículos operativos dentro de la mina.
 
     Los comportamientos validados fueron:
 
