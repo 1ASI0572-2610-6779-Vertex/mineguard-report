@@ -19,7 +19,7 @@
 
 <br>
 
-# Informe del Trabajo Parcial
+# Informe del Trabajo Final
 
 <br>
 

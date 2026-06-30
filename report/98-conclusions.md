@@ -75,3 +75,12 @@ El desarrollo del Avance 2 permitió transformar MineGuard de una propuesta conc
 * Incorporar métricas operativas básicas, como tiempo de respuesta ante alertas y cantidad de eventos registrados, que permitan evaluar el desempeño de MineGuard en futuras iteraciones.
 
 
+## Conclusiones TF ()
+
+### Conclusión general
+
+### Conclusiones específicas
+
+## Recomendaciones para próximas iteraciones
+
+# Video About-the-team
