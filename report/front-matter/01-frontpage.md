@@ -1,44 +1,42 @@
 <p align="center">
-  <img src="../assets/UpcLogo.png" alt="Logo de UPC" width="200">
+  <img src="../assets/UpcLogo.png" alt="Logo de UPC" width="80">
 </p>
 
 <div align="center">
 
-# Universidad Peruana de Ciencias Aplicadas
+Universidad Peruana de Ciencias Aplicadas
 
-## Carrera de Ingeniería de Software
-
-<br>
-
-## 1ASI0572
-## Desarrollo de Soluciones IoT
+Carrera de Ingeniería de Software
 
 <br>
 
-**NRC:** 6779
+**1ASI0572**
+
+**Desarrollo de Soluciones IoT**
+
+NRC
+
+**6779**
+
+**Informe del Trabajo Parcial**
+
+Docente: 
+
+**Velásquez Núñez, Ángel Augusto**
 
 <br>
 
-# Informe del Trabajo Parcial
+Equipo:
+
+**Vertex**
+
+Proyecto: 
+
+**MineGuard**
 
 <br>
 
-**Docente:** Velásquez Núñez, Ángel Augusto
-
-<br>
-
-**Equipo:** Vertex
-
-**Proyecto:** MineGuard
-
-<br>
-
-**Versión del documento:** v3.0.0  
-**Fecha de publicación:** Junio de 2026
-
-<br>
-
-## Integrantes
+Integrantes
 
 <table style="border-collapse: collapse; border: none; margin-left: auto; margin-right: auto;">
   <thead>
@@ -80,11 +78,7 @@
 </table>
 
 <br>
-<br>
 
 **Período 202610**
 
 </div>
-
-<br>
-<br>
