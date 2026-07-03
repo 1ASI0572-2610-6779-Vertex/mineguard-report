@@ -8,8 +8,6 @@ Universidad Peruana de Ciencias Aplicadas
 
 Carrera de Ingeniería de Software
 
-<br>
-
 **1ASI0572**
 
 **Desarrollo de Soluciones IoT**
@@ -25,8 +23,6 @@ NRC
 Docente: 
 
 **Velásquez Núñez, Ángel Augusto**
-
-<br>
 
 Equipo:
 
@@ -80,6 +76,8 @@ Integrantes
 </table>
 
 <br>
+  
+**Fecha de publicación:** Junio de 2026
 
 **Período 202610**
 
