@@ -18,7 +18,9 @@ NRC
 
 **6779**
 
+
 **Informe del Trabajo Parcial**
+
 
 Docente: 
 
