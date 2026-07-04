@@ -110,21 +110,35 @@ En este sprint se consolidaron dos frentes de trabajo. En el landing page se ava
 
 ![webappPicture.png](../report/assets/webappPicture.png)
 
-#### 6.2.1.5. Execution Evidence for Sprint Review
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
-En esta sección deben insertarse las capturas de las vistas principales implementadas durante el Sprint 1. Para este sprint, las evidencias visuales mínimas sugeridas son:
+#### 6.2.1.6. Execution Evidence for Sprint Review
 
-| Evidence | Suggested Screenshots / Views |
-|---|---|
-| Landing Page | Nav con i18n, sección de solución, sección “how it works”, about the team, about the product, FAQ, subscription, footer y corrección del overflow en mobile. |
-| Web Application | Configuración inicial, base de IAM, dashboard, monitoring, analytics, resources y planning. |
-| Responsive Validation | Vista desktop y mobile de las secciones principales del landing page. |
+Durante el Sprint 1, el equipo desarrolló las primeras funcionalidades del Landing Page y de la Web Application de MineGuard, estableciendo la base de la solución y validando la correcta implementación de los principales módulos definidos en el Sprint Backlog. A continuación, se presentan las evidencias de ejecución correspondientes a las funcionalidades implementadas durante este sprint.
 
-**Video de ejecución del Sprint:**  
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQBHgmq8mmaLTIVOJdzcH6V8AU_hHsDqC7EfKRFUE62LxZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ka50P7
+**Landing Page**
 
+Se implementaron las principales secciones del Landing Page, incluyendo la barra de navegación con soporte de internacionalización (i18n), la presentación de la solución, la sección *How It Works*, las secciones *About the Team* y *About the Product*, preguntas frecuentes (FAQ), formulario de suscripción y el pie de página. Asimismo, se realizaron mejoras de diseño responsive y se corrigieron problemas de visualización en dispositivos móviles para garantizar una experiencia de usuario consistente.
 
-#### 6.2.1.6. Services Documentation Evidence for Sprint Review
+- How It Works:
+
+![execution_evidence_landing_page_1.png](../report/assets/evidence_ex_landin_1.png)
+
+- About the Team
+
+![execution_evidence_landing_page_1.png](../report/assets/evidence_ex_landin_2.png)
+
+- About the Product:
+
+![execution_evidence_landing_page_1.png](../report/assets/evidence_ex_landin_3.png)
+
+**Web Application**
+
+Se desarrolló la configuración inicial de la aplicación web utilizando Angular y se implementaron las funcionalidades base de los primeros bounded contexts, incluyendo Identity and Access Management (IAM), Dashboard, Monitoring, Analytics, Resource and Asset Management y Service Design and Planning. Estas implementaciones permitieron validar la arquitectura de la solución y preparar la plataforma para el desarrollo de funcionalidades más avanzadas en los siguientes sprints.
+
+**Video de ejecución del Sprint:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQBHgmq8mmaLTIVOJdzcH6V8AU_hHsDqC7EfKRFUE62LxZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ka50P7
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
 La documentación de servicios de este sprint se organizó a partir de los recursos del `db.json`, enfocándose en autenticación, monitoreo, alertas, tablero y datos comerciales. La documentación OpenAPI puede agruparse por módulos de negocio y por tipo de consumo.
 
@@ -140,7 +154,7 @@ La documentación de servicios de este sprint se organizó a partir de los recur
 | Dashboard & Analytics | `/dashboardSummary`, `/dashboardTrend`, `/dashboardRiskDrivers`, `/dashboardRecentAlerts`, `/analyticsFatigueBars`, `/analyticsIncidentDistribution`, `/analyticsHistoryRows`, `/analyticsInsights` | GET | Soporta la visualización ejecutiva y analítica del sprint. |
 
 
-#### 6.2.1.7. Software Deployment Evidence for Sprint Review
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
 En este sprint se dejó preparada la base de despliegue de los productos del alcance: landing page, web application y mock service/documented API. El objetivo de esta sección es mostrar cómo se publican y validan los artefactos construidos a partir de los repositorios.
 
@@ -151,7 +165,7 @@ En este sprint se dejó preparada la base de despliegue de los productos del alc
 | Services / Mock API | Preparado para documentación y consumo | https://mineguard-api-wmr0.onrender.com |
 
 
-#### 6.2.1.8. Team Collaboration Insights during Sprint
+#### 6.2.1.9. Team Collaboration Insights during Sprint
 
 Durante el Sprint 1 el equipo trabajó en dos líneas paralelas. La primera se centró en el landing page, donde se desarrollaron la navegación, la propuesta de valor, la explicación de funcionamiento, las secciones informativas, la suscripción, el footer y los ajustes responsive. La segunda línea se enfocó en la web application, comenzando por la configuración del frontend, la base de IAM, el dashboard, el monitoreo, las analíticas, los recursos de flota y la lógica de planificación.
 
