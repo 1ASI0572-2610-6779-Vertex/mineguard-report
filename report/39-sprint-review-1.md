@@ -110,7 +110,9 @@ En este sprint se consolidaron dos frentes de trabajo. En el landing page se ava
 
 ![webappPicture.png](../report/assets/webappPicture.png)
 
+
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
 
