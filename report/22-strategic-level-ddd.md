@@ -69,39 +69,47 @@ Se identificaron 7 Bounded Context:
 
 - Identify and Access Management (IAM): 
 
-En este escenario, se crea, auténtica, autoriza y gestiona los usuarios que están registrados en el sistema. Se introduce el manejo de permisos y roles, también el control de acceso a diferentes tipos de usuarios.
+Este bounded context se encarga de gestionar el ciclo de vida de la identidad de los usuarios dentro de la plataforma MineGuard. Es responsable del registro, autenticación, autorización y administración de supervisores y conductores, garantizando un acceso seguro al sistema mediante el control de credenciales, roles y permisos. Además, establece las políticas de acceso para cada tipo de usuario, asegurando que únicamente puedan utilizar las funcionalidades correspondientes a sus responsabilidades dentro de la operación minera.
 
 <img src="assets/iam_ccd.png">  
 
 - Service Execution and Monitoring: 
 
-Este bounded context se encarga de procesar la telemetría en tiempo real, evaluar riesgos (proximidad, colisión y fatiga) y gestionar el ciclo de vida de las alertas, determinando si deben notificarse, auto-resolverse o escalarse al supervisor.
+Este bounded context se encarga de ejecutar y supervisar las operaciones en tiempo real de la plataforma MineGuard. Es responsable de procesar la telemetría proveniente de los sensores IoT, evaluar continuamente riesgos como proximidad, colisiones y fatiga del conductor, y gestionar el ciclo de vida de las alertas generadas. Además, coordina las acciones de respuesta, determinando si una alerta debe resolverse automáticamente, escalarse al supervisor o derivar en la creación de un incidente, garantizando una atención oportuna y el registro de las métricas operativas del sistema.
 
 <img src="assets/EventStorming_Service_Execution_and_Monitoring.jpg">
 
 
 - Profile and Preference Management: 
 
-Este bounded context se encarga se encarga de gestionar los perfiles de usuario y sus preferencias para personalizar cómo cada usuario interactúa con el sistema MineGuard.
+Este bounded context se encarga de gestionar los perfiles de usuario y las preferencias de configuración dentro de la plataforma MineGuard. Es responsable de administrar la información del perfil, las preferencias de idioma, las configuraciones de alertas y notificaciones, así como las opciones de personalización que permiten adaptar la experiencia de uso a las necesidades de cada supervisor o conductor. Además, garantiza la actualización, restauración y mantenimiento de dichas preferencias durante todo el ciclo de vida del usuario.
 
 <img src="assets/EventStorming_profile_preference_management.jpg">
+
+- Resource and Asset Management:
+
+Este bounded context fue identificado durante la sesión de Candidate Context Discovery a partir de los eventos relacionados con el registro, asignación y control de los recursos físicos que participan en la operación minera. Su aparición responde a la necesidad de separar la gestión de activos operativos, como vehículos livianos, camiones autónomos, sensores IoT, dispositivos de cabina y zonas de riesgo, del monitoreo en tiempo real realizado por Service Execution and Monitoring.
+
+Resource and Asset Management permite mantener un modelo claro y consistente de los recursos disponibles antes y durante la operación. Este contexto se encarga de registrar activos, validar su estado operativo, asociar sensores a vehículos, administrar disponibilidad de unidades y asegurar que solo los recursos habilitados participen en las rutas configuradas. De esta manera, aporta trazabilidad al dominio y garantiza que los eventos de telemetría y alerta puedan relacionarse correctamente con los activos físicos involucrados.
+
+<img src="assets/Event_storming_Resource_Asset_Management.png">
 
 
 - Dashboards and Analytics: 
 
-Este bounded permite recopilar, procesar y visualizar la información operativa del sistema. Analizando alertas, identificar patrones de riesgo y tomar decisiones mediante dashboards en tiempo real y análisis históricos.
+Este bounded context se encarga de recopilar, consolidar y visualizar la información operativa generada por la plataforma MineGuard. Es responsable de procesar los datos provenientes de la operación en tiempo real para generar dashboards, indicadores y análisis históricos que permitan monitorear el estado del sistema, identificar patrones de riesgo, consultar el historial de eventos y alertas, evaluar el desempeño de los conductores y apoyar la toma de decisiones mediante reportes y métricas exportables.
 
 <img src="assets/EventStorming_Dashboard_and_Analytics.png">
 
 - Subscriptions and Payment Management:
 
-Este bounded permite gestionar los planes de suscripción de los usuarios, procesar los pagos y controlar los estados de cada suscripción. Se encarga de manejar las renovaciones automáticas, garantizar la correcta facturación y facilitar el seguimiento financiero de los cobros recurrentes.
+Este bounded context se encarga de administrar el ciclo de vida de las suscripciones y los pagos de la plataforma MineGuard. Es responsable de gestionar los planes de suscripción, procesar los pagos mediante pasarelas externas, controlar el estado de cada suscripción y administrar los métodos de pago de los usuarios. Además, coordina las renovaciones automáticas, el manejo de pagos fallidos y reintentos, la generación de facturas y el envío de notificaciones relacionadas con el proceso de facturación, garantizando la continuidad del servicio y la correcta gestión financiera de la plataforma.
 
 <img src="assets/EventStorming_Subscriptions_and_Payment_Management.png">
 
 - Service Design and Planing:
 
-Este bounded context se encarga de gestionar la configuración inicial, espacial y de recursos de la mina de forma local antes del inicio de las operaciones. Centraliza la importación de la topografía, el trazado y validación de zonas de riesgo, la definición de permisos de acceso, el registro del padrón de flota y la vinculación de los sensores IoT a los vehículos, garantizando un despliegue operativo seguro y sin puntos ciegos.
+Este bounded context se encarga de planificar y configurar la infraestructura operativa de la plataforma MineGuard antes del inicio de las operaciones. Es responsable de administrar la información geográfica de la mina mediante la importación de la topografía, el trazado y validación de zonas de riesgo, así como del registro de vehículos, conductores y sensores IoT. Además, gestiona la vinculación de los recursos operativos, la definición de políticas de acceso y la activación de la configuración del servicio, garantizando un despliegue seguro, consistente y preparado para el monitoreo en tiempo real.
 
 <img src="assets/EventStorming_service_design_and_planing.png">
 
@@ -169,6 +177,10 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 - Bounded Context Canvas Profile and Preferences Management
 
 <img src="assets/BC_Canvases_profile_preference_management.jpg">
+
+- Bounded Context Canvas Resource and Asset Management
+
+<img src="assets/BC_Canvases_Resource_and_Asset_Management.png">
 
 - Bounded Context Canvases Dashboards and Analytics
 
