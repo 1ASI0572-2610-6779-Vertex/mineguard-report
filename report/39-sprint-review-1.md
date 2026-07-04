@@ -67,44 +67,46 @@ En este sprint se consolidaron dos frentes de trabajo. En el landing page se ava
 
 **Landing Page Repository:** https://github.com/1ASI0572-2610-6779-Vertex/mineguard-website
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|
-| landing-page | origin/feature/nav | 6839e9f | feat: added nav design and i18n logic | — | — |
-| landing-page | origin/feature/solution | 1381fe0 | feat():Add solition section | — | — |
-| landing-page | origin/feature/solution | 0a64f9a | fix():Change css desing | — | — |
-| landing-page | origin/feature/how-it-works | 61a0223 | Feat: add how it works section | — | — |
-| landing-page | origin/feature/about-the-team-and-product | 1e750cc | feat(): add about the team and about the product sections | — | — |
-| landing-page | origin/feature/faq | b9133de | feat: add faq section | — | — |
-| landing-page | origin/feature/subscription | c6b1215 | Add subscription section and styles | — | — |
-| landing-page | origin/feature/footer | 75dbce6 | feat(feature/footer): add complete footer layout with HTML and CSS styling | — | — |
-| landing-page | origin/feature/footer | 7c5a856 | feat(feature/footer): add terms page with footer links and project README | — | — |
-| landing-page | origin/feat/responsive | eb6443e | feat(): add responsive web design | — | — |
-| landing-page | origin/feat/responsive | 68499f0 | feat(): add responsive small mobile responsive | — | — |
-| landing-page | origin/hotfix/team-section-overflow | eb448b4 | fix(): resolve about team section overflow | — | — |
+| Repository   | Branch                                    | Commit Id | Commit Message                                                             | Commit Message Body | Committed on (Date) |
+| ------------ | ----------------------------------------- | --------- | -------------------------------------------------------------------------- | ------------------- | ------------------- |
+| landing-page | origin/feature/nav                        | 6839e9f   | feat: added nav design and i18n logic                                      | —                   | 2026-04-28          |
+| landing-page | origin/feature/solution                   | 1381fe0   | feat():Add solition section                                                | —                   | 2026-04-30          |
+| landing-page | origin/feature/solution                   | 0a64f9a   | fix():Change css desing                                                    | —                   | 2026-05-02          |
+| landing-page | origin/feature/how-it-works               | 61a0223   | Feat: add how it works section                                             | —                   | 2026-05-05          |
+| landing-page | origin/feature/about-the-team-and-product | 1e750cc   | feat(): add about the team and about the product sections                  | —                   | 2026-05-07          |
+| landing-page | origin/feature/faq                        | b9133de   | feat: add faq section                                                      | —                   | 2026-05-09          |
+| landing-page | origin/feature/subscription               | c6b1215   | Add subscription section and styles                                        | —                   | 2026-05-10          |
+| landing-page | origin/feature/footer                     | 75dbce6   | feat(feature/footer): add complete footer layout with HTML and CSS styling | —                   | 2026-05-11          |
+| landing-page | origin/feature/footer                     | 7c5a856   | feat(feature/footer): add terms page with footer links and project README  | —                   | 2026-05-12          |
+| landing-page | origin/feat/responsive                    | eb6443e   | feat(): add responsive web design                                          | —                   | 2026-05-14          |
+| landing-page | origin/feat/responsive                    | 68499f0   | feat(): add responsive small mobile responsive                             | —                   | 2026-05-15          |
+| landing-page | origin/hotfix/team-section-overflow       | eb448b4   | fix(): resolve about team section overflow                                 | —                   | 2026-05-15          |
+
 
 ![landing.png](../report/assets/landing.png)
 
 **Web Application Repository:** https://github.com/1ASI0572-2610-6779-Vertex/mineguard-webapp
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|
-| web-application | origin/feature/config | f29ff1d | feat: configure angular frontend | — | — |
-| web-application | origin/feature/iam | ae99a48 | feat(iam): scaffold IAM bounded context with shared DDD layers and auth setup | — | — |
-| web-application | origin/feature/dashboard | 38cfd85 | feat():Add dashboard page | — | — |
-| web-application | origin/feature/dashboard | 7da95f9 | feat():Add dashboard and Analytics | — | — |
-| web-application | origin/feature/dashboard | 5a19409 | feat():Add dashboard and Analytic | — | — |
-| web-application | origin/feature/monitoring | 9c7db5a | Feat: add monitoring bc logic | — | — |
-| web-application | origin/feature/monitoring | 4493c3e | Feat: add views monitoring BC | — | — |
-| web-application | origin/feature/resources | c212d8d | Add assets bounded context (fleet & drivers) | — | — |
-| web-application | origin/feature/analytics | 7dfecfd | feat():add analytics models notice and summary | — | — |
-| web-application | origin/feature/analytics | 6c30f22 | feat(): add analytics infrastructure | — | — |
-| web-application | origin/feature/analytics | 688e1fc | feat(): add analytics presentation | — | — |
-| web-application | origin/feature/analytics | 12ff519 | fix(): analytics api | — | — |
-| web-application | origin/feature/planing | aa206dd | feat: aggregate logic of planing of live mapping | — | — |
-| web-application | origin/feature/planing | 8c2c2ab | feat: logic of the planing | — | — |
-| web-application | origin/feature/analytics | 0c68762 | feat():add report and analytics | — | — |
-| web-application | origin/feature/iam | 83a3543 | docs(feat/iam): add user stories,diagrams and readme | — | — |
-| web-application | origin/feature/licence | a08e936 | Add MIT License to the project | — | — |
+| Repository      | Branch                    | Commit Id | Commit Message                                                                | Commit Message Body | Committed on (Date) |
+| --------------- | ------------------------- | --------- | ----------------------------------------------------------------------------- | ------------------- | ------------------- |
+| web-application | origin/feature/config     | f29ff1d   | feat: configure angular frontend                                              | —                   | 2026-04-27          |
+| web-application | origin/feature/iam        | ae99a48   | feat(iam): scaffold IAM bounded context with shared DDD layers and auth setup | —                   | 2026-04-29          |
+| web-application | origin/feature/dashboard  | 38cfd85   | feat():Add dashboard page                                                     | —                   | 2026-05-02          |
+| web-application | origin/feature/dashboard  | 7da95f9   | feat():Add dashboard and Analytics                                            | —                   | 2026-05-04          |
+| web-application | origin/feature/dashboard  | 5a19409   | feat():Add dashboard and Analytic                                             | —                   | 2026-05-05          |
+| web-application | origin/feature/monitoring | 9c7db5a   | Feat: add monitoring bc logic                                                 | —                   | 2026-05-07          |
+| web-application | origin/feature/monitoring | 4493c3e   | Feat: add views monitoring BC                                                 | —                   | 2026-05-08          |
+| web-application | origin/feature/resources  | c212d8d   | Add assets bounded context (fleet & drivers)                                  | —                   | 2026-05-09          |
+| web-application | origin/feature/analytics  | 7dfecfd   | feat():add analytics models notice and summary                                | —                   | 2026-05-10          |
+| web-application | origin/feature/analytics  | 6c30f22   | feat(): add analytics infrastructure                                          | —                   | 2026-05-11          |
+| web-application | origin/feature/analytics  | 688e1fc   | feat(): add analytics presentation                                            | —                   | 2026-05-12          |
+| web-application | origin/feature/analytics  | 12ff519   | fix(): analytics api                                                          | —                   | 2026-05-13          |
+| web-application | origin/feature/planing    | aa206dd   | feat: aggregate logic of planing of live mapping                              | —                   | 2026-05-13          |
+| web-application | origin/feature/planing    | 8c2c2ab   | feat: logic of the planing                                                    | —                   | 2026-05-14          |
+| web-application | origin/feature/analytics  | 0c68762   | feat():add report and analytics                                               | —                   | 2026-05-14          |
+| web-application | origin/feature/iam        | 83a3543   | docs(feat/iam): add user stories,diagrams and readme                          | —                   | 2026-05-15          |
+| web-application | origin/feature/licence    | a08e936   | Add MIT License to the project                                                | —                   | 2026-05-15          |
+
 
 ![webappPicture.png](../report/assets/webappPicture.png)
 
