@@ -120,6 +120,167 @@ En este sprint se consolidaron dos frentes de trabajo. En el landing page se ava
 
 ### 6.2.1.5. Testing Suite Evidence for Sprint Review
 
+#### Unit Tests
+
+**Unit Test Record 01**
+
+Se implementó el Unit Test IamStore con el objetivo de validar la lógica de autenticación y administración de sesiones de la Web Application. Este test verifica el comportamiento del módulo IAM encargado del inicio de sesión, la persistencia de la sesión del usuario y la gestión de supervisores mediante una API JSON simulada.
+
+Este test se relaciona con la User Story US01, orientada al inicio de sesión de los supervisores en la plataforma.
+
+Los comportamientos validados fueron:
+
+- Inicio de sesión exitoso y almacenamiento de la sesión del usuario.
+- Redirección automática hacia la página principal después de autenticarse.
+- Eliminación de la sesión cuando las credenciales son inválidas.
+- Carga correcta de supervisores desde la API simulada.
+- Creación y actualización del estado de acceso de supervisores.
+
+Ruta del test:
+
+ ```src/app/iam/application/iam.store.spec.ts ```
+
+![unit-test-001](../report/assets/unitest/test1_angular.png)
+
+**Unit Test Record 02**
+
+Se implementó el Unit Test MonitoringStore con el objetivo de validar la lógica de gestión de alertas del módulo de monitoreo. Este test verifica el procesamiento de alertas críticas provenientes de la API JSON simulada y la actualización de su estado dentro de la aplicación.
+
+Este test se relaciona con la User Story US10, orientada a la gestión y monitoreo de alertas operacionales.
+
+Los comportamientos validados fueron:
+
+- Carga correcta de alertas activas.
+- Identificación automática de alertas críticas.
+- Clasificación de alertas como resueltas.
+- Actualización del listado de alertas después de una modificación.
+- Manejo de errores cuando la carga de alertas falla.
+
+Ruta del test:
+
+ ```src/app/monitoring/application/monitoring.store.spec.ts ```
+
+![unit-test-002](../report/assets/unitest/test2_angular.png)
+
+**Unit Test Record 03**
+
+Se implementó el Unit Test SignInForm con el objetivo de validar el comportamiento del formulario de autenticación de la Web Application. Este test verifica las validaciones del formulario y la correcta comunicación con el módulo de autenticación antes de permitir el acceso al sistema.
+
+Este test se relaciona con la User Story US01, orientada al inicio de sesión del usuario.
+
+Los comportamientos validados fueron:
+
+- Redirección automática cuando el usuario ya posee una sesión activa.
+- Validación del formulario antes de enviar credenciales.
+- Envío correcto de las credenciales al servicio de autenticación cuando el formulario es válido.
+
+Ruta del test:
+
+ ```src/app/iam/presentation/components/sign-in-form/sign-in-form.spec.ts ```
+
+![unit-test-003](../report/assets/unitest/test3_angular.png)
+
+**Unit Test Record 04**
+
+Se implementó el Unit Test VehiclesInventory con el objetivo de validar las operaciones básicas de administración de vehículos dentro de la Web Application. Este test verifica que las acciones ejecutadas por el usuario actualicen correctamente el estado operativo de los vehículos mediante el módulo correspondiente.
+
+Este test se relaciona con la User Story US02, orientada a la administración del estado operativo de los vehículos.
+
+Los comportamientos validados fueron:
+
+- Cambio del estado de un vehículo a Maintenance.
+- Cambio del estado de un vehículo a Operational.
+- Comunicación correcta con el módulo encargado de administrar los vehículos.
+
+Ruta del test:
+
+ ```src/app/assets/presentation/components/vehicles-inventory/vehicles-inventory.spec.ts ```
+
+![unit-test-004](../report/assets/unitest/test4_angular.png)
+
+
+####BDD Tests
+**BDD Test Record 01**
+
+Se implementó el Acceptance Test bajo enfoque BDD authentication.feature con el objetivo de validar el flujo de autenticación de los usuarios de la Web Application y el acceso a las funcionalidades protegidas mediante una sesión válida.
+
+Este test se relaciona con la User Story US01, orientada al inicio de sesión de los usuarios en la plataforma.
+
+Los comportamientos validados fueron:
+
+- Inicio de sesión exitoso con credenciales válidas.
+- Validación del formulario cuando existen campos incompletos.
+- Redirección automática hacia la página principal cuando el usuario ya posee una sesión activa.
+- Restricción de acceso a rutas protegidas cuando no existe una sesión autenticada.
+
+Ruta del archivo feature:
+
+```features/authentication.feature```
+
+  ```
+  Feature: Autenticacion de usuarios
+
+Scenario: El usuario accede correctamente con credenciales validas
+    Given el usuario esta en la ruta "/iam/sign-in"
+    When ingresa un usuario y contrasena validos
+    And envia el formulario de inicio de sesion
+    Then la aplicacion guarda la sesion autenticada
+    And navega a la ruta "/home"
+  ```
+
+**BDD Test Record 02**
+
+Se implementó el Acceptance Test bajo enfoque BDD alerts-management.feature con el objetivo de validar la gestión de alertas operativas dentro de la Web Application, verificando la visualización, clasificación y actualización de alertas provenientes de la API JSON simulada.
+
+Este test se relaciona con la User Story US10, orientada al monitoreo y gestión de alertas.
+
+Los comportamientos validados fueron:
+
+- Visualización del listado de alertas operativas.
+- Clasificación de alertas como resueltas.
+- Actualización del listado de alertas críticas activas.
+- Manejo de errores cuando la API JSON simulada no se encuentra disponible.
+
+Ruta del archivo feature:
+
+```features/alerts-management.feature```
+ ```
+Feature: Gestion de alertas operativas
+
+Scenario: El supervisor clasifica una alerta correctamente
+    Given existe una alerta activa y critica
+    When el supervisor la marca como resuelta con notas
+    Then la aplicacion envia la actualizacion a la API JSON simulada
+    And reemplaza la alerta en la bandeja local
+ ```
+
+**BDD Test Record 03**
+
+Se implementó el Acceptance Test bajo enfoque BDD fleet-and-drivers.feature con el objetivo de validar la administración del inventario de vehículos de la plataforma, verificando la consulta y actualización del estado operativo de la flota mediante la API JSON simulada.
+
+Este test se relaciona con la User Story US02, orientada a la gestión de vehículos operativos.
+
+Los comportamientos validados fueron:
+
+- Visualización del inventario de vehículos.
+- Cambio del estado de un vehículo a mantenimiento.
+- Cambio del estado de un vehículo a operativo.
+- Acceso a la pantalla de flota desde una ruta protegida.
+- Manejo de errores cuando la información de vehículos no está disponible.
+
+Ruta del archivo feature:
+
+```features/fleet-and-drivers.feature```
+ ```
+Feature: Flota y conductores
+
+Scenario: El supervisor envia un vehiculo a mantenimiento
+    Given existe un vehiculo operativo con conductor asignado
+    When el supervisor lo envia a mantenimiento
+    Then la aplicacion actualiza el estado a "maintenance"
+    And limpia el conductor y turno asignados localmente
+ ```
+
 ### 6.2.1.6. Execution Evidence for Sprint Review
 
 En esta sección deben insertarse las capturas de las vistas principales implementadas durante el Sprint 1. Para este sprint, las evidencias visuales mínimas sugeridas son:
