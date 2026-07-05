@@ -168,29 +168,43 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 
 - Bounded Context Canvases Identity and Access Management (IAM)
 
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Identidad y Acceso (Identity and Access Management - IAM) de la plataforma MineGuard. Este contexto es responsable de gestionar el registro de usuarios, la autenticación, la autorización y la administración de perfiles, garantizando que únicamente los usuarios registrados y autenticados puedan acceder de forma segura a la aplicación web y móvil. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, estableciendo los límites de seguridad necesarios para proteger los recursos del sistema y la información de los usuarios.
+
 <img src="assets/iam2.0.png">
 
 - Bounded Context Canvas Service Execution and Monitoring
+
+    El siguiente Bounded Context Canvas describe el contexto de Ejecución y Monitoreo de Servicios (Service Execution and Monitoring) de la plataforma MineGuard. Este contexto es responsable de recibir y procesar la telemetría proveniente de los sensores IoT, detectar alertas en tiempo real y coordinar las acciones correspondientes, como la activación de alarmas sonoras, notificaciones visuales y protocolos de emergencia. Asimismo, define los comandos, eventos, consultas, reglas de negocio e interacciones con otros Bounded Contexts, permitiendo el monitoreo continuo y la respuesta oportuna ante incidentes detectados durante la operación.
 
 <img src="assets/BC_Canvases_Service_Execution_and_Monitoring.jpg">
 
 - Bounded Context Canvas Profile and Preferences Management
 
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Perfiles y Preferencias (Profiles and Preferences Management) de la plataforma MineGuard. Este contexto es responsable de la creación, actualización y personalización de los perfiles de usuario, permitiendo configurar preferencias como el idioma, las rutas críticas, las notificaciones, las alertas y la visualización del panel de control. Asimismo, define los comandos, eventos, consultas, reglas de negocio e interacciones con otros Bounded Contexts, garantizando que las preferencias del usuario sean utilizadas para personalizar su experiencia dentro de la plataforma.
+
 <img src="assets/BC_Canvases_profile_preference_management.jpg">
 
 - Bounded Context Canvas Resource and Asset Management
+
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Recursos y Activos (Resource and Asset Management) de la plataforma MineGuard. Este contexto es responsable de administrar la configuración inicial de la mina, incluyendo la importación de la topografía base, la gestión de los recursos operativos, la definición de zonas de riesgo y la asociación de sensores IoT con los activos correspondientes. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, asegurando que la información de configuración sea validada y publicada antes de ser utilizada por los módulos de monitoreo y análisis.
 
 <img src="assets/BC_Canvases_Resource_and_Asset_Management.png">
 
 - Bounded Context Canvases Dashboards and Analytics
 
+    El siguiente Bounded Context Canvas describe el contexto de Paneles y Analítica (Dashboards and Analytics) de la plataforma MineGuard. Este contexto es responsable de consolidar y visualizar en tiempo real la información proveniente de los sensores, las alertas y los sistemas de monitoreo, permitiendo a los supervisores analizar el estado de las operaciones, identificar patrones de riesgo y generar reportes para apoyar la toma de decisiones. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, facilitando el análisis y la visualización de la información operativa.
+
 <img src="assets/BC_Canvases_Dashboards_and_Analytics.png">
 
 - Subscriptions and Payment Management
 
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Suscripciones y Pagos (Subscriptions and Payment Management) de la plataforma MineGuard. Este contexto es responsable de administrar los planes de suscripción de los usuarios, procesar los pagos, gestionar las renovaciones y garantizar una facturación precisa. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, asegurando la continuidad del servicio, la trazabilidad de las transacciones y la integración con los módulos financieros, de notificaciones y analítica.
+
 <img src="assets/BC_Canvases_Subscriptions_and_Payment_Management.png">
 
 - Service Design and Planing
+
+    El siguiente Bounded Context Canvas describe el contexto de Diseño y Planificación del Servicio (Service Design and Planning) de la plataforma MineGuard. Este contexto es responsable de configurar el entorno de la mina antes de iniciar el monitoreo en tiempo real, permitiendo importar la topografía, registrar los recursos operativos, definir las zonas geográficas y establecer las reglas de configuración necesarias para el funcionamiento del sistema. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, garantizando que la configuración sea validada y publicada antes de ser utilizada por los módulos de monitoreo y analítica.
 
 <img src="assets/BC_Canvases_Service_Design_and_Planing.png">
 
