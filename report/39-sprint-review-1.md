@@ -140,7 +140,7 @@ Ruta del test:
 
  ```src/app/iam/application/iam.store.spec.ts ```
 
-![unit-test-001](../report/assets/unitest/test1_angular.png)
+![unit-test-001](../report/assets/test1_angular.png)
 
 **Unit Test Record 02**
 
@@ -160,7 +160,7 @@ Ruta del test:
 
  ```src/app/monitoring/application/monitoring.store.spec.ts ```
 
-![unit-test-002](../report/assets/unitest/test2_angular.png)
+![unit-test-002](../report/assets/test2_angular.png)
 
 **Unit Test Record 03**
 
@@ -178,7 +178,7 @@ Ruta del test:
 
  ```src/app/iam/presentation/components/sign-in-form/sign-in-form.spec.ts ```
 
-![unit-test-003](../report/assets/unitest/test3_angular.png)
+![unit-test-003](../report/assets/test3_angular.png)
 
 **Unit Test Record 04**
 
@@ -196,7 +196,7 @@ Ruta del test:
 
  ```src/app/assets/presentation/components/vehicles-inventory/vehicles-inventory.spec.ts ```
 
-![unit-test-004](../report/assets/unitest/test4_angular.png)
+![unit-test-004](../report/assets/test4_angular.png)
 
 
 ####BDD Tests
