@@ -36,7 +36,7 @@ El objetivo principal de esta reunión fue priorizar los primeros User Stories y
 
 
 
-### 6.2.1.2. Aspect Leaders and Collaborators
+#### 6.2.1.2. Aspect Leaders and Collaborators
 
 Durante el Sprint 1 del proyecto MineGuard, el equipo definió la distribución inicial de responsabilidades con el propósito de organizar el trabajo colaborativo y establecer una base sólida para el desarrollo del producto. Para ello, se identificaron los principales aspectos funcionales y técnicos que serían abordados durante la primera iteración, incluyendo el desarrollo de la Landing Page, la implementación del módulo de autenticación (IAM/Auth), la estructura inicial del monitoreo y las alertas, los primeros componentes del dashboard analítico y la planificación general del proyecto.
 
@@ -54,7 +54,7 @@ Con el fin de facilitar la coordinación y asegurar una adecuada asignación de 
 | Gonzales Alvarado Javier Sebastian | WoodsDos | C |  |  | C |  |
 
 
-### 6.2.1.3. Sprint Backlog 1
+#### 6.2.1.3. Sprint Backlog 1
 
 En este sprint se priorizó la entrega del landing page público y la base operativa de la aplicación web. El backlog se organizó para que el trabajo visible del producto y la lógica mínima de acceso, monitoreo y alertas quedaran listos para revisión.
 
@@ -71,50 +71,52 @@ En este sprint se priorizó la entrega del landing page público y la base opera
 
 
 
-### 6.2.1.4. Development Evidence for Sprint Review
+#### 6.2.1.4. Development Evidence for Sprint Review
 
 En este sprint se consolidaron dos frentes de trabajo. En el landing page se avanzó desde la navegación y la propuesta de valor hasta secciones informativas, footer, suscripción y ajustes responsive. En la web application se construyó la base técnica con configuración inicial, IAM, dashboard, monitoring, analytics, resources y planning.
 
 **Landing Page Repository:** https://github.com/1ASI0572-2610-6779-Vertex/mineguard-website
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|
-| landing-page | origin/feature/nav | 6839e9f | feat: added nav design and i18n logic | — | — |
-| landing-page | origin/feature/solution | 1381fe0 | feat():Add solition section | — | — |
-| landing-page | origin/feature/solution | 0a64f9a | fix():Change css desing | — | — |
-| landing-page | origin/feature/how-it-works | 61a0223 | Feat: add how it works section | — | — |
-| landing-page | origin/feature/about-the-team-and-product | 1e750cc | feat(): add about the team and about the product sections | — | — |
-| landing-page | origin/feature/faq | b9133de | feat: add faq section | — | — |
-| landing-page | origin/feature/subscription | c6b1215 | Add subscription section and styles | — | — |
-| landing-page | origin/feature/footer | 75dbce6 | feat(feature/footer): add complete footer layout with HTML and CSS styling | — | — |
-| landing-page | origin/feature/footer | 7c5a856 | feat(feature/footer): add terms page with footer links and project README | — | — |
-| landing-page | origin/feat/responsive | eb6443e | feat(): add responsive web design | — | — |
-| landing-page | origin/feat/responsive | 68499f0 | feat(): add responsive small mobile responsive | — | — |
-| landing-page | origin/hotfix/team-section-overflow | eb448b4 | fix(): resolve about team section overflow | — | — |
+| Repository   | Branch                                    | Commit Id | Commit Message                                                             | Commit Message Body | Committed on (Date) |
+| ------------ | ----------------------------------------- | --------- | -------------------------------------------------------------------------- | ------------------- | ------------------- |
+| landing-page | origin/feature/nav                        | 6839e9f   | feat: added nav design and i18n logic                                      | —                   | 2026-04-28          |
+| landing-page | origin/feature/solution                   | 1381fe0   | feat():Add solition section                                                | —                   | 2026-04-30          |
+| landing-page | origin/feature/solution                   | 0a64f9a   | fix():Change css desing                                                    | —                   | 2026-05-02          |
+| landing-page | origin/feature/how-it-works               | 61a0223   | Feat: add how it works section                                             | —                   | 2026-05-05          |
+| landing-page | origin/feature/about-the-team-and-product | 1e750cc   | feat(): add about the team and about the product sections                  | —                   | 2026-05-07          |
+| landing-page | origin/feature/faq                        | b9133de   | feat: add faq section                                                      | —                   | 2026-05-09          |
+| landing-page | origin/feature/subscription               | c6b1215   | Add subscription section and styles                                        | —                   | 2026-05-10          |
+| landing-page | origin/feature/footer                     | 75dbce6   | feat(feature/footer): add complete footer layout with HTML and CSS styling | —                   | 2026-05-11          |
+| landing-page | origin/feature/footer                     | 7c5a856   | feat(feature/footer): add terms page with footer links and project README  | —                   | 2026-05-12          |
+| landing-page | origin/feat/responsive                    | eb6443e   | feat(): add responsive web design                                          | —                   | 2026-05-14          |
+| landing-page | origin/feat/responsive                    | 68499f0   | feat(): add responsive small mobile responsive                             | —                   | 2026-05-15          |
+| landing-page | origin/hotfix/team-section-overflow       | eb448b4   | fix(): resolve about team section overflow                                 | —                   | 2026-05-15          |
+
 
 ![landing.png](../report/assets/landing.png)
 
 **Web Application Repository:** https://github.com/1ASI0572-2610-6779-Vertex/mineguard-webapp
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|
-| web-application | origin/feature/config | f29ff1d | feat: configure angular frontend | — | — |
-| web-application | origin/feature/iam | ae99a48 | feat(iam): scaffold IAM bounded context with shared DDD layers and auth setup | — | — |
-| web-application | origin/feature/dashboard | 38cfd85 | feat():Add dashboard page | — | — |
-| web-application | origin/feature/dashboard | 7da95f9 | feat():Add dashboard and Analytics | — | — |
-| web-application | origin/feature/dashboard | 5a19409 | feat():Add dashboard and Analytic | — | — |
-| web-application | origin/feature/monitoring | 9c7db5a | Feat: add monitoring bc logic | — | — |
-| web-application | origin/feature/monitoring | 4493c3e | Feat: add views monitoring BC | — | — |
-| web-application | origin/feature/resources | c212d8d | Add assets bounded context (fleet & drivers) | — | — |
-| web-application | origin/feature/analytics | 7dfecfd | feat():add analytics models notice and summary | — | — |
-| web-application | origin/feature/analytics | 6c30f22 | feat(): add analytics infrastructure | — | — |
-| web-application | origin/feature/analytics | 688e1fc | feat(): add analytics presentation | — | — |
-| web-application | origin/feature/analytics | 12ff519 | fix(): analytics api | — | — |
-| web-application | origin/feature/planing | aa206dd | feat: aggregate logic of planing of live mapping | — | — |
-| web-application | origin/feature/planing | 8c2c2ab | feat: logic of the planing | — | — |
-| web-application | origin/feature/analytics | 0c68762 | feat():add report and analytics | — | — |
-| web-application | origin/feature/iam | 83a3543 | docs(feat/iam): add user stories,diagrams and readme | — | — |
-| web-application | origin/feature/licence | a08e936 | Add MIT License to the project | — | — |
+| Repository      | Branch                    | Commit Id | Commit Message                                                                | Commit Message Body | Committed on (Date) |
+| --------------- | ------------------------- | --------- | ----------------------------------------------------------------------------- | ------------------- | ------------------- |
+| web-application | origin/feature/config     | f29ff1d   | feat: configure angular frontend                                              | —                   | 2026-04-27          |
+| web-application | origin/feature/iam        | ae99a48   | feat(iam): scaffold IAM bounded context with shared DDD layers and auth setup | —                   | 2026-04-29          |
+| web-application | origin/feature/dashboard  | 38cfd85   | feat():Add dashboard page                                                     | —                   | 2026-05-02          |
+| web-application | origin/feature/dashboard  | 7da95f9   | feat():Add dashboard and Analytics                                            | —                   | 2026-05-04          |
+| web-application | origin/feature/dashboard  | 5a19409   | feat():Add dashboard and Analytic                                             | —                   | 2026-05-05          |
+| web-application | origin/feature/monitoring | 9c7db5a   | Feat: add monitoring bc logic                                                 | —                   | 2026-05-07          |
+| web-application | origin/feature/monitoring | 4493c3e   | Feat: add views monitoring BC                                                 | —                   | 2026-05-08          |
+| web-application | origin/feature/resources  | c212d8d   | Add assets bounded context (fleet & drivers)                                  | —                   | 2026-05-09          |
+| web-application | origin/feature/analytics  | 7dfecfd   | feat():add analytics models notice and summary                                | —                   | 2026-05-10          |
+| web-application | origin/feature/analytics  | 6c30f22   | feat(): add analytics infrastructure                                          | —                   | 2026-05-11          |
+| web-application | origin/feature/analytics  | 688e1fc   | feat(): add analytics presentation                                            | —                   | 2026-05-12          |
+| web-application | origin/feature/analytics  | 12ff519   | fix(): analytics api                                                          | —                   | 2026-05-13          |
+| web-application | origin/feature/planing    | aa206dd   | feat: aggregate logic of planing of live mapping                              | —                   | 2026-05-13          |
+| web-application | origin/feature/planing    | 8c2c2ab   | feat: logic of the planing                                                    | —                   | 2026-05-14          |
+| web-application | origin/feature/analytics  | 0c68762   | feat():add report and analytics                                               | —                   | 2026-05-14          |
+| web-application | origin/feature/iam        | 83a3543   | docs(feat/iam): add user stories,diagrams and readme                          | —                   | 2026-05-15          |
+| web-application | origin/feature/licence    | a08e936   | Add MIT License to the project                                                | —                   | 2026-05-15          |
+
 
 ![webappPicture.png](../report/assets/webappPicture.png)
 
@@ -281,19 +283,32 @@ Scenario: El supervisor envia un vehiculo a mantenimiento
     And limpia el conductor y turno asignados localmente
  ```
 
-### 6.2.1.6. Execution Evidence for Sprint Review
 
-En esta sección deben insertarse las capturas de las vistas principales implementadas durante el Sprint 1. Para este sprint, las evidencias visuales mínimas sugeridas son:
+#### 6.2.1.6. Execution Evidence for Sprint Review
 
-| Evidence | Suggested Screenshots / Views |
-|---|---|
-| Landing Page | Nav con i18n, sección de solución, sección “how it works”, about the team, about the product, FAQ, subscription, footer y corrección del overflow en mobile. |
-| Web Application | Configuración inicial, base de IAM, dashboard, monitoring, analytics, resources y planning. |
-| Responsive Validation | Vista desktop y mobile de las secciones principales del landing page. |
+Durante el Sprint 1, el equipo desarrolló las primeras funcionalidades del Landing Page y de la Web Application de MineGuard, estableciendo la base de la solución y validando la correcta implementación de los principales módulos definidos en el Sprint Backlog. A continuación, se presentan las evidencias de ejecución correspondientes a las funcionalidades implementadas durante este sprint.
 
-**Video de ejecución del Sprint:**  
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQBHgmq8mmaLTIVOJdzcH6V8AU_hHsDqC7EfKRFUE62LxZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ka50P7
+**Landing Page**
 
+Se implementaron las principales secciones del Landing Page, incluyendo la barra de navegación con soporte de internacionalización (i18n), la presentación de la solución, la sección *How It Works*, las secciones *About the Team* y *About the Product*, preguntas frecuentes (FAQ), formulario de suscripción y el pie de página. Asimismo, se realizaron mejoras de diseño responsive y se corrigieron problemas de visualización en dispositivos móviles para garantizar una experiencia de usuario consistente.
+
+- How It Works:
+
+![execution_evidence_landing_page_1.png](../report/assets/evidence_ex_landin_1.png)
+
+- About the Team
+
+![execution_evidence_landing_page_1.png](../report/assets/evidence_ex_landin_2.png)
+
+- About the Product:
+
+![execution_evidence_landing_page_1.png](../report/assets/evidence_ex_landin_3.png)
+
+**Web Application**
+
+Se desarrolló la configuración inicial de la aplicación web utilizando Angular y se implementaron las funcionalidades base de los primeros bounded contexts, incluyendo Identity and Access Management (IAM), Dashboard, Monitoring, Analytics, Resource and Asset Management y Service Design and Planning. Estas implementaciones permitieron validar la arquitectura de la solución y preparar la plataforma para el desarrollo de funcionalidades más avanzadas en los siguientes sprints.
+
+**Video de ejecución del Sprint:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311558_upc_edu_pe/IQBHgmq8mmaLTIVOJdzcH6V8AU_hHsDqC7EfKRFUE62LxZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ka50P7
 
 ### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
