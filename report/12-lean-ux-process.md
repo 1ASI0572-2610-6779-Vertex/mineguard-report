@@ -2,6 +2,7 @@
 
 #### 1.2.2.1. Lean UX Problem Statement
 
+
 El estado actual de las operaciones mineras automatizadas se ha enfocado principalmente en mejorar la productividad y eficiencia del transporte mediante el uso de camiones autónomos de alto tonelaje. Sin embargo, las rutas mineras continúan siendo compartidas con camionetas de supervisión, mantenimiento y vehículos de generando riesgos constantes de invasión de rutas y posibles colisiones que comprometen la seguridad de las operaciones.
 
 Los productos y servicios existentes no logran abordar la detección temprana de incursiones de vehículos menores dentro de rutas autónomas críticas ni proporcionar información en tiempo real que permita a los operadores actuar de forma preventiva antes de que ocurra un incidente, manteniendo una brecha importante en la seguridad de este tipo de operaciones.
@@ -11,6 +12,7 @@ Nuestro producto buscará cubrir esta necesidad mediante una estrategia basada e
 Nuestro enfoque inicial estará dirigido a empresas mineras de gran escala que utilicen sistemas de transporte autónomo o semiautónomo en sus operaciones de extracción y acarreo.
 
 Sabremos que la solución es exitosa cuando observemos una disminución en las incursiones no detectadas dentro de rutas autónomas, una reducción en los tiempos de respuesta ante situaciones de riesgo y una mejora en la capacidad de los operadores para prevenir incidentes durante las operaciones.
+
 
 
 
