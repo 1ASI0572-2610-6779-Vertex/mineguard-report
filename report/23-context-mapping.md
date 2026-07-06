@@ -47,11 +47,11 @@ Relación de **Customer-Supplier**. Si el estado de suscripción cambia a Premiu
 
 Descripción:
 
-La planificación define rutas y horarios; la ejecución debe obedecer este plan de forma que se garantiza un proceso eficaz en el transporte de los camiones dentro de la mina. Además se define los nodos para que los sensores no pierdan el alcanze que se necesita para monitorear a los vehiculos. 
+La planificación define rutas y horarios; la ejecución debe obedecer este plan de forma que se garantiza un proceso eficaz en el transporte de los camiones dentro de la mina. Además se define los nodos para que los sensores no pierdan el alcance que se necesita para monitorear a los vehiculos. 
 
 Patrón:
 
-**Customer-Supplier** porque el monitoreo no puede inventarse rutas estas deben seguir un diselo planificadó.
+**Customer-Supplier** porque el monitoreo no puede inventarse rutas estas deben seguir un diseño planificado.
 
 <h3>- RAM -> SEM</h3>
 
@@ -77,7 +77,7 @@ Patrón:
 
 - ¿ Qué pasaría si juntamos IAM con PPM ?
 
-No sería ideal juntarlos, debido a que ambos tienen responsabilidades diferentes. IAM se encarga de la autorizaión, autenticacióon y permisos de los usuarios mientras que la gdestión de perfil maneja la información personal de cada tipo de cuenta.
+No sería ideal juntarlos, debido a que ambos tienen responsabilidades diferentes. IAM se encarga de la autorización, autenticación y permisos de los usuarios mientras que la gestión de perfil maneja la información personal de cada tipo de cuenta.
 
 - ¿ Qué pasaría si creamos un Shared Service para la Telemetría ?
 

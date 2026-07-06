@@ -7,56 +7,59 @@ A continuación se mostrará los 9 pasos del Event Storming realizados en el Mir
 
 **Paso 1: Unstructured Exploration**
 
-En este paso se realiza una lluvia de ideas relacionado a los eventos que posiblemente posea el sistema.
+En este paso se realiza una lluvia de ideas relacionado a los eventos que posiblemente posea el sistema. Aquí mapeamos la amplitud de la lógica de negocio, desde el registro de sensores hasta la detección de ritmo cardiaco y alertas de proximidad.
 
 <img src="assets/Step1.png">
 
 **Paso 2: Timelines**
 
-En esta fase, los eventos identificados se ordenan de manera secuenial y se agrupan entre los tipos de usuario.
+En esta fase, los eventos identificados se ordenan de manera secuenial y se agrupan entre los tipos de usuario. Esta estructura permite visualizar el flujo de trabajo de extremo a extremo y entender la interdependencia entre ambos roles.
 
 <img src="assets/Step2.png">
 
 **Paso 3: Paint Points**
 
-Durante este paso, se identifican los puntos donde se presente tráfico o también llamado cuellos de botella para poseer un plan para poder mejorar y actualizar aquellos puntos y así ofrecer una mejor experiencia a nuestros usuarios.
+Durante este paso, se identifican los puntos donde se presente tráfico o también llamado cuellos de botella para poseer un plan para poder mejorar y actualizar aquellos puntos y así ofrecer una mejor experiencia a nuestros usuarios. 
+
+Se detectaron fricciones críticas en la validación de credenciales, la comunicación inmediata ante alertas de pulso y la sincronización del registro de vehículos. Estos puntos son prioridades para la implementación de mecanismos de resiliencia y alta disponibilidad.
 
 <img src="assets/Step3.png">
 
 
 **Paso 4: Pivotal Points**
 
-En este paso, identificamos los eventos comerciales importantes que nos indica que hay un cambio de contexto o sección en la aplicación.
+En este paso, identificamos los eventos comerciales importantes que nos indica que hay un cambio de contexto o sección en la aplicación. Eventos como "Conductor Logueado" o "Ruta Establecida" actúan como disparadores que activan diferentes subdominios del sistema, permitiendo una separación clara entre la gestión administrativa y la telemetría en tiempo real.
 
 <img src="assets/step4.png">
 
 **Paso 5: Commands**
 
-Los comandos son representaciones de la consecuencia que generó un evento o varios eventos.
+Los comandos son representaciones de la consecuencia que generó un evento o varios eventos. El comando Vincular unidad es la acción del Supervisor que resulta en el evento Vehículo vinculado al conductor. Esto define la interfaz de interacción (API/UI) que el sistema debe soportar para procesar las solicitudes de los usuarios.
 
 <img src="assets/step5.png">
 
 **Paso 6: Policies**
 
-En este escenario, se muestra que un evento puede provocar la ejecución de un comando manejado por una política.
+En este escenario, se muestra que un evento puede provocar la ejecución de un comando manejado por una política. Por ejemplo, ante un evento de "Exceso de velocidad detectado", la política dispara automáticamente un comando de "Notificar a Supervisor" y "Generar alerta sonora", garantizando una respuesta autónoma sin intervención humana constante. 
+
 
 <img src="assets/step6.png">
 
 **Paso 7: Read Models**
 
-En este escenario, los read models sirven para generar una interfaz de lectura de un evento para que el usuario pueda decidir si ejecutar un comando o no.
+En este escenario, los read models sirven para generar una interfaz de lectura de un evento para que el usuario pueda decidir si ejecutar un comando o no. Estos modelos representan proyecciones de datos que alimentan los dashboards del supervisor y la vista del conductor, facilitando una interacción informada y eficiente con el sistema.
 
 <img src="assets/step7.png">
 
 **Paso 8: External Systems**
 
-En esta fase, se identifican los sistemas externos que usará la plataforma móvil para su ejecución eficaz.
+En esta fase, se identifican los sistemas externos que usará la plataforma móvil para su ejecución eficaz. Se definieron fronteras con servicios de Pasarela de Pagos (Stripe) para suscripciones, servicios de Geolocalización (GPS/Maps) para el rastreo de rutas.
 
 <img src="assets/step8.png">
 
 **Paso 9: Aggregates**
 
-En este paso, con los eventos y comandos realizados, entonces ya se puede comenzar a juntar conceptos relacionados en un grupo, o mejor dicho en un bounded context.
+Con los eventos y comandos realizados, entonces ya se puede comenzar a juntar conceptos relacionados en un grupo, o mejor dicho en un bounded context. 
 
 <h3>4.1.1.1. Candidate Context Discovery</h3>
 
@@ -66,39 +69,47 @@ Se identificaron 7 Bounded Context:
 
 - Identify and Access Management (IAM): 
 
-En este escenario, se crea, auténtica, autoriza y gestiona los usuarios que están registrados en el sistema. Se introduce el manejo de permisos y roles, también el control de acceso a diferentes tipos de usuarios.
+Este bounded context se encarga de gestionar el ciclo de vida de la identidad de los usuarios dentro de la plataforma MineGuard. Es responsable del registro, autenticación, autorización y administración de supervisores y conductores, garantizando un acceso seguro al sistema mediante el control de credenciales, roles y permisos. Además, establece las políticas de acceso para cada tipo de usuario, asegurando que únicamente puedan utilizar las funcionalidades correspondientes a sus responsabilidades dentro de la operación minera.
 
 <img src="assets/iam_ccd.png">  
 
 - Service Execution and Monitoring: 
 
-Este bounded context se encarga de procesar la telemetría en tiempo real, evaluar riesgos (proximidad, colisión y fatiga) y gestionar el ciclo de vida de las alertas, determinando si deben notificarse, auto-resolverse o escalarse al supervisor.
+Este bounded context se encarga de ejecutar y supervisar las operaciones en tiempo real de la plataforma MineGuard. Es responsable de procesar la telemetría proveniente de los sensores IoT, evaluar continuamente riesgos como proximidad, colisiones y fatiga del conductor, y gestionar el ciclo de vida de las alertas generadas. Además, coordina las acciones de respuesta, determinando si una alerta debe resolverse automáticamente, escalarse al supervisor o derivar en la creación de un incidente, garantizando una atención oportuna y el registro de las métricas operativas del sistema.
 
 <img src="assets/EventStorming_Service_Execution_and_Monitoring.jpg">
 
 
 - Profile and Preference Management: 
 
-Este bounded context se encarga se encarga de gestionar los perfiles de usuario y sus preferencias para personalizar cómo cada usuario interactúa con el sistema MineGuard.
+Este bounded context se encarga de gestionar los perfiles de usuario y las preferencias de configuración dentro de la plataforma MineGuard. Es responsable de administrar la información del perfil, las preferencias de idioma, las configuraciones de alertas y notificaciones, así como las opciones de personalización que permiten adaptar la experiencia de uso a las necesidades de cada supervisor o conductor. Además, garantiza la actualización, restauración y mantenimiento de dichas preferencias durante todo el ciclo de vida del usuario.
 
 <img src="assets/EventStorming_profile_preference_management.jpg">
+
+- Resource and Asset Management:
+
+Este bounded context fue identificado durante la sesión de Candidate Context Discovery a partir de los eventos relacionados con el registro, asignación y control de los recursos físicos que participan en la operación minera. Su aparición responde a la necesidad de separar la gestión de activos operativos, como vehículos livianos, camiones autónomos, sensores IoT, dispositivos de cabina y zonas de riesgo, del monitoreo en tiempo real realizado por Service Execution and Monitoring.
+
+Resource and Asset Management permite mantener un modelo claro y consistente de los recursos disponibles antes y durante la operación. Este contexto se encarga de registrar activos, validar su estado operativo, asociar sensores a vehículos, administrar disponibilidad de unidades y asegurar que solo los recursos habilitados participen en las rutas configuradas. De esta manera, aporta trazabilidad al dominio y garantiza que los eventos de telemetría y alerta puedan relacionarse correctamente con los activos físicos involucrados.
+
+<img src="assets/Event_storming_Resource_Asset_Management.png">
 
 
 - Dashboards and Analytics: 
 
-Este bounded permite recopilar, procesar y visualizar la información operativa del sistema. Analizando alertas, identificar patrones de riesgo y tomar decisiones mediante dashboards en tiempo real y análisis históricos.
+Este bounded context se encarga de recopilar, consolidar y visualizar la información operativa generada por la plataforma MineGuard. Es responsable de procesar los datos provenientes de la operación en tiempo real para generar dashboards, indicadores y análisis históricos que permitan monitorear el estado del sistema, identificar patrones de riesgo, consultar el historial de eventos y alertas, evaluar el desempeño de los conductores y apoyar la toma de decisiones mediante reportes y métricas exportables.
 
 <img src="assets/EventStorming_Dashboard_and_Analytics.png">
 
 - Subscriptions and Payment Management:
 
-Este bounded permite gestionar los planes de suscripción de los usuarios, procesar los pagos y controlar los estados de cada suscripción. Se encarga de manejar las renovaciones automáticas, garantizar la correcta facturación y facilitar el seguimiento financiero de los cobros recurrentes.
+Este bounded context se encarga de administrar el ciclo de vida de las suscripciones y los pagos de la plataforma MineGuard. Es responsable de gestionar los planes de suscripción, procesar los pagos mediante pasarelas externas, controlar el estado de cada suscripción y administrar los métodos de pago de los usuarios. Además, coordina las renovaciones automáticas, el manejo de pagos fallidos y reintentos, la generación de facturas y el envío de notificaciones relacionadas con el proceso de facturación, garantizando la continuidad del servicio y la correcta gestión financiera de la plataforma.
 
 <img src="assets/EventStorming_Subscriptions_and_Payment_Management.png">
 
 - Service Design and Planing:
 
-Este bounded context se encarga de gestionar la configuración inicial, espacial y de recursos de la mina de forma local antes del inicio de las operaciones. Centraliza la importación de la topografía, el trazado y validación de zonas de riesgo, la definición de permisos de acceso, el registro del padrón de flota y la vinculación de los sensores IoT a los vehículos, garantizando un despliegue operativo seguro y sin puntos ciegos.
+Este bounded context se encarga de planificar y configurar la infraestructura operativa de la plataforma MineGuard antes del inicio de las operaciones. Es responsable de administrar la información geográfica de la mina mediante la importación de la topografía, el trazado y validación de zonas de riesgo, así como del registro de vehículos, conductores y sensores IoT. Además, gestiona la vinculación de los recursos operativos, la definición de políticas de acceso y la activación de la configuración del servicio, garantizando un despliegue seguro, consistente y preparado para el monitoreo en tiempo real.
 
 <img src="assets/EventStorming_service_design_and_planing.png">
 
@@ -157,25 +168,46 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 
 - Bounded Context Canvases Identity and Access Management (IAM)
 
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Identidad y Acceso (Identity and Access Management - IAM) de la plataforma MineGuard. Este contexto es responsable de gestionar el registro de usuarios, la autenticación, la autorización y la administración de perfiles, garantizando que únicamente los usuarios registrados y autenticados puedan acceder de forma segura a la aplicación web y móvil. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, estableciendo los límites de seguridad necesarios para proteger los recursos del sistema y la información de los usuarios.
+
 <img src="assets/iam2.0.png">
 
 - Bounded Context Canvas Service Execution and Monitoring
+
+    El siguiente Bounded Context Canvas describe el contexto de Ejecución y Monitoreo de Servicios (Service Execution and Monitoring) de la plataforma MineGuard. Este contexto es responsable de recibir y procesar la telemetría proveniente de los sensores IoT, detectar alertas en tiempo real y coordinar las acciones correspondientes, como la activación de alarmas sonoras, notificaciones visuales y protocolos de emergencia. Asimismo, define los comandos, eventos, consultas, reglas de negocio e interacciones con otros Bounded Contexts, permitiendo el monitoreo continuo y la respuesta oportuna ante incidentes detectados durante la operación.
 
 <img src="assets/BC_Canvases_Service_Execution_and_Monitoring.jpg">
 
 - Bounded Context Canvas Profile and Preferences Management
 
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Perfiles y Preferencias (Profiles and Preferences Management) de la plataforma MineGuard. Este contexto es responsable de la creación, actualización y personalización de los perfiles de usuario, permitiendo configurar preferencias como el idioma, las rutas críticas, las notificaciones, las alertas y la visualización del panel de control. Asimismo, define los comandos, eventos, consultas, reglas de negocio e interacciones con otros Bounded Contexts, garantizando que las preferencias del usuario sean utilizadas para personalizar su experiencia dentro de la plataforma.
+
 <img src="assets/BC_Canvases_profile_preference_management.jpg">
 
+- Bounded Context Canvas Resource and Asset Management
+
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Recursos y Activos (Resource and Asset Management) de la plataforma MineGuard. Este contexto es responsable de administrar la configuración inicial de la mina, incluyendo la importación de la topografía base, la gestión de los recursos operativos, la definición de zonas de riesgo y la asociación de sensores IoT con los activos correspondientes. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, asegurando que la información de configuración sea validada y publicada antes de ser utilizada por los módulos de monitoreo y análisis.
+
+<img src="assets/BC_Canvases_Resource_and_Asset_Management.png">
+
 - Bounded Context Canvases Dashboards and Analytics
+
+    El siguiente Bounded Context Canvas describe el contexto de Paneles y Analítica (Dashboards and Analytics) de la plataforma MineGuard. Este contexto es responsable de consolidar y visualizar en tiempo real la información proveniente de los sensores, las alertas y los sistemas de monitoreo, permitiendo a los supervisores analizar el estado de las operaciones, identificar patrones de riesgo y generar reportes para apoyar la toma de decisiones. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, facilitando el análisis y la visualización de la información operativa.
 
 <img src="assets/BC_Canvases_Dashboards_and_Analytics.png">
 
 - Subscriptions and Payment Management
 
+    El siguiente Bounded Context Canvas describe el contexto de Gestión de Suscripciones y Pagos (Subscriptions and Payment Management) de la plataforma MineGuard. Este contexto es responsable de administrar los planes de suscripción de los usuarios, procesar los pagos, gestionar las renovaciones y garantizar una facturación precisa. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, asegurando la continuidad del servicio, la trazabilidad de las transacciones y la integración con los módulos financieros, de notificaciones y analítica.
+
 <img src="assets/BC_Canvases_Subscriptions_and_Payment_Management.png">
 
 - Service Design and Planing
 
+    El siguiente Bounded Context Canvas describe el contexto de Diseño y Planificación del Servicio (Service Design and Planning) de la plataforma MineGuard. Este contexto es responsable de configurar el entorno de la mina antes de iniciar el monitoreo en tiempo real, permitiendo importar la topografía, registrar los recursos operativos, definir las zonas geográficas y establecer las reglas de configuración necesarias para el funcionamiento del sistema. Asimismo, define los comandos, eventos, reglas de negocio e interacciones con otros Bounded Contexts, garantizando que la configuración sea validada y publicada antes de ser utilizada por los módulos de monitoreo y analítica.
+
 <img src="assets/BC_Canvases_Service_Design_and_Planing.png">
 
+- Resource and Managment 
+
+<img src="assets/BC_Canvas_Resource_And_Managment.png">
