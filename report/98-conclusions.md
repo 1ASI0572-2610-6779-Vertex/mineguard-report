@@ -79,8 +79,29 @@ El desarrollo del Avance 2 permitió transformar MineGuard de una propuesta conc
 
 ### Conclusión general
 
+El desarrollo integral de MineGuard permitió validar que la propuesta de solución responde a la problemática identificada durante el proceso de Lean UX. A través de las diferentes etapas de investigación, diseño, desarrollo, implementación y validación, se comprobó que una solución IoT orientada a la detección y gestión de riesgos de colisión aporta valor tanto para supervisores como para conductores en operaciones de minería de tajo abierto. Los resultados obtenidos durante las validaciones permitieron confirmar los principales Problem Statements, respaldar los Assumptions e Hypothesis Statements planteados al inicio del proyecto y demostrar que los criterios de éxito definidos fueron alcanzados de manera satisfactoria, consolidando a MineGuard como una solución técnicamente viable y alineada con las necesidades del sector minero.
+
 ### Conclusiones específicas
+
+* **Sobre los Problem Statements: Las actividades de investigación, el desarrollo del producto y las validaciones realizadas permitieron comprobar que la problemática relacionada con la prevención de colisiones, la falta de monitoreo en tiempo real y la limitada capacidad de respuesta ante situaciones de riesgo constituye una necesidad real dentro de las operaciones mineras. Las funcionalidades implementadas en MineGuard responden directamente a estos problemas al proporcionar monitoreo centralizado, gestión de alertas y acceso oportuno a la información operacional.**
+  
+* **Sobre los Assumptions e Hypothesis Statements: Los resultados obtenidos durante las entrevistas, pruebas de usabilidad y evaluaciones heurísticas permitieron validar los principales supuestos planteados durante el proceso de Lean UX. Los usuarios manifestaron que consideran valioso recibir alertas oportunas, visualizar el estado de la operación en tiempo real y contar con una plataforma que facilite la supervisión y el seguimiento de incidentes, confirmando así la propuesta de valor establecida para MineGuard.**
+  
+* **Sobre los Success Criteria: Los criterios de éxito definidos para el proyecto fueron alcanzados mediante la implementación funcional de los componentes del ecosistema MineGuard y la aceptación obtenida durante las sesiones de validación. Las pruebas realizadas evidenciaron que los usuarios pudieron interactuar con la solución de manera satisfactoria, comprendiendo las funcionalidades principales y reconociendo su utilidad para apoyar las actividades de prevención y monitoreo dentro de la operación minera.**
+  
+* **Sobre el desarrollo del producto: La implementación de la Landing Page, la Web Application, la Mobile Application, los Web Services, el Edge Service y la Embedded Application permitió demostrar la viabilidad técnica de la arquitectura IoT propuesta desde las primeras etapas del proyecto. Asimismo, el uso de metodologías como Lean UX, Domain-Driven Design y Scrum facilitó un desarrollo iterativo, colaborativo y centrado en el usuario, asegurando la trazabilidad entre las necesidades identificadas y las funcionalidades implementadas.**
+
+* **Sobre el proceso de desarrollo y la gestión del proyecto:** La aplicación de metodologías como Lean UX y Domain-Driven Design , junto con el uso de herramientas colaborativas para el diseño, gestión y control de versiones, permitió mantener una adecuada organización durante todas las etapas del proyecto. El trabajo iterativo facilitó la trazabilidad entre los requerimientos identificados, las funcionalidades implementadas y las validaciones realizadas, contribuyendo al cumplimiento de los objetivos planteados para MineGuard y al desarrollo de una solución centrada en las necesidades de los usuarios.**
+
 
 ## Recomendaciones para próximas iteraciones
 
+* **Realizar una prueba piloto en un entorno minero real para validar el funcionamiento integral de MineGuard bajo condiciones operacionales y recopilar información sobre su desempeño en escenarios de uso reales.** 
+* **Fortalecer la integración entre la Web Application, la Mobile Application, el Edge Service, la Embedded Application y los Web Services, optimizando la comunicación en tiempo real y el procesamiento de alertas para garantizar un funcionamiento más eficiente del ecosistema MineGuard.**
+* **Continuar incorporando mejoras funcionales y de experiencia de usuario a partir de la retroalimentación obtenida durante las validaciones, ampliando las capacidades de monitoreo, gestión de alertas y analítica para futuras versiones del producto.**
+
 # Video About-the-team
+
+<img src="assets/about-the-team-video.png">
+
+`link del video`
