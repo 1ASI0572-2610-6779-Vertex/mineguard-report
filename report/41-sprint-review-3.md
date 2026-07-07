@@ -112,6 +112,78 @@ Link Trello: `Agregar enlace del tablero Sprint 3`
 
 #### 6.2.3.4. Development Evidence for Sprint Review
 
+Durante el Sprint 3 del proyecto MineGuard, el equipo completó la implementación de las funcionalidades planificadas para esta iteración, fortaleciendo los diferentes componentes de la solución, incluyendo la Landing Page, Web Application, Web Services, Mobile Application, Edge Service, Embedded Application y Prototype. Los avances estuvieron enfocados en completar los flujos de autenticación, gestión de sesiones, comunicación entre supervisor y conductor, análisis del comportamiento del conductor, recomendaciones de seguridad y mejoras en la experiencia de usuario. A continuación, se presentan los repositorios y los commits que evidencian las implementaciones realizadas durante este Sprint.
+
+
++ **Web Service:**
+
++ **Web Service:**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| MineGuard-WebService | feature/restful-endpoints | `cfb5f73` | fix: fix a send email on brevo | Fixed email sending integration using Brevo service. | Jul 2, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `a8787ba` | fix: correction email autorization | Corrected email authorization configuration for notification delivery. | Jul 2, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `38c6450` | fix: address personal change | Updated personal address data handling in service records. | Jul 2, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `8c600d7` | fix: dataseeder commit | Updated DataSeeder configuration and initial test data. | Jul 2, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `9912f47` | fix: vehicle operational string | Fixed vehicle operational status value handling. | Jul 2, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `d7880e6` | feat: fix backend connection | Improved backend connection configuration for service integration. | Jul 4, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `ec087ec` | fix: Implementation of RESTful endpoints and service refactoring | Implemented RESTful endpoints and refactored service structure. | Jul 4, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `a854a87` | Fixr: Cleaning up duplicate controllers and resolving ambiguous mapping | Removed duplicate controllers and fixed ambiguous endpoint mappings. | Jul 4, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `ffacab4` | fix:adreess correct port | Corrected application port configuration for service execution. | Jul 4, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `c568035` | fix:change valued of tables | Adjusted database table values and seed records. | Jul 4, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `4a77c73` | fix: application properties | Updated application properties for environment configuration. | Jul 4, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `d54d20d` | feature: add new parametre of suscription | Added new subscription parameter for company registration flow. | Jul 5, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `8c600d7` | fix: id of generate reports | Fixed generated report identifier handling. | Jul 5, 2026 |
+| MineGuard-WebService | feature/restful-endpoints | `9912f47` | fix: add new parametres of device sensors | Added new device sensor parameters for telemetry records. | Jul 5, 2026 |
+
++ **Web App:**
+
+| Repository       | Branch                   | Commit Id | Commit Message                                                | Commit Message Body                                                                       | Committed on (Date) |
+| ---------------- | ------------------------ | --------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------- |
+| MineGuard-WebApp | hotfix/deploy-webapp     | `8c37de0` | fix: update angular build budgets                             | Updated Angular build budgets to optimize the application build process.                  | Jun 25, 2026        |
+| MineGuard-WebApp | feature/register-company | `1f2a523` | fix: refactor all end points and add register companie screen | Refactored frontend service endpoints and implemented the company registration interface. | Jul 5, 2026         |
+| MineGuard-WebApp | feature/register-company | `0ce169b` | fix: change kpis tokens for iam                               | Updated KPI authentication tokens to integrate with the new IAM module.                   | Jul 5, 2026         |
+| MineGuard-WebApp | feature/register-company | `42fead1` | feat: integrate a new tab of create a device                  | Added a new interface for registering and managing IoT devices.                           | Jul 5, 2026         |
+| MineGuard-WebApp | feature/register-company | `1421660` | fix: style and hardcode                                       | Adjusted UI styles and corrected hardcoded values in the application.                     | Jul 6, 2026         |
+
+
++ **Landing Page:**
+
++ **Mobile App:**
+
++ **Embbeded App:**
+
+| Repository            | Branch                                | Commit Id | Commit Message                                      | Commit Message Body                                                                                              | Committed on (Date) |
+| --------------------- | ------------------------------------- | --------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------- |
+| MineGuard-EmbeddedApp | fix/sensors-actuators-errors          | `9180b57` | fix: fixed some features about sensor and actuators | Fixed issues related to sensor readings and actuator behavior to improve device stability.                       | Jul 1, 2026         |
+| MineGuard-EmbeddedApp | feature/Integrate-framework-modestiot | `06e6085` | feat: integrate the library modestiot               | Integrated the ModestIoT framework into the embedded application to improve device communication and management. | Jul 4, 2026         |
+| MineGuard-EmbeddedApp | fix/fixed-edge-connection             | `de4c000` | feat: added edge connection                         | Implemented the communication layer between the embedded device and the Edge Service.                            | Jul 5, 2026         |
+
+
++ **Edge Service:**
+
+| Repository            | Branch             | Commit Id | Commit Message                                                                | Commit Message Body                                                              | Committed on (Date) |
+| --------------------- | ------------------ | --------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------- |
+| MineGuard-EmbeddedApp | feature/iam        | `d80b83d` | feat: add application layer                                                   | Added application layer for device authentication.                               | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/iam        | `534077e` | feat: add domain layer                                                        | Added domain layer for device authentication.                                    | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/iam        | `c586035` | feat: add infrastructure layer                                                | Added infrastructure layer for device authentication.                            | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/iam        | `4a77c73` | feat: add interfaces layer                                                    | Added interfaces layer for device authentication.                                | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/iam        | `9a3ac50` | fix(): Add IAM services                                                       | Implemented IAM services and related fixes.                                      | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/iam        | `68d270e` | feat(): Add IAM entities                                                      | Added IAM entities for device authentication.                                    | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/iam        | `f7d5418` | feat(iam): add infrastructure and interfaces layers for device authentication | Completed infrastructure and interface implementation for device authentication. | Jun 19, 2026        |
+| MineGuard-EmbeddedApp | feature/monitoring | `2cb7c5d` | feat(): add monitoring features to edge                                       | Implemented monitoring features for the embedded edge device.                    | Jun 20, 2026        |
+| MineGuard-EmbeddedApp | feature/monitoring | `a854a87` | Feature: Update monitoring                                                    | Updated monitoring functionalities and operational logic.                        | Jun 20, 2026        |
+| MineGuard-EmbeddedApp | feature/planning   | `d54d20d` | feat: add bounded planning and subscriptions                                  | Added planning module and subscription management components.                    | Jun 20, 2026        |
+| MineGuard-EmbeddedApp | develop            | `d7880e6` | feat: fix backend connection                                                  | Updated backend connection and integration settings.                             | Jul 5, 2026         |
+| MineGuard-EmbeddedApp | develop            | `ec087ec` | feat: Add Swagger and Render configuration                                    | Added API documentation and Render deployment configuration.                     | Jul 5, 2026         |
+| MineGuard-EmbeddedApp | release/2.0.0      | `8eeb650` | fix: restore Render configuration from release/2.0.0                          | Restored the Render deployment configuration for the final release.              | Jul 5, 2026         |
+
+
+
++ **Prototype:**
+
+
+
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review.
 
@@ -463,6 +535,26 @@ Feature: Driver behavior follow up
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
+Durante el Sprint 3 del proyecto MineGuard, el equipo completó las funcionalidades pendientes del Product Backlog, consolidando una versión funcional de la solución orientada a la prevención de accidentes en operaciones mineras. Las actividades de desarrollo estuvieron enfocadas en fortalecer los mecanismos de autenticación y seguridad, implementar el cierre de sesión y desvinculación del vehículo, habilitar la comunicación entre supervisor y conductor, incorporar recomendaciones inteligentes frente a eventos de riesgo, validar el cumplimiento de las acciones realizadas por el conductor y desarrollar funcionalidades para el análisis de desempeño y comportamiento durante la operación. Asimismo, se completaron las mejoras de la Landing Page dirigidas al segmento de operadores y conductores, fortaleciendo la presentación de las herramientas de seguridad personal ofrecidas por la plataforma.
+
+A continuación, se presentan las principales evidencias de ejecución correspondientes a las funcionalidades implementadas durante este Sprint. Cada captura refleja una de las características desarrolladas y demuestra el comportamiento esperado de la solución en los diferentes componentes del ecosistema MineGuard.
+
++ Pantalla Login del Supervisor:
+
+  La figura muestra la interfaz de autenticación del supervisor, permitiendo el acceso seguro al centro de monitoreo mediante credenciales registradas. Esta funcionalidad corresponde a la implementación de la US31 – Inicio de sesión del supervisor.
+
++ Pantalla donde obliga a cambiar la contraseña:
+
+  La figura presenta el flujo de actualización obligatoria de contraseña durante el primer acceso al sistema. Esta funcionalidad garantiza que las credenciales temporales sean reemplazadas por una contraseña segura antes de habilitar el acceso a las funcionalidades operativas (US41)
+
++ Cierre de sesión y desvinculación del vehículo:
+
+  La figura muestra el proceso mediante el cual el conductor finaliza su jornada de trabajo, cerrando su sesión y desvinculándose del vehículo asignado. Esta funcionalidad asegura la correcta trazabilidad de las operaciones realizadas (US42).
+
++ Comunicación entre supervisor y conductor:
+
+  La figura evidencia la funcionalidad de comunicación entre supervisor y conductor después de generarse una alerta operacional, permitiendo coordinar acciones inmediatas para reducir riesgos (US11).
+
 
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
@@ -487,4 +579,28 @@ A diferencia de los sprints anteriores, este Sprint se enfocó en verificar la d
 
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
+
++ **Web Site:**
+
+![website-insight](../report/assets/insights-sprint2/website-i.png)
+
++ **Web App:**
+
+![webapp-insight](../report/assets/insights-sprint2/webapp-i.png)
+
++ **Web Service:**
+
+![webservice-insight](../report/assets/insights-sprint2/webservices-i.png)
+
++ **Mobile App:**
+
+![mobile-insight](../report/assets/insights-sprint2/mobile-i.png)
+
++ **Edge Service:**
+
+![webservice-insight](../report/assets/insights-sprint2/edgeservice-i.png)
+
++ **Embedded App:**
+
+![webservice-insight](../report/assets/insights-sprint2/embeddedapp-i.png)
 
