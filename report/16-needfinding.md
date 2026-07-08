@@ -4,6 +4,8 @@
 
 + **Segmento 1: Supervisión Corporativa en Minería de Tajo Abierto** 
 
+Las decisiones definidas para el User Persona de Raúl Ramírez se sustentan en los hallazgos obtenidos durante las entrevistas realizadas al segmento de Supervisión Corporativa en Minería de Tajo Abierto. Su edad, cargo y experiencia representan a un perfil con responsabilidad directa sobre la seguridad, continuidad operativa y toma de decisiones en operaciones mineras. El uso de celular, Android, laptop y Windows responde a la necesidad identificada de acceder a información tanto desde campo como desde el centro de control. Asimismo, sus metas, motivaciones y frustraciones reflejan problemas recurrentes mencionados por los entrevistados, como la falta de alertas en tiempo real, la dependencia de reportes tardíos y la baja visibilidad de eventos críticos. Por ello, este persona permite orientar MineGuard hacia una solución IoT enfocada en anticipar riesgos, mejorar la respuesta operativa y apoyar decisiones basadas en datos reales.
+
 <p align="center">
     <img src="assets/Segmento 1 - Raúl Ramírez.png" alt="upc-logo" width="750px" height="900px"/>
 </p>
@@ -11,6 +13,8 @@
 <br>
 
 + **Segmento 2: Operadores y Conductores de Vehículos Livianos** 
+
+Las decisiones adoptadas para este User Persona se fundamentan en la información recopilada durante las entrevistas realizadas al segmento de Operadores y Conductores de Vehículos Livianos. La edad, experiencia, ocupación y contexto de trabajo representan el perfil predominante de los participantes, quienes realizan recorridos diarios por rutas internas de la mina y se encuentran expuestos a la interacción con maquinaria pesada y camiones autónomos. Asimismo, el uso de dispositivos móviles Android, sus habilidades y nivel de adopción tecnológica reflejan las características observadas en los entrevistados, quienes priorizan herramientas simples, intuitivas y de fácil acceso. Finalmente, las metas, motivaciones y frustraciones responden a necesidades recurrentes identificadas durante la investigación, como recibir alertas oportunas, reducir el riesgo de accidentes y contar con mayor visibilidad de los peligros presentes en su entorno, aspectos que guiaron el diseño de MineGuard y la priorización de sus funcionalidades.
 
 <p align="center">
     <img src="assets/Segmento 2 - Carlos Huamán.png" alt="upc-logo" width="750px" height="900px"/>
