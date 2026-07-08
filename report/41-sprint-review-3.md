@@ -117,24 +117,23 @@ Durante el Sprint 3 del proyecto MineGuard, el equipo completó la implementaci�
 
 + **Web Service:**
 
-+ **Web Service:**
+| **Repository** | **Branch**                  | **Commit Message**                                                         | **Commit Message Body**                                                                                                                    | **Committed on (Date)** |
+| -------------- | --------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| Web Service    | `feature/restful-endpoints` | **fix: fix a send email on brevo**                                         | Se corrigió el servicio de envío de correos electrónicos mediante Brevo para asegurar el funcionamiento de las notificaciones del sistema. | Jul 2, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: correction email autorization**                                     | Se ajustó la autorización utilizada para el envío de correos electrónicos, mejorando la autenticación del servicio.                        | Jul 2, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: addres personal change**                                            | Se actualizaron datos relacionados con la información personal utilizada por el sistema.                                                   | Jul 2, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: dataseeder commit**                                                 | Se corrigió la carga inicial de datos para garantizar una correcta inicialización de la base de datos.                                     | Jul 2, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: vehicle operational string**                                        | Se corrigió el manejo del estado operativo de los vehículos para evitar inconsistencias en la información mostrada.                        | Jul 2, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: Implementation of RESTful endpoints and service refactoring**       | Se implementaron nuevos endpoints RESTful y se refactorizó la capa de servicios para mejorar la estructura y mantenibilidad del backend.   | Jul 4, 2026             |
+| Web Service    | `feature/restful-endpoints` | **Fix: Cleaning up duplicate controllers and resolving ambiguous mapping** | Se eliminaron controladores duplicados y se resolvieron conflictos de mapeo entre endpoints REST.                                          | Jul 4, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: address correct port**                                              | Se corrigió la configuración del puerto de ejecución del servicio para asegurar el despliegue correcto.                                    | Jul 4, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: change values of tables**                                           | Se ajustaron valores y configuraciones de las tablas de la base de datos para mantener la consistencia de la información.                  | Jul 4, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: application properties**                                            | Se actualizaron las propiedades de configuración de la aplicación para mejorar su funcionamiento en distintos entornos.                    | Jul 4, 2026             |
+| Web Service    | `feature/restful-endpoints` | **feature: add new parameter of subscription**                             | Se incorporó un nuevo parámetro para la gestión de suscripciones dentro del sistema.                                                       | Jul 5, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: id of generate reports**                                            | Se corrigió la generación del identificador utilizado en los reportes emitidos por la plataforma.                                          | Jul 5, 2026             |
+| Web Service    | `feature/restful-endpoints` | **fix: add new parameters of device sensors**                              | Se añadieron nuevos parámetros para registrar información adicional proveniente de los sensores de los dispositivos IoT.                   | Jul 5, 2026             |
+| Web Service    | `feature/restful-endpoints` | **feature: add new endpoint patch device with vehicle**                    | Se implementó un nuevo endpoint REST que permite asociar un dispositivo con un vehículo mediante una operación PATCH.                      | Jul 7, 2026             |
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|---|---|---|---|---|---|
-| MineGuard-WebService | feature/restful-endpoints | `cfb5f73` | fix: fix a send email on brevo | Fixed email sending integration using Brevo service. | Jul 2, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `a8787ba` | fix: correction email autorization | Corrected email authorization configuration for notification delivery. | Jul 2, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `38c6450` | fix: address personal change | Updated personal address data handling in service records. | Jul 2, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `8c600d7` | fix: dataseeder commit | Updated DataSeeder configuration and initial test data. | Jul 2, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `9912f47` | fix: vehicle operational string | Fixed vehicle operational status value handling. | Jul 2, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `d7880e6` | feat: fix backend connection | Improved backend connection configuration for service integration. | Jul 4, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `ec087ec` | fix: Implementation of RESTful endpoints and service refactoring | Implemented RESTful endpoints and refactored service structure. | Jul 4, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `a854a87` | Fixr: Cleaning up duplicate controllers and resolving ambiguous mapping | Removed duplicate controllers and fixed ambiguous endpoint mappings. | Jul 4, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `ffacab4` | fix:adreess correct port | Corrected application port configuration for service execution. | Jul 4, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `c568035` | fix:change valued of tables | Adjusted database table values and seed records. | Jul 4, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `4a77c73` | fix: application properties | Updated application properties for environment configuration. | Jul 4, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `d54d20d` | feature: add new parametre of suscription | Added new subscription parameter for company registration flow. | Jul 5, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `8c600d7` | fix: id of generate reports | Fixed generated report identifier handling. | Jul 5, 2026 |
-| MineGuard-WebService | feature/restful-endpoints | `9912f47` | fix: add new parametres of device sensors | Added new device sensor parameters for telemetry records. | Jul 5, 2026 |
 
 + **Web App:**
 
@@ -162,6 +161,14 @@ Durante el Sprint 3 del proyecto MineGuard, el equipo completó la implementaci�
 
 + **Mobile App:**
 
+| **Repository** | **Branch**              | **Commit Message**                                                           | **Commit Message Body**                                                                                                                                                 | **Committed on (Date)** |
+| -------------- | ----------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Mobile App     | `feature/iam_endpoints` | **feat(mobile-app): connect app to deployed webservice API**                 | Se integró la aplicación móvil con la API REST desplegada, permitiendo consumir los servicios backend desde la aplicación.                                              | Jul 6, 2026             |
+| Mobile App     | `feature/iam_endpoints` | **feat(mobile-app): migrate state management from Riverpod to flutter_bloc** | Se migró la gestión del estado de Riverpod a Flutter BLoC para mejorar la organización del código, la escalabilidad y el mantenimiento de la aplicación.                | Jul 6, 2026             |
+| Mobile App     | `feature/iam_endpoints` | **feat(mobile-app): add English/Spanish i18n with flutter_localizations**    | Se implementó la internacionalización de la aplicación utilizando `flutter_localizations`, incorporando soporte para los idiomas español e inglés.                      | Jul 6, 2026             |
+| Mobile App     | `feature/iam_endpoints` | **Merge Pull Requests (#8–#9)**                                              | Integración de las funcionalidades desarrolladas en la rama `feature/iam_endpoints`, consolidando las mejoras implementadas en la aplicación móvil durante el Sprint 3. | Jul 6, 2026             |
+
+
 + **Embbeded App:**
 
 | Repository            | Branch                                | Commit Id | Commit Message                                      | Commit Message Body                                                                                              | Committed on (Date) |
@@ -188,12 +195,6 @@ Durante el Sprint 3 del proyecto MineGuard, el equipo completó la implementaci�
 | MineGuard-EmbeddedApp | develop            | `d7880e6` | feat: fix backend connection                                                  | Updated backend connection and integration settings.                             | Jul 5, 2026         |
 | MineGuard-EmbeddedApp | develop            | `ec087ec` | feat: Add Swagger and Render configuration                                    | Added API documentation and Render deployment configuration.                     | Jul 5, 2026         |
 | MineGuard-EmbeddedApp | release/2.0.0      | `8eeb650` | fix: restore Render configuration from release/2.0.0                          | Restored the Render deployment configuration for the final release.              | Jul 5, 2026         |
-
-
-
-+ **Prototype:**
-
-
 
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review.
@@ -342,6 +343,55 @@ A continuación, se presentan las principales evidencias de ejecución correspon
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
+Durante el Sprint 3 se completó y actualizó la documentación técnica de los Web Services de MineGuard mediante OpenAPI/Swagger. Esta documentación permite visualizar, probar y validar los endpoints implementados para la gestión de usuarios, sesiones, empresas, vehículos, conductores, sensores, telemetría IoT, alertas, métricas, reportes y auditoría. Además, se organizó la API por módulos funcionales, facilitando que el equipo y futuros desarrolladores comprendan la sintaxis de llamada, los métodos HTTP soportados, los parámetros requeridos y las respuestas esperadas. La documentación también permite ejecutar pruebas con datos de muestra directamente desde Swagger UI.
+
+| Módulo             | Método | Endpoint                                        | Acción implementada                  | Parámetros principales       | Response esperado         |
+| ------------------ | ------ | ----------------------------------------------- | ------------------------------------ | ---------------------------- | ------------------------- |
+| Users & Sessions   | POST   | `/api/v1/users`                                 | Crear usuario                        | body con datos del usuario   | Usuario registrado        |
+| Users & Sessions   | POST   | `/api/v1/sessions`                              | Iniciar sesión web                   | email, password              | JWT de autenticación      |
+| Users & Sessions   | POST   | `/api/v1/password-resets`                       | Solicitar recuperación de contraseña | email                        | Confirmación de solicitud |
+| Users & Sessions   | PATCH  | `/api/v1/users/me/password`                     | Cambiar contraseña                   | contraseña actual y nueva    | Contraseña actualizada    |
+| Companies          | POST   | `/api/v1/companies`                             | Registrar empresa tenant             | datos de empresa             | Empresa creada            |
+| Companies          | GET    | `/api/v1/companies/{companyId}/kpis`            | Obtener KPIs de empresa              | companyId                    | Métricas consolidadas     |
+| Companies          | GET    | `/api/v1/companies/{companyId}/insights`        | Obtener insights analíticos          | companyId                    | Lista de insights         |
+| Vehicles           | GET    | `/api/v1/vehicles`                              | Listar vehículos                     | opcional `view`              | Vehículos registrados     |
+| Vehicles           | POST   | `/api/v1/vehicles`                              | Crear vehículo                       | datos del vehículo           | Vehículo creado           |
+| Vehicles           | PATCH  | `/api/v1/vehicles/{vehicleId}`                  | Actualizar vehículo                  | vehicleId + body             | Vehículo actualizado      |
+| Vehicles           | DELETE | `/api/v1/vehicles/{vehicleId}`                  | Archivar vehículo                    | vehicleId                    | Vehículo desactivado      |
+| Drivers            | GET    | `/api/v1/drivers`                               | Listar conductores                   | filtros opcionales           | Conductores registrados   |
+| Drivers            | POST   | `/api/v1/drivers`                               | Crear conductor                      | datos del conductor          | Conductor creado          |
+| Drivers            | GET    | `/api/v1/drivers/{driverId}`                    | Consultar conductor                  | driverId                     | Detalle del conductor     |
+| Drivers            | PATCH  | `/api/v1/drivers/{driverId}`                    | Actualizar conductor                 | driverId + body              | Conductor actualizado     |
+| Drivers            | DELETE | `/api/v1/drivers/{driverId}`                    | Desactivar conductor                 | driverId                     | Conductor desactivado     |
+| Supervisors        | GET    | `/api/v1/supervisors`                           | Listar supervisores                  | JWT válido                   | Supervisores registrados  |
+| Supervisors        | POST   | `/api/v1/supervisors`                           | Crear supervisor                     | datos del supervisor         | Supervisor creado         |
+| Supervisors        | PATCH  | `/api/v1/supervisors/{supervisorId}`            | Actualizar supervisor                | supervisorId + body          | Supervisor actualizado    |
+| Sensors            | GET    | `/api/v1/sensors`                               | Listar sensores                      | JWT válido                   | Sensores registrados      |
+| Sensors            | POST   | `/api/v1/sensors`                               | Registrar sensor                     | datos del sensor             | Sensor creado             |
+| Sensors            | PATCH  | `/api/v1/sensors/{id}`                          | Actualizar sensor                    | id + body                    | Sensor actualizado        |
+| Vehicle Device     | GET    | `/api/v1/vehicles/{vehicleId}/sensor`           | Consultar sensor de vehículo         | vehicleId                    | Sensor vinculado          |
+| Vehicle Device     | POST   | `/api/v1/vehicles/{vehicleId}/sensor`           | Vincular sensor a vehículo           | vehicleId + sensorId         | Vinculación creada        |
+| IoT Telemetry      | POST   | `/api/v1/telemetry`                             | Ingestar telemetría IoT              | header `X-API-Key` + payload | Lectura registrada        |
+| Driving Sessions   | POST   | `/api/v1/vehicles/{vehicleId}/driving-sessions` | Iniciar sesión de conducción         | vehicleId + conductor        | Sesión iniciada           |
+| Driving Sessions   | PATCH  | `/api/v1/driving-sessions/{sessionId}`          | Cerrar/cancelar sesión               | sessionId                    | Sesión finalizada         |
+| Mobile Sessions    | POST   | `/api/v1/mobile-sessions`                       | Iniciar sesión móvil                 | credenciales operador        | Sesión móvil creada       |
+| Alerts             | GET    | `/api/v1/alerts`                                | Listar alertas                       | filtros opcionales           | Alertas registradas       |
+| Alerts             | GET    | `/api/v1/alerts/{alertId}`                      | Consultar alerta                     | alertId                      | Detalle de alerta         |
+| Alerts             | PATCH  | `/api/v1/alerts/{alertId}`                      | Actualizar alerta                    | alertId + estado             | Alerta actualizada        |
+| Alerts             | GET    | `/api/v1/alerts/{alertId}/history`              | Ver historial de alerta              | alertId                      | Historial de cambios      |
+| Driver Performance | GET    | `/api/v1/drivers/{driverId}/scores`             | Obtener score del conductor          | driverId                     | Puntaje de desempeño      |
+| Driver Performance | GET    | `/api/v1/drivers/{driverId}/metrics`            | Listar métricas del conductor        | driverId                     | Métricas históricas       |
+| Vehicle Positions  | GET    | `/api/v1/vehicles/positions`                    | Listar posiciones GPS                | JWT válido                   | Ubicación de flota        |
+| Reports            | GET    | `/api/v1/reports`                               | Listar reportes                      | JWT válido                   | Reportes disponibles      |
+| Driver Reports     | GET    | `/api/v1/drivers/{driverId}/reports/{reportId}` | Obtener reporte de conductor         | driverId, reportId, formato  | Reporte JSON/PDF/Excel    |
+| Audit Logs         | GET    | `/api/v1/audit-logs`                            | Obtener logs de auditoría            | formato opcional             | Auditoría JSON/PDF/Excel  |
+| Platform           | GET    | `/api/v1/platform/metrics`                      | Obtener métricas globales            | rol ADMIN/GLOBAL_ADMIN       | Métricas de plataforma    |
+
+
+Como evidencia de interacción con la documentación, se utilizó Swagger UI para consultar y probar endpoints con datos de muestra. Por ejemplo, el endpoint POST /api/v1/telemetry permite registrar telemetría enviada por dispositivos IoT mediante el header X-API-Key, incluyendo datos como frecuencia cardíaca, coordenadas GPS, distancia de proximidad y eventos de colisión. Como respuesta, el servicio confirma el registro de la información y permite que esta sea utilizada posteriormente para generar alertas, métricas de desempeño y reportes operativos.
+
+![enpoints-evidence](../report/assets/evidence-sprint-3-endpoints.png)
+
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
@@ -353,37 +403,48 @@ A diferencia de los sprints anteriores, este Sprint se enfocó en verificar la d
 |---|---|---|
 | Landing Page | Desplegado | https://1asi0572-2610-6779-vertex.github.io/mineguard-website/ |
 | Web Application | Desplegado | https://mineguard-iot.netlify.app/ |
-| Web Service | Preparado para ejecución/publicación | https://mineguard-webservice.onrender.com/swagger-ui/index.html# |
-| Mobile Application | Preparado para ejecución local / build móvil | Flutter local environment / Android emulator |
-| Edge Service | Preparado para ejecución local / integración con backend | Local environment / Edge Service API |
-| Embedded Application | Preparado para validación en entorno embebido | ESP32 / Wokwi simulation environment |
-| Prototype | Preparado para validación funcional del prototipo | Wokwi simulation / physical prototype environment |
+| Web Service | Desplegado | https://mineguard-webservice.onrender.com/swagger-ui/index.html# |
+| Mobile Application | Preparado para ejecución local / build móvil | -|
+| Edge Service | Desplegado | https://mineguard-edgeservice.onrender.com/apidocs/#/ |
+| Embedded Application | Desplegado | - |
+| Prototype | Desplegado | - |
 
 
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
 + **Web Site:**
+Durante este Sprint se mejoró la Landing Page incorporando contenido orientado a operadores y conductores, además de optimizar la experiencia de navegación y automatizar el proceso de despliegue mediante GitHub Actions.
 
-![website-insight](../report/assets/insights-sprint2/website-i.png)
+![website-insight](../report/assets/insights-sprint3/i-website.png)
 
 + **Web App:**
+La colaboración en la Web Application permitió integrar nuevos módulos para la gestión de empresas y dispositivos IoT, además de actualizar la comunicación con los nuevos servicios del backend y mejorar la interfaz de usuario.
 
-![webapp-insight](../report/assets/insights-sprint2/webapp-i.png)
+![webapp-insight](../report/assets/insights-sprint3/i-webapp.png)
 
 + **Web Service:**
+El equipo trabajó en la ampliación y refactorización de los servicios REST, incorporando nuevos endpoints, mejoras en la gestión de sensores, autenticación y generación de reportes para fortalecer la plataforma.
 
-![webservice-insight](../report/assets/insights-sprint2/webservices-i.png)
+![webservice-insight](../report/assets/insights-sprint3/i-webservice.png)
 
 + **Mobile App:**
+Durante el Sprint se integró la aplicación móvil con el Web Service desplegado, se modernizó la arquitectura mediante Flutter BLoC y se añadió soporte para internacionalización en español e inglés.
 
-![mobile-insight](../report/assets/insights-sprint2/mobile-i.png)
+![mobileapp-insight](../report/assets/insights-sprint3/i-mobileapp.png)
 
 + **Edge Service:**
+La colaboración permitió fortalecer el Edge Service mediante la incorporación de módulos de autenticación, monitoreo y planificación, además de completar su configuración para documentación y despliegue en Render.
 
-![webservice-insight](../report/assets/insights-sprint2/edgeservice-i.png)
+![edgeservice-insight](../report/assets/insights-sprint3/i-edgeservice.png)
 
 + **Embedded App:**
+Se realizaron mejoras en la estabilidad de la aplicación embebida, corrigiendo el funcionamiento de sensores y actuadores e integrando la comunicación con el Edge Service para una operación más confiable.
 
-![webservice-insight](../report/assets/insights-sprint2/embeddedapp-i.png)
+![embeddedapp-insight](../report/assets/insights-sprint3/i-embbededapp.png)
+
++ **Prototype:**
+El prototipo IoT fue actualizado para validar la integración entre los dispositivos físicos y el ecosistema MineGuard, comprobando el flujo completo de captura de datos, transmisión y monitoreo en tiempo real.
+
+![prototype-insight](../report/assets/insights-sprint3/i-prototype.png)
 
