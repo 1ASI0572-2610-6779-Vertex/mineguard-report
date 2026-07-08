@@ -149,6 +149,17 @@ Durante el Sprint 3 del proyecto MineGuard, el equipo completó la implementaci�
 
 + **Landing Page:**
 
+| **Repository** | **Branch**      | **Commit Id** | **Commit Message**                                                               | **Commit Message Body**                                                                                                         | **Committed on (Date)** |
+| -------------- | --------------- | ------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Landing Page   | `release/2.1.0` | `996024f`     | Merge pull request #24 from 1ASI0572-2610-6779-Vertex/release/2.1.0              | Integración de la versión **2.1.0** del Landing Page en la rama principal del proyecto.                                         | Jul 3, 2026             |
+| Landing Page   | `develop`       | `7d49f10`     | Add GitHub Actions workflow for GitHub Pages deployment                          | Se implementó un flujo de GitHub Actions para automatizar el despliegue continuo del Landing Page en GitHub Pages.              | Jul 3, 2026             |
+| Landing Page   | `release/2.1.0` | `cf32a1f`     | Merge pull request #23 from 1ASI0572-2610-6779-Vertex/release/2.1.0              | Integración de los cambios preparados para la versión **2.1.0** antes de su publicación.                                        | Jul 3, 2026             |
+| Landing Page   | `develop`       | `49f2805`     | fix: change link of video about the product and light theme and default language | Se corrigió el enlace del video **About the Product** y se configuró el tema claro y el idioma predeterminado de la aplicación. | Jul 3, 2026             |
+| Landing Page   | `develop`       | `8824ad3`     | Merge main into develop                                                          | Sincronización de la rama `develop` con los cambios incorporados en la rama `main`.                                             | Jul 3, 2026             |
+| Landing Page   | `develop`       | `f84f44d`     | Merge branch 'main' into develop                                                 | Integración de la rama `main` en `develop` para mantener ambas ramas actualizadas.                                              | Jul 3, 2026             |
+| Landing Page   | `release/2.0.0` | `25ceb1d`     | Merge pull request #22 from 1ASI0572-2610-6779-Vertex/release/2.0.0              | Integración de la versión **2.0.0** como base para la preparación de la siguiente versión del Landing Page.                     | Jul 3, 2026             |
+
+
 + **Mobile App:**
 
 + **Embbeded App:**
@@ -193,344 +204,116 @@ La suite de testing incluye **Unit Tests**, **Integration Tests** y **Acceptance
 
 **Testing repository:** `https://github.com/1ASI0572-2610-6779-Vertex/mineguard-webservice`
 
-##### Unit Tests
+##### Unit Testing
 
-###### Unit Test Record 01
+Durante el Sprint 3 se implementó una suite de pruebas unitarias para validar el correcto funcionamiento de los componentes fundamentales del backend de MineGuard. Estas pruebas se enfocaron en verificar la lógica de negocio de clases utilitarias y objetos de valor (Value Objects), garantizando que las conversiones, validaciones y reglas implementadas produzcan los resultados esperados de manera independiente, sin necesidad de interactuar con la base de datos o con otros componentes del sistema. La ejecución de las pruebas permitió confirmar el comportamiento correcto de estas funcionalidades, contribuyendo a mejorar la confiabilidad y mantenibilidad del software.
 
-Se implementó el Unit Test **SupervisorAuthenticationServiceImplTest** con el objetivo de validar la lógica de autenticación del supervisor y las restricciones asociadas al primer ingreso con contraseña temporal.
++ Tabla de pruebas unitarias:
 
-Este test se relaciona con las **User Stories US31** y **US41**, orientadas al inicio de sesión del supervisor y al cambio obligatorio de contraseña.
+| Clase evaluada    | Funcionalidad validada                                       | Cantidad de pruebas |
+| ----------------- | ------------------------------------------------------------ | :-----------------: |
+| PasswordGenerator | Generación de contraseñas seguras y validación de formato    |          2          |
+| UsernameGenerator | Generación automática de nombres de usuario según el rol     |          3          |
+| VehicleStatus     | Conversión entre valores serializados y estados del vehículo |          3          |
+| AlertStatus       | Conversión entre valores serializados y estados de alertas   |          2          |
+| AlertType         | Conversión entre valores serializados y tipos de alertas     |          3          |
+| CardiacStatus     | Clasificación del estado cardíaco según frecuencia cardíaca  |          3          |
+| **Total**         | **Pruebas unitarias implementadas**                          |        **16**       |
 
-Los comportamientos validados fueron:
 
-- Inicio de sesión exitoso del supervisor con credenciales válidas.
-- Rechazo de credenciales inválidas.
-- Identificación de usuarios que ingresan por primera vez con contraseña temporal.
-- Restricción de acceso a funcionalidades operativas hasta completar el cambio de contraseña.
+Evidencias:
 
-Ruta del test:
++ Implementación de las pruebas unitarias para las clases utilitarias y objetos de valor del dominio.
 
-```plaintext
-src/test/java/com/mineguard/platform/iam/application/internal/commandservices/SupervisorAuthenticationServiceImplTest.java
-```
+![unit-test-sprint3-2](../report/assets/unit-test-sprint3-2.png)
 
-![unit-test-01](../report/assets/evidence-sprint3/testing/unit-test-01-supervisor-auth.png)
+![unit-test-sprint3-3](../report/assets/unit-test-sprint3-3.png)
 
-###### Unit Test Record 02
+![unit-test-sprint3-4](../report/assets/unit-test-sprint3-4.png)
 
-Se implementó el Unit Test **DriverSessionCommandServiceImplTest** con el objetivo de validar la lógica de cierre de sesión del conductor y la desvinculación del vehículo asignado al finalizar la jornada operativa.
+![unit-test-sprint3-5](../report/assets/unit-test-sprint3-5.png)
 
-Este test se relaciona con la **User Story US42**, orientada al cierre de sesión y desvinculación de vehículo.
++ Ejecución satisfactoria de la suite de pruebas unitarias mediante Maven.
 
-Los comportamientos validados fueron:
+![unit-test-sprint3-1](../report/assets/unit-test-sprint3-1.png)
 
-- Cierre correcto de sesión cuando el vehículo se encuentra detenido.
-- Bloqueo del cierre de sesión cuando el vehículo reporta movimiento.
-- Liberación del vehículo para futuras operaciones.
-- Registro de la hora de fin de la operación.
 
-Ruta del test:
+##### Integration Testing
 
-```plaintext
-src/test/java/com/mineguard/platform/operations/application/internal/commandservices/DriverSessionCommandServiceImplTest.java
-```
+Durante el Sprint 3 se implementó una suite de pruebas de integración con el objetivo de validar la correcta interacción entre la capa de persistencia, el framework Spring Boot y la base de datos de pruebas H2. Estas pruebas permitieron comprobar el funcionamiento conjunto de los repositorios JPA, verificando operaciones de creación, consulta y conteo de registros, así como los métodos personalizados implementados para cada contexto de negocio. La ejecución satisfactoria de estas pruebas garantiza que los componentes del sistema interactúan correctamente en un entorno cercano al de producción.
 
-![unit-test-02](../report/assets/evidence-sprint3/testing/unit-test-02-driver-session.png)
++ Tabla de pruebas de integración:
 
-###### Unit Test Record 03
+| Componente evaluado          | Funcionalidad validada                           | Cantidad de pruebas |
+| ---------------------------- | ------------------------------------------------ | :-----------------: |
+| Contexto de la aplicación    | Inicialización correcta del contexto Spring Boot |          1          |
+| CompanyPersistenceRepository | Registro, búsqueda y consulta de empresas        |          3          |
+| VehiclePersistenceRepository | Persistencia, búsqueda y conteo de vehículos     |          3          |
+| DriverPersistenceRepository  | Persistencia, búsqueda y conteo de conductores   |          3          |
+| AlertPersistenceRepository   | Persistencia y consulta de alertas               |          2          |
+| **Total**                    | **Pruebas de integración implementadas**         |        **12**       |
 
-Se implementó el Unit Test **DriverPerformanceQueryServiceImplTest** con el objetivo de validar el cálculo de métricas históricas del conductor y la clasificación de su comportamiento operativo a partir de alertas, incidentes y acciones cumplidas.
 
-Este test se relaciona con las **User Stories US04** y **US23**, orientadas a la consulta de desempeño del conductor y seguimiento de comportamiento.
+Evidencias:
 
-Los comportamientos validados fueron:
++ Implementación de las pruebas de integración desarrolladas para los repositorios de persistencia del sistema.
 
-- Consulta de desempeño histórico por conductor.
-- Agregación de alertas, incidencias y acciones cumplidas.
-- Actualización automática de métricas ante nuevos eventos.
-- Clasificación del conductor según comportamiento seguro, preventivo o riesgoso.
++ Contexto de la aplicación:
 
-Ruta del test:
+  Se verificó que la aplicación Spring Boot iniciara correctamente utilizando el perfil de pruebas, asegurando que todos los componentes y configuraciones del sistema se carguen sin errores.
 
-```plaintext
-src/test/java/com/mineguard/platform/analytics/application/internal/queryservices/DriverPerformanceQueryServiceImplTest.java
-```
+![integration-test-sprint3-5](../report/assets/integration-test-sprint3-5.png)
 
-![unit-test-03](../report/assets/evidence-sprint3/testing/unit-test-03-performance-behavior.png)
++ CompanyPersistenceRepository:
 
-###### Unit Test Record 04
+  Se validaron las operaciones de persistencia relacionadas con las empresas, incluyendo el registro, la búsqueda por identificador y la consulta mediante la API Key utilizada por los dispositivos IoT.
 
-Se implementó el Unit Test **AlertRecommendationServiceImplTest** con el objetivo de validar la generación de recomendaciones automáticas para el conductor y la confirmación de acciones esperadas tras una alerta crítica o preventiva.
+![integration-test-sprint3-4](../report/assets/integration-test-sprint3-4.png)
 
-Este test se relaciona con las **User Stories US21** y **US22**, orientadas a la recomendación de acción para el conductor y confirmación de cumplimiento.
++ VehiclePersistenceRepository:
 
-Los comportamientos validados fueron:
+  Se comprobó el correcto almacenamiento y recuperación de vehículos, así como la consulta por empresa y el conteo de registros según el estado operativo de la flota.
 
-- Generación de recomendaciones preventivas ante alertas de proximidad.
-- Generación de recomendaciones críticas ante riesgo de colisión o fatiga severa.
-- Asociación de la recomendación generada con el evento de alerta.
-- Evaluación de telemetría posterior para validar si el conductor respondió correctamente.
+![integration-test-sprint3-3](../report/assets/integration-test-sprint3-3.png)
 
-Ruta del test:
++ DriverPersistenceRepository:
 
-```plaintext
-src/test/java/com/mineguard/platform/monitoring/application/internal/domainservices/AlertRecommendationServiceImplTest.java
-```
+  Se verificó la persistencia de los conductores y la correcta ejecución de consultas por empresa, usuario y estado de turno, garantizando la integridad de la información registrada.
 
-![unit-test-04](../report/assets/evidence-sprint3/testing/unit-test-04-recommendation-compliance.png)
+![integration-test-sprint3-2](../report/assets/integration-test-sprint3-2.png)
 
----
++ AlertPersistenceRepository:
 
-##### Integration Tests
+  Se validó el registro y la recuperación de alertas operacionales, comprobando la correcta persistencia de su información y su asociación con la empresa correspondiente.
 
-###### Integration Test Record 01
+![integration-test-sprint3-1](../report/assets/integration-test-sprint3-1.png)
 
-Se ejecutó una prueba de integración sobre el endpoint **POST /api/v1/sessions/supervisor**, perteneciente al módulo IAM. El objetivo fue validar que el Web Service permita el inicio de sesión de supervisores autorizados y rechace credenciales inválidas.
 
-Este test se relaciona con la **User Story US31**.
+##### Integration Testing
 
-Comportamiento validado:
+Durante el Sprint 3 se elaboraron escenarios de pruebas utilizando la metodología Behavior-Driven Development (BDD) con el lenguaje Gherkin. Estos escenarios describen el comportamiento esperado del sistema desde la perspectiva del usuario, permitiendo validar los principales flujos de negocio de MineGuard mediante una especificación clara y comprensible para desarrolladores y stakeholders. De esta manera, se garantiza que los requisitos funcionales implementados respondan al comportamiento esperado de la plataforma.
 
-- El endpoint permite el acceso cuando las credenciales del supervisor son válidas.
-- El backend retorna un token de sesión y datos básicos del usuario autenticado.
-- El endpoint rechaza credenciales inválidas con estado **401 Unauthorized**.
++ Tabla de escenarios BDD:
 
-Endpoint probado:
+| Escenario                         | Objetivo                                                                                                 |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Registro de empresa minera        | Validar el proceso de registro de una empresa y la generación de credenciales administrativas y API Key. |
+| Registro de conductor             | Verificar la creación de un conductor y su asociación con la empresa correspondiente.                    |
+| Inicio de sesión de conducción    | Validar la creación de una sesión activa de conducción para un vehículo operativo.                       |
+| Prevención de sesiones duplicadas | Comprobar que el sistema impida múltiples sesiones activas para un mismo conductor.                      |
+| Procesamiento de telemetría IoT   | Verificar que la recepción de telemetría crítica genere las alertas operacionales correspondientes.      |
+| Resolución de alertas             | Validar la actualización del estado de una alerta cuando es atendida por un supervisor.                  |
+| **Total**                         | **6 escenarios BDD implementados**                                                                       |
 
-```http
-POST /api/v1/sessions/supervisor
-```
 
-###### Integration Test Record 02
++ Evidencias:
 
-Se ejecutó una prueba de integración sobre el endpoint **PATCH /api/v1/users/me/password**, perteneciente al módulo IAM. El objetivo fue validar el flujo de cambio obligatorio de contraseña para usuarios que ingresan con credenciales temporales.
+Escenarios BDD desarrollados en Gherkin
 
-Este test se relaciona con la **User Story US41**.
+Se implementaron los escenarios funcionales utilizando el lenguaje Gherkin, definiendo las condiciones iniciales (Given), las acciones ejecutadas (When) y los resultados esperados (Then) para los principales procesos del sistema.
 
-Comportamiento validado:
 
-- El endpoint valida la contraseña temporal actual.
-- El sistema rechaza contraseñas nuevas que no cumplen los requisitos de seguridad.
-- El sistema actualiza el estado del usuario cuando la contraseña fue cambiada correctamente.
-- El usuario queda habilitado para acceder a las funciones operativas.
-
-Endpoint probado:
-
-```http
-PATCH /api/v1/users/me/password
-```
-
-###### Integration Test Record 03
-
-Se ejecutó una prueba de integración sobre el endpoint **POST /api/v1/driver-sessions/{sessionId}/close**, perteneciente al módulo de operaciones. El objetivo fue validar el cierre de sesión del conductor y la liberación del vehículo asignado.
-
-Este test se relaciona con la **User Story US42**.
-
-Comportamiento validado:
-
-- El endpoint permite cerrar la sesión cuando el vehículo está detenido.
-- El sistema bloquea el cierre si el vehículo reporta movimiento.
-- El vehículo queda disponible después del cierre exitoso.
-- Se registra la hora de fin de la operación.
-
-Endpoint probado:
-
-```http
-POST /api/v1/driver-sessions/{sessionId}/close
-```
-
-###### Integration Test Record 04
-
-Se ejecutó una prueba de integración sobre el endpoint **GET /api/v1/drivers/{driverId}/performance**, perteneciente al módulo de analíticas. El objetivo fue validar la consulta del desempeño histórico del conductor.
-
-Este test se relaciona con las **User Stories US04** y **US23**.
-
-Comportamiento validado:
-
-- El endpoint retorna métricas asociadas al conductor solicitado.
-- El sistema incluye información de alertas, incidentes y cumplimiento de acciones.
-- El sistema retorna una respuesta vacía o informativa cuando el conductor no tiene historial suficiente.
-- La clasificación de comportamiento se calcula a partir de los eventos existentes.
-
-Endpoint probado:
-
-```http
-GET /api/v1/drivers/{driverId}/performance
-```
-
----
-
-##### BDD Tests
-
-###### BDD Test Record 01
-
-Se implementó el Acceptance Test bajo enfoque BDD **supervisor_session_security.feature** con el objetivo de validar el acceso del supervisor al centro de control y el cambio obligatorio de contraseña temporal en el primer ingreso.
-
-Este test se relaciona con las **User Stories US31** y **US41**.
-
-Ruta del archivo feature:
-
-```plaintext
-src/test/resources/features/supervisor_session_security.feature
-```
-
-Ruta del archivo steps:
-
-```plaintext
-src/test/java/com/mineguard/platform/iam/bdd/SupervisorSessionSecuritySteps.java
-```
-
-```gherkin
-Feature: Supervisor session security
-
-  As a MineGuard supervisor
-  I want to access the control center with valid credentials
-  So that I can monitor and manage the mining operation securely
-
-  Scenario: Supervisor accesses the control center with valid credentials
-    Given a supervisor account exists with valid credentials
-    When I send a POST request to "/api/v1/sessions/supervisor" with valid credentials
-    Then the response status should be 200
-    And the response body should contain a session token
-    And the supervisor should be allowed to access the control center
-
-  Scenario: Supervisor must change temporary password on first login
-    Given a supervisor account exists with a temporary password
-    When I authenticate using the temporary password
-    Then the response status should be 200
-    And the response body should indicate that password change is required
-    When I send a PATCH request to "/api/v1/users/me/password" with a valid new password
-    Then the response status should be 200
-    And the account should be marked as password updated
-```
-
-![bdd-test-01](../report/assets/evidence-sprint3/testing/bdd-01-supervisor-session-security.png)
-
-###### BDD Test Record 02
-
-Se implementó el Acceptance Test bajo enfoque BDD **driver_shift_closure.feature** con el objetivo de validar el cierre de sesión del conductor y la desvinculación del vehículo asignado.
-
-Este test se relaciona con la **User Story US42**.
-
-Ruta del archivo feature:
-
-```plaintext
-src/test/resources/features/driver_shift_closure.feature
-```
-
-Ruta del archivo steps:
-
-```plaintext
-src/test/java/com/mineguard/platform/operations/bdd/DriverShiftClosureSteps.java
-```
-
-```gherkin
-Feature: Driver shift closure
-
-  As a MineGuard driver
-  I want to close my session when my workday ends
-  So that I can be legally disconnected from the assigned vehicle
-
-  Scenario: Driver closes session after vehicle has stopped
-    Given a driver has an active session with an assigned vehicle
-    And the vehicle reports stopped status
-    When I send a POST request to "/api/v1/driver-sessions/current/close"
-    Then the response status should be 200
-    And the session should store the operation end time
-    And the vehicle should be available for other drivers
-
-  Scenario: Driver cannot close session while vehicle is moving
-    Given a driver has an active session with an assigned vehicle
-    And the vehicle reports movement
-    When I send a POST request to "/api/v1/driver-sessions/current/close"
-    Then the response status should be 409
-    And the response body should indicate that the vehicle must stop before logout
-```
-
-![bdd-test-02](../report/assets/evidence-sprint3/testing/bdd-02-driver-shift-closure.png)
-
-###### BDD Test Record 03
-
-Se implementó el Acceptance Test bajo enfoque BDD **alert_recommendations_and_compliance.feature** con el objetivo de validar la generación de recomendaciones de seguridad y la confirmación de acciones del conductor ante alertas.
-
-Este test se relaciona con las **User Stories US21** y **US22**.
-
-Ruta del archivo feature:
-
-```plaintext
-src/test/resources/features/alert_recommendations_and_compliance.feature
-```
-
-Ruta del archivo steps:
-
-```plaintext
-src/test/java/com/mineguard/platform/monitoring/bdd/AlertRecommendationsAndComplianceSteps.java
-```
-
-```gherkin
-Feature: Alert recommendations and driver compliance
-
-  As a MineGuard driver
-  I want to receive clear recommendations after an alert
-  So that I can react correctly during the operation
-
-  Scenario: Driver receives a critical recommendation after a collision alert
-    Given a critical collision alert exists for an active driver
-    When the system processes the alert recommendation
-    Then the recommendation should indicate immediate stop
-    And the recommendation should be associated with the alert event
-
-  Scenario: Supervisor sees compliance registered after driver response
-    Given a critical alert required the driver to stop
-    And the vehicle telemetry reports stopped status after the alert
-    When the system evaluates driver compliance
-    Then the alert action should be marked as fulfilled
-    And the compliance result should be visible to the supervisor
-```
-
-![bdd-test-03](../report/assets/evidence-sprint3/testing/bdd-03-alert-recommendations.png)
-
-###### BDD Test Record 04
-
-Se implementó el Acceptance Test bajo enfoque BDD **driver_behavior_follow_up.feature** con el objetivo de validar la consulta de desempeño del conductor y el seguimiento de comportamiento por parte del supervisor.
-
-Este test se relaciona con las **User Stories US04** y **US23**.
-
-Ruta del archivo feature:
-
-```plaintext
-src/test/resources/features/driver_behavior_follow_up.feature
-```
-
-Ruta del archivo steps:
-
-```plaintext
-src/test/java/com/mineguard/platform/analytics/bdd/DriverBehaviorFollowUpSteps.java
-```
-
-```gherkin
-Feature: Driver behavior follow up
-
-  As a MineGuard supervisor
-  I want to evaluate driver behavior
-  So that I can identify risky driving patterns and take preventive actions
-
-  Scenario: Supervisor reviews risk classification of a driver
-    Given a driver has historical alerts and compliance records
-    When I send a GET request to "/api/v1/drivers/DRV-001/performance"
-    Then the response status should be 200
-    And the response body should include alert metrics
-    And the response body should include a behavior classification
-
-  Scenario: Driver checks own historical performance
-    Given an authenticated driver has previous operational events
-    When the driver opens the performance view
-    Then the system should display alerts, incidents and fulfilled actions
-    And the information should correspond only to the authenticated driver
-```
-
-![bdd-test-04](../report/assets/evidence-sprint3/testing/bdd-04-driver-behavior.png)
-
+![bdd-test-sprint3-1](../report/assets/bdd-test-sprint3-1.png)
 
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
