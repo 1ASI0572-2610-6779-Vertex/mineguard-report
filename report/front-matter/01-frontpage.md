@@ -17,7 +17,7 @@ NRC
 **6779**
 
 
-**Informe del Trabajo Parcial**
+**Informe del Trabajo Final**
 
 
 Docente: 
@@ -77,7 +77,7 @@ Integrantes
 
 <br>
   
-**Fecha de publicación:** Junio de 2026
+**Fecha de publicación:** Julio de 2026
 
 **Período 202610**
 
