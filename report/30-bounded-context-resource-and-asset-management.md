@@ -320,3 +320,4 @@ Las tablas Vehicles y Sensors almacenan la información de la flota operativa y 
 En conjunto, este submodelo permite mantener una base de datos coherente para la preparación operativa, la validación de configuración y la sincronización con el contexto de ejecución.
 
 <img src="assets/ERD_BC_resource_and_asset_management.png">
+<div style="break-after: page;"></div>

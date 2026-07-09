@@ -58,3 +58,4 @@ Este segmento incluye a los conductores de vehículos menores que circulan dentr
 
     - Según el Ministerio de Energía y Minas (MINEM), la incorporación de tecnologías de automatización, monitoreo y seguridad operacional constituye una prioridad para mejorar la productividad y reducir la ocurrencia de incidentes dentro de las operaciones mineras.
 
+<div style="break-after: page;"></div>

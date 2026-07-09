@@ -57,3 +57,5 @@
 | 53 | TS10 | Disponibilidad del servicio de alertas | Como Developer quiero implementar mecanismos de disponibilidad para el servicio de alertas para asegurar que las respuestas críticas sigan siendo procesadas ante fallos parciales. | 8 |
 
 Link de Trello: https://trello.com/invite/b/69eed853dff727dbee5ccedc/ATTIde103e1bb7dcc09fcfbbb82e366f616bC5620F9A/mineguard
+
+<div style="break-after: page;"></div>

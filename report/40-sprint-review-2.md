@@ -643,3 +643,5 @@ En este sprint se dejó preparada la base de despliegue de los productos del alc
 + **Embedded App:**
 
 ![webservice-insight](../report/assets/insights-sprint2/embeddedapp-i.png)
+
+<div style="break-after: page;"></div>

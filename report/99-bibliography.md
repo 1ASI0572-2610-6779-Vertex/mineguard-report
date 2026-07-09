@@ -21,3 +21,5 @@ Sociedad Nacional de Minería, Petróleo y Energía. (2024). *Seguridad y Salud 
 Superintendencia Nacional de Fiscalización Laboral. (2023). *Resolución N.° 911-2023-SUNAFIL/TFL-Primera Sala*. Tribunal de Fiscalización Laboral. https://img.lpderecho.pe/wp-content/uploads/2023/10/Resolucion-911-2023-Sunafil-TFL-Primera-Sala-LPDerecho.pdf
 
 Torsa. (s. f.). *Collision avoidance system for open-pit mining: Real-time safety and control*. https://torsaglobal.com/en/solution/collision-avoidance-system-for-open-pit-mining-real-time-safety-and-control/
+
+<div style="break-after: page;"></div>

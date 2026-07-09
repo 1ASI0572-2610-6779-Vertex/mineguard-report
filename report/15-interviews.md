@@ -258,3 +258,4 @@ Características subjetivas identificadas:
 Las entrevistas realizadas permitieron identificar necesidades comunes relacionadas con la seguridad durante la conducción, precisión de alertas y apoyo tecnológico frente a riesgos operacionales y fatiga laboral. Además, se reconocieron patrones de comportamiento y percepción del peligro que influyen directamente en la interacción del conductor con los sistemas actuales. Estos hallazgos serán utilizados como insumo principal para el desarrollo del Needfinding y la construcción del arquetipo del conductor de vehículos livianos.
 
 <br>
+<div style="break-after: page;"></div>
