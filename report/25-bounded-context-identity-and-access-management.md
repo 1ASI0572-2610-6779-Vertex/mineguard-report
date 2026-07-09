@@ -150,3 +150,4 @@ String generateAccessToke(...): Crea y firma un JWT para autenticación
 Este diagrama de base de datos representa el bounded context IAM (Identity and Access Management), encargado de la autenticación y autorización de los usuarios dentro del sistema. Las tablas principales son User y Role, vinculadas mediante una relación muchos a uno, donde cada usuario posee un único rol asignado, pero un rol puede estar asociado a múltiples usuarios. Este diseño permite administrar de manera flexible los permisos y accesos, garantizando seguridad y control centralizado en la gestión de identidades.
 
 <img src="assets/iamdb.png">
+<div style="break-after: page;"></div>

@@ -50,3 +50,4 @@ De la misma manera, se muestra su versión para mobile.
 <img src="assets/movile-mockUp4.png">
 <br>
 <img src="assets/movile-mockUp5.png">
+<div style="break-after: page;"></div>

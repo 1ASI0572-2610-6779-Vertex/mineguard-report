@@ -32,3 +32,4 @@ Este diagrama describe la topología de infraestructura física y virtual donde 
 Se detalla una distribución geográfica de nodos. En el borde, la unidad Mineguard Edge Unit instalada en el vehículo gestiona el procesamiento local de sensores. En la nube, se observa el despliegue del Backend Application Server y el Database Server, optimizados para alta disponibilidad.
 
 <img src="assets/FinalDeploymentViewB.png">
+<div style="break-after: page;"></div>

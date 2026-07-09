@@ -345,3 +345,4 @@ La paleta de colores del LED RGB de ambos dispositivos sigue la guía de estilos
 |  Gris | `#888780` | Dispositivo en standby / sin actividad |
 
 Esta semántica cromática es consistente con la guía de estilos definida para las interfaces gráficas del dashboard del supervisor y la aplicación móvil del conductor, garantizando una experiencia unificada entre el mundo físico y el digital.
+<div style="break-after: page;"></div>

@@ -203,3 +203,4 @@ El siguiente diagrama UML representa las entidades del dominio, sus atributos, m
 #### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
 <img src="assets/DB_BC_service_execution_monitoring.png">
+<div style="break-after: page;"></div>

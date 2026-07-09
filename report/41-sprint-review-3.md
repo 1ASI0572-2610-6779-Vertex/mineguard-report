@@ -448,3 +448,4 @@ El prototipo IoT fue actualizado para validar la integración entre los disposit
 
 ![prototype-insight](../report/assets/insights-sprint3/i-prototype.png)
 
+<div style="break-after: page;"></div>

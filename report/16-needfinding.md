@@ -85,4 +85,4 @@ Este User Journey Map representa la experiencia de un conductor de vehículo liv
 <p align="center">
     <img src="assets/Empathy map 2.png" alt="upc-logo" width="850px" height="1300px"/>
 </p>
-
+<div style="break-after: page;"></div>

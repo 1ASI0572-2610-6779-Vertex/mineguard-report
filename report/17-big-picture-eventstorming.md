@@ -74,5 +74,4 @@ Captura el ciclo de cierre y aprendizaje tras un evento de riesgo o colisión. E
 </p>
 
 <br>
-
-
+<div style="break-after: page;"></div>

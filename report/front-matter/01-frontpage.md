@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/UpcLogo.png" alt="Logo de UPC" width="80">
+  <img src="../report/assets/UpcLogo.png" alt="Logo de UPC" width="80">
 </p>
 
 <div align="center">
@@ -82,3 +82,4 @@ Integrantes
 **Período 202610**
 
 </div>
+<div style="break-after: page;"></div>

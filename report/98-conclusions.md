@@ -105,3 +105,5 @@ El desarrollo integral de MineGuard permitió validar que la propuesta de soluci
 <img src="assets/about-the-team-video.png">
 
 `link del video`
+
+<div style="break-after: page;"></div>

@@ -115,5 +115,4 @@ Creemos que incrementaremos la capacidad de respuesta ante situaciones de emerge
 #### 1.2.2.4. Lean UX Canvas
 
 ![LeanUxCanvas](../report/assets/lean_ux_canvas.png)
-
-
+<div style="break-after: page;"></div>

@@ -110,5 +110,4 @@ Criterio: : La capacidad de funcionar efectivamente en un equipo cuyos miembros 
 </table>
 
 </div>
-
-
+<div style="break-after: page;"></div>

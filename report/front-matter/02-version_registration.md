@@ -38,3 +38,4 @@
 | 0.34 | 06/07/2026 | Gabriel Gordon | Corrección de diagramas de arquitectura, infraestructura IoT y consistencia técnica del informe |
 | 0.35 | 07/07/2026 | Marcia Melgarejo | Integración de validaciones, evaluación heurística y evidencias del Video About-the-Product |
 | 0.36 | 08/07/2026 | Javier Gonzales | Revisión final de conclusiones, Student Outcome, bibliografía, anexos y estructura general del informe |
+<div style="break-after: page;"></div>

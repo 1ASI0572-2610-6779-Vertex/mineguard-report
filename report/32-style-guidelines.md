@@ -175,3 +175,4 @@ Las etiquetas funcionan como puntos de entrada semánticos, permitiendo que los 
 * **Alertas:** Notificaciones activas asociadas al vehículo del conductor.
 * **Mi Equipo:** Detalle del vehículo asignado al conductor, con telemetría y estado de seguridad.
 * **Turno:** Información del turno en curso, bitácora y eventos asociados al conductor.
+<div style="break-after: page;"></div>
