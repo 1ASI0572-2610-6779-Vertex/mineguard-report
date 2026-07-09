@@ -333,9 +333,13 @@ A continuación, se presentan las principales evidencias de ejecución correspon
 
   La figura presenta el flujo de actualización obligatoria de contraseña durante el primer acceso al sistema. Esta funcionalidad garantiza que las credenciales temporales sean reemplazadas por una contraseña segura antes de habilitar el acceso a las funcionalidades operativas (US41)
 
+  ![evidence-login](../report/assets/evi-password.png)
+
 + Cierre de sesión y desvinculación del vehículo:
 
   La figura muestra el proceso mediante el cual el conductor finaliza su jornada de trabajo, cerrando su sesión y desvinculándose del vehículo asignado. Esta funcionalidad asegura la correcta trazabilidad de las operaciones realizadas (US42).
+
+  ![evidence-login](../report/assets/evi-logout.png)
 
 
 
