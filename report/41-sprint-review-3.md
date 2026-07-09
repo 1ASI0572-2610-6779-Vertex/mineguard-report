@@ -435,7 +435,7 @@ La aplicación móvil fue configurada e integrada con Firebase, utilizando esta 
 | Landing Page | Desplegado | https://1asi0572-2610-6779-vertex.github.io/mineguard-website/ |
 | Web Application | Desplegado | https://mineguard-iot.netlify.app/ |
 | Web Service | Desplegado | https://mineguard-webservice.onrender.com/swagger-ui/index.html# |
-| Mobile Application | Preparado para ejecución local / build móvil | -|
+| Mobile Application | Preparado para ejecución local / build móvil | https://appdistribution.firebase.google.com/testerapps/1:490390952912:android:59aa1f8fa9c51d8ca6f7d5/releases/2bbv1r660u9ro?utm_source=firebase-console |
 | Edge Service | Desplegado | https://mineguard-edgeservice.onrender.com/apidocs/#/ |
 | Embedded Application | Desplegado | - |
 | Prototype | Desplegado | https://wokwi.com/projects/467328858128287745  |
