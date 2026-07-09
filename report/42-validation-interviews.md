@@ -257,7 +257,7 @@ Como recomendación, sugirió incorporar mensajes más descriptivos que indiquen
 <tr>
   <td>2</td>
   <td>
-    <strong>Nombre:</strong> Jorge Astolingón Díaz <br>
+    <strong>Nombre:</strong> Jorge Silva <br>
     <strong>Edad:</strong> 48 años <br>
     <strong>Distrito:</strong> Carhuaz, Áncash <br>
     <strong>Cargo:</strong> Operador de Maquinaria <br>
@@ -265,7 +265,7 @@ Como recomendación, sugirió incorporar mensajes más descriptivos que indiquen
     <strong>Duración:</strong> [09:57]
   </td>
   <td>
-    Jorge Astolingón Díaz participó en la validación de la aplicación móvil MineGuard desde la perspectiva de un operador con amplia experiencia en minería. Durante la sesión realizó tareas relacionadas con la recepción de alertas, consulta de eventos recientes y revisión de información vinculada a situaciones de riesgo registradas por el sistema.<br><br>
+    Jorge Silva participó en la validación de la aplicación móvil MineGuard desde la perspectiva de un operador con amplia experiencia en minería. Durante la sesión realizó tareas relacionadas con la recepción de alertas, consulta de eventos recientes y revisión de información vinculada a situaciones de riesgo registradas por el sistema.<br><br>
 
 Durante la evaluación destacó que la aplicación presenta la información de manera clara y directa, permitiendo comprender rápidamente el contexto de una alerta sin necesidad de navegar por múltiples opciones. Considera que esta característica es importante debido a que los conductores suelen disponer de poco tiempo para revisar información adicional durante sus actividades operativas.<br><br>
 
@@ -275,8 +275,8 @@ Como observación, señaló que la aplicación debe mantener un equilibrio adecu
   </td>
   <td align="center">
     <img
-      src="assets/img/interviews/validacion_segmento_2-Jorge_Astolingon.png"
-      alt="captura entrevista Jorge Astolingón"
+      src="assets/img/interviews/validacion_segmento_2-Jorge_Silva.png"
+      alt="captura entrevista Jorge Silva"
       width="320"
     >
   </td>
