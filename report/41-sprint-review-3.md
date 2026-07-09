@@ -64,7 +64,7 @@ Para la gestión y seguimiento de las actividades, se utilizó Trello como herra
 
 <br>
 
-Link Trello: `Agregar enlace del tablero Sprint 3`
+Link Trello: `https://trello.com/invite/b/6a4f01ec7e3908de7f45dcf4/ATTI1eb2926c5733201b753d716b805fc24bC0367DDF/sprint-3`
 
 <br>
 
@@ -290,7 +290,7 @@ Evidencias:
 ![integration-test-sprint3-1](../report/assets/integration-test-sprint3-1.png)
 
 
-##### Integration Testing
+##### BDD Testing
 
 Durante el Sprint 3 se elaboraron escenarios de pruebas utilizando la metodología Behavior-Driven Development (BDD) con el lenguaje Gherkin. Estos escenarios describen el comportamiento esperado del sistema desde la perspectiva del usuario, permitiendo validar los principales flujos de negocio de MineGuard mediante una especificación clara y comprensible para desarrolladores y stakeholders. De esta manera, se garantiza que los requisitos funcionales implementados respondan al comportamiento esperado de la plataforma.
 
@@ -401,6 +401,34 @@ Como evidencia de interacción con la documentación, se utilizó Swagger UI par
 Durante el Sprint 3 del proyecto MineGuard, se consolidó la evidencia de despliegue de los principales artefactos de software desarrollados durante la iteración. El objetivo de esta sección es mostrar que los componentes del producto se encuentran disponibles en entornos de ejecución o publicación, permitiendo validar las funcionalidades finales relacionadas con seguridad de acceso, gestión de sesiones, comunicación operativa, análisis del comportamiento del conductor, recomendaciones de seguridad y experiencia informativa para operadores.
 
 A diferencia de los sprints anteriores, este Sprint se enfocó en verificar la disponibilidad de los artefactos finales del ecosistema MineGuard, incluyendo la Landing Page, la Web Application, el Web Service, la Mobile Application, el Edge Service y los componentes asociados al prototipo IoT. Estos despliegues permiten demostrar la integración de los módulos funcionales y técnicos desarrollados durante el proyecto.
+
+
++ Landing Page – GitHub Pages
+
+El Landing Page fue publicado utilizando GitHub Pages, permitiendo que el sitio esté disponible mediante una URL pública para presentar el proyecto y brindar acceso a la información principal del producto.
+
+![deploy-evidence-website](../report/assets/deploy-evidence-sprint3/deploy-website.png)
+
++ Frontend – Netlify
+
+La aplicación web fue desplegada en Netlify, configurando el proceso de compilación y publicación para facilitar la disponibilidad de la interfaz de usuario durante las pruebas y demostraciones del Sprint.
+
+![deploy-evidence-webapp](../report/assets/deploy-evidence-sprint3/deploy-webapp.png)
+
++ Backend y Edge Service – Render
+
+El Backend y el Edge Service fueron desplegados en Render, permitiendo exponer los servicios REST mediante una URL pública. Como evidencia del correcto funcionamiento del backend, se utilizó la documentación interactiva generada con Swagger OpenAPI.
+
+![deploy-evidence-webservice](../report/assets/deploy-evidence-sprint3/deploy-webservice.png)
+
+![deploy-evidence-edge](../report/assets/deploy-evidence-sprint3/deploy-edge.jpg)
+
++ Mobile App – Firebase
+
+La aplicación móvil fue configurada e integrada con Firebase, utilizando esta plataforma como servicio en la nube para soportar las funcionalidades necesarias durante la ejecución y validación del Sprint.
+
+![deploy-evidence-mobile](../report/assets/deploy-evidence-sprint3/deploy-mobile.jpg)
+
 
 | Artifact | Deployment Status | URL / Environment |
 |---|---|---|
