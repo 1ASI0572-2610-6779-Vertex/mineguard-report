@@ -248,5 +248,4 @@ En conjunto, este submodelo permite almacenar y consultar información analític
 
 
 ![Erd_Dashboard](../report/assets/erd_dashboard_and_analytics.png)
-
-
+<div style="break-after: page;"></div>

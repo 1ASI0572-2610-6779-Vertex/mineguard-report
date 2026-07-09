@@ -211,3 +211,5 @@ En esta sección se demuestra el proceso que ejecutó el equipo para agrupar los
 - Resource and Managment 
 
 <img src="assets/BC_Canvas_Resource_And_Managment.png">
+
+<div style="break-after: page;"></div>

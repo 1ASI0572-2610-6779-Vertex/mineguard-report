@@ -12,3 +12,5 @@ A través de este mapa, se visualiza cómo cada requerimiento técnico genera un
 <p align="center">
     <img src="assets/impact-map-segmento-2.png" alt="segmento Operadores y Conductores de Vehículos Livianos"/>
 </p>
+
+<div style="break-after: page;"></div>

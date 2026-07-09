@@ -396,3 +396,4 @@ En esta sección se especifica la configuración de despliegue definida para los
     <img src="assets/FinalDeploymentView.png" alt="deployment-diagram-c4" width="800px" height="750px"/>
 </p>
 
+<div style="break-after: page;"></div>

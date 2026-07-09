@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/UpcLogo.png" alt="Logo de UPC" width="80">
+  <img src="../report/assets/UpcLogo.png" alt="Logo de UPC" width="80">
 </p>
 
 <div align="center">
@@ -17,7 +17,7 @@ NRC
 **6779**
 
 
-**Informe del Trabajo Parcial**
+**Informe del Trabajo Final**
 
 
 Docente: 
@@ -77,8 +77,9 @@ Integrantes
 
 <br>
   
-**Fecha de publicación:** Junio de 2026
+**Fecha de publicación:** Julio de 2026
 
 **Período 202610**
 
 </div>
+<div style="break-after: page;"></div>

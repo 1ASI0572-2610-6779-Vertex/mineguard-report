@@ -91,3 +91,4 @@ Si el Dashboard (DA) deja de ser un Conformist, pasaría de ser un "espectador p
 - ¿Qué pasaría si el Bounded Context de Pagos (SPM) falla? ¿Debería el Dashboard (DA) dejar de mostrar datos en tiempo real, o el sistema de seguridad es lo suficientemente crítico como para ignorar el estado de la suscripción en una emergencia?
 
 El sistema detecta la falla del módulo de pagos y activa un permiso temporal (o "Fail-open"). El Dashboard sigue mostrando la telemetría crítica de SEM, pero quizás se deshabilitaría funciones secundarias como reportes históricos o analítica avanzada.
+<div style="break-after: page;"></div>

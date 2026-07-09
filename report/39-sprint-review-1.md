@@ -345,3 +345,4 @@ La evidencia de commits muestra una evolución progresiva del producto, desde la
 
 ![insights_landing.png](../report/assets/insigths/insight4.png)
 ![insights_webapp.png](../report/assets/insigths/insight5.png)
+<div style="break-after: page;"></div>

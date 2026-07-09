@@ -105,3 +105,4 @@ Este flujo describe una de las tareas más críticas: **Gestionar una Alerta**. 
 Para el perfil administrativo, este diagrama explica el proceso para **Agregar un Supervisor**. El administrador accede a la sección de Gestión de Usuarios y completa los datos requeridos. El flujo incluye la validación de la información; si es correcta, el sistema envía las credenciales automáticamente al nuevo supervisor y muestra un mensaje de éxito.
 
 ![User Flow 4 - Agregar Supervisor](../report/assets/userflow4.png)
+<div style="break-after: page;"></div>
