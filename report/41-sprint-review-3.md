@@ -64,7 +64,7 @@ Para la gestión y seguimiento de las actividades, se utilizó Trello como herra
 
 <br>
 
-Link Trello: `Agregar enlace del tablero Sprint 3`
+Link Trello: `https://trello.com/invite/b/6a4f01ec7e3908de7f45dcf4/ATTI1eb2926c5733201b753d716b805fc24bC0367DDF/sprint-3`
 
 <br>
 
@@ -290,7 +290,7 @@ Evidencias:
 ![integration-test-sprint3-1](../report/assets/integration-test-sprint3-1.png)
 
 
-##### Integration Testing
+##### BDD Testing
 
 Durante el Sprint 3 se elaboraron escenarios de pruebas utilizando la metodología Behavior-Driven Development (BDD) con el lenguaje Gherkin. Estos escenarios describen el comportamiento esperado del sistema desde la perspectiva del usuario, permitiendo validar los principales flujos de negocio de MineGuard mediante una especificación clara y comprensible para desarrolladores y stakeholders. De esta manera, se garantiza que los requisitos funcionales implementados respondan al comportamiento esperado de la plataforma.
 
@@ -327,17 +327,20 @@ A continuación, se presentan las principales evidencias de ejecución correspon
 
   La figura muestra la interfaz de autenticación del supervisor, permitiendo el acceso seguro al centro de monitoreo mediante credenciales registradas. Esta funcionalidad corresponde a la implementación de la US31 – Inicio de sesión del supervisor.
 
+  ![evidence-login](../report/assets/evi-login.png)
+
 + Pantalla donde obliga a cambiar la contraseña:
 
   La figura presenta el flujo de actualización obligatoria de contraseña durante el primer acceso al sistema. Esta funcionalidad garantiza que las credenciales temporales sean reemplazadas por una contraseña segura antes de habilitar el acceso a las funcionalidades operativas (US41)
+
+  ![evidence-login](../report/assets/evi-password.png)
 
 + Cierre de sesión y desvinculación del vehículo:
 
   La figura muestra el proceso mediante el cual el conductor finaliza su jornada de trabajo, cerrando su sesión y desvinculándose del vehículo asignado. Esta funcionalidad asegura la correcta trazabilidad de las operaciones realizadas (US42).
 
-+ Comunicación entre supervisor y conductor:
+  ![evidence-login](../report/assets/evi-logout.png)
 
-  La figura evidencia la funcionalidad de comunicación entre supervisor y conductor después de generarse una alerta operacional, permitiendo coordinar acciones inmediatas para reducir riesgos (US11).
 
 
 
@@ -399,6 +402,34 @@ Durante el Sprint 3 del proyecto MineGuard, se consolidó la evidencia de despli
 
 A diferencia de los sprints anteriores, este Sprint se enfocó en verificar la disponibilidad de los artefactos finales del ecosistema MineGuard, incluyendo la Landing Page, la Web Application, el Web Service, la Mobile Application, el Edge Service y los componentes asociados al prototipo IoT. Estos despliegues permiten demostrar la integración de los módulos funcionales y técnicos desarrollados durante el proyecto.
 
+
++ Landing Page – GitHub Pages
+
+El Landing Page fue publicado utilizando GitHub Pages, permitiendo que el sitio esté disponible mediante una URL pública para presentar el proyecto y brindar acceso a la información principal del producto.
+
+![deploy-evidence-website](../report/assets/deploy-evidence-sprint3/deploy-website.png)
+
++ Frontend – Netlify
+
+La aplicación web fue desplegada en Netlify, configurando el proceso de compilación y publicación para facilitar la disponibilidad de la interfaz de usuario durante las pruebas y demostraciones del Sprint.
+
+![deploy-evidence-webapp](../report/assets/deploy-evidence-sprint3/deploy-webapp.png)
+
++ Backend y Edge Service – Render
+
+El Backend y el Edge Service fueron desplegados en Render, permitiendo exponer los servicios REST mediante una URL pública. Como evidencia del correcto funcionamiento del backend, se utilizó la documentación interactiva generada con Swagger OpenAPI.
+
+![deploy-evidence-webservice](../report/assets/deploy-evidence-sprint3/deploy-webservice.png)
+
+![deploy-evidence-edge](../report/assets/deploy-evidence-sprint3/deploy-edge.jpg)
+
++ Mobile App – Firebase
+
+La aplicación móvil fue configurada e integrada con Firebase, utilizando esta plataforma como servicio en la nube para soportar las funcionalidades necesarias durante la ejecución y validación del Sprint.
+
+![deploy-evidence-mobile](../report/assets/deploy-evidence-sprint3/deploy-mobile.jpg)
+
+
 | Artifact | Deployment Status | URL / Environment |
 |---|---|---|
 | Landing Page | Desplegado | https://1asi0572-2610-6779-vertex.github.io/mineguard-website/ |
@@ -407,7 +438,7 @@ A diferencia de los sprints anteriores, este Sprint se enfocó en verificar la d
 | Mobile Application | Preparado para ejecución local / build móvil | -|
 | Edge Service | Desplegado | https://mineguard-edgeservice.onrender.com/apidocs/#/ |
 | Embedded Application | Desplegado | - |
-| Prototype | Desplegado | - |
+| Prototype | Desplegado | https://wokwi.com/projects/467328858128287745  |
 
 
 
