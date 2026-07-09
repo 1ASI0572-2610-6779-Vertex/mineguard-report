@@ -1,5 +1,6 @@
-## Report Team Collaboration Insights
+## Project Report Collaboration Insights
 
+Link del repositorio: https://github.com/1ASI0572-2610-6779-Vertex/mineguard-report 
 
 + AV1:
 
@@ -37,3 +38,10 @@
   <img src="../assets/rptinsav2.png" alt="insights3" width="400">
 </p>
 
++ TP2:
+
+  Este insight presenta la actividad de desarrollo registrada durante el Sprint 3 y el final del proyecto mediante la cantidad de commits efectuados por cada miembro del equipo. La evidencia demuestra la culminación del proyecto y el trabajo colaborativo a través del uso de Git para la gestión del código fuente.
+
+  <p align="center">
+  <img src="../assets/rptinsav3.png" alt="insights3" width="400">
+</p>
