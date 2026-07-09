@@ -1,23 +1,41 @@
 ## 5.4. Applications UX/UI Design 
 ### 5.4.1. Applications Wireframes
 
-La propuesta de wireframes fue desarrollada aplicando los principios de diseño inclusivo, accesibilidad, jerarquía visual y usabilidad. Se busca asegurar una navegación clara y coherente, tanto para turistas como para agencias, adaptando la estructura y contenido de la interfaz según el tipo de usuario para optimizar su experiencia.  
+La propuesta de wireframes fue desarrollada aplicando los principios de diseño inclusivo, accesibilidad, jerarquía visual y usabilidad. Se busca asegurar una navegación clara y coherente, adaptando la estructura y contenido de la interfaz según el tipo de usuario para optimizar su experiencia.  
+
+La pantalla de inicio de sesión de MineGuard presenta un diseño centrado y minimalista, acorde a las guías de estilo definidas en la sección. 
 
 ![Wireframe 1](../report/assets/wireframe1.png)
 
 #### VISTA SUPERVISOR
 
+Centro de Control (dashboard principal del Supervisor): constituye la vista principal de operación en tiempo real. En la parte superior se presentan cuatro tarjetas de KPI: Alertas Críticas, Eventos Fatiga, Vehículos Activos y Conductores en Campo, permitiendo al supervisor obtener un estado operativo de un vistazo. El cuerpo de la pantalla se divide en dos paneles: el panel izquierdo muestra la Tendencia de Incidentes con un gráfico histórico filtrable por fecha, y el panel derecho lista los Conductores en Riesgo con un acceso rápido al reporte completo.
 ![Wireframe 2](../report/assets/wireframe2.png)
+
+Inventario de Vehículos: presenta la pestaña Inventario de Vehículos de la sección Flota y Conductores. La tabla muestra columnas de Identificador y Tipo, Estado (con badge de color), Asignación Actual y Acciones. Se visualizan dos registros de ejemplo: V-04 (Volquete, Maquinaria Pesada) asignado a Juan Pérez — Turno Mañana, con acción Enviar a Taller; y V-07 (Volquete, Maquinaria Pesada) con estado Bloqueado para uso y acción Marcar Operativo. El botón Nuevo Vehículo en la esquina superior derecha permite registrar activos. Este wireframe corresponde a las User Stories de gestión de flota del bounded context Resource and Asset Management.
 ![Wireframe 3](../report/assets/wireframe3.png)
+
+ Directorio de Conductores: muestra la pestaña Directorio de Conductores dentro de la misma sección. La tabla incluye columnas de Datos del Personal, Estado de Turno, Último Acceso y Acciones Administrativas. Se muestran dos registros: Carlos Ruiz (OP-8841, Licencia A3-C, Especialidad Livianos) con acceso Hoy 06:15 AM; y Luis Mendoza (OP-1142, Desvinculado) con historial conservado en Analytics. El footer del sidebar muestra al usuario autenticado (Juan Pérez, JP) con su estado de sesión activa.
 ![Wireframe 4](../report/assets/wireframe4.png)
+
+Mapa Operativo en Vivo: muestra la vista de geolocalización en tiempo real de la operación. El panel principal (columna izquierda) presenta el mapa interactivo con las rutas y posiciones de los vehículos. El panel lateral derecho incluye Estado General de la Flota con métricas de resumen y el Resumen de Alertas con un listado en tiempo real donde se identifica una Incursión en zona restringida (marcada con punto de color de alerta). Este wireframe corresponde a la User Story de visualización del mapa operativo del bounded context Service Execution and Monitoring.
 ![Wireframe 5](../report/assets/wireframe5.png)
+
+Gestión de Alertas: presenta la vista de bandeja de incidentes con layout de dos paneles. El panel izquierdo muestra la Bandeja de Incidentes como lista scrollable, con cada incidente representado como una tarjeta que incluye identificador, timestamp y estado. El panel derecho muestra el detalle del incidente seleccionado: título Alerta de Colisión, unidad involucrada (Unidad Liviana), descripción del evento, el botón Contactar con el Operador para comunicación inmediata, y la sección Clasificación y Cierre para gestionar la resolución. Los dos botones de acción principal en el footer derecho son Falsa Alarma y Marcar como Resuelta, que actualizan el estado del incidente en el sistema. 
 ![Wireframe 6](../report/assets/wireframe6.png)
+
+Centro de Control Operativo (Analítica y Reportes): constituye la vista de inteligencia operacional del sistema. Se estructura en tres bloques: en la parte superior, dos paneles lado a lado muestran el Análisis de Fatiga por Conductor (gráfico de barras horizontales por conductor) y la Distribución de Incidentes (gráfico de dona con categorías de incidente). En la parte inferior se ubica el Historial de Eventos Críticos, una tabla filtrable y exportable con columnas de Fecha y Hora, Criticidad, Tipo de Incidente, Involucrados, Ubicación (Ruta A / Ruta B con badge) y Acción/Detalles con el enlace Ver Reporte por fila. La barra de búsqueda y el botón Filtros permiten segmentar por ID, Conductor o Zona. Este wireframe corresponde a las User Stories del bounded context Dashboards and Analytics.
 ![Wireframe 7](../report/assets/wireframe7.png)
 
 #### VISTA ADMINISTRADOR
 
+Salud Operativa del Sistema: presenta un dashboard de estado con tres tarjetas de métricas en la parte superior: Estado Hardware, Cuentas Bloqueadas y Activos en Base. Debajo se muestra la sección Avisos Administrativos Pendientes, con una lista de notificaciones que requieren acción y un botón de resolución por ítem. La barra lateral izquierda expone el menú de navegación con las opciones Resumen del Sistema, Gestión de Roles y Auditoría y Activos. 
 ![Wireframe 8](../report/assets/wireframe8.png)
+
+Auditoría y Activos: muestra un layout de dos columnas. En la columna izquierda se ubica el Resumen del Catálogo de activos (recursos, sensores y vehículos registrados) con un listado paginable. En la columna derecha se despliega el Registro de Eventos del sistema con eventos clasificados como Bloqueo Automático de Cuenta, Baja Lógica de Personal y Alta de Nuevo Supervisor, cada uno con su marca de tiempo. Se incluye el botón Exportar como PDF en la esquina superior derecha, habilitando la trazabilidad de auditoría. 
 ![Wireframe 9](../report/assets/wireframe9.png)
+
+ Gestión de Roles / Directorio de Supervisores: permite registrar nuevos supervisores mediante un formulario con los campos Nombre Completo e ID Corporativo, y visualizar el Directorio de Supervisores existente en formato de tabla con columnas de Usuario y Contacto, Estado del Acceso y Acción Requerida. Este wireframe corresponde a las User Stories del bounded context Identity and Access Management relacionadas con la gestión de usuarios y roles.
 ![Wireframe 10](../report/assets/wireframe10.png)
 
 ### 5.4.2. Applications Wireflow Diagrams
@@ -87,3 +105,4 @@ Este flujo describe una de las tareas más críticas: **Gestionar una Alerta**. 
 Para el perfil administrativo, este diagrama explica el proceso para **Agregar un Supervisor**. El administrador accede a la sección de Gestión de Usuarios y completa los datos requeridos. El flujo incluye la validación de la información; si es correcta, el sistema envía las credenciales automáticamente al nuevo supervisor y muestra un mensaje de éxito.
 
 ![User Flow 4 - Agregar Supervisor](../report/assets/userflow4.png)
+<div style="break-after: page;"></div>

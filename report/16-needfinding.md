@@ -4,6 +4,8 @@
 
 + **Segmento 1: Supervisión Corporativa en Minería de Tajo Abierto** 
 
+Las decisiones definidas para el User Persona de Raúl Ramírez se sustentan en los hallazgos obtenidos durante las entrevistas realizadas al segmento de Supervisión Corporativa en Minería de Tajo Abierto. Su edad, cargo y experiencia representan a un perfil con responsabilidad directa sobre la seguridad, continuidad operativa y toma de decisiones en operaciones mineras. El uso de celular, Android, laptop y Windows responde a la necesidad identificada de acceder a información tanto desde campo como desde el centro de control. Asimismo, sus metas, motivaciones y frustraciones reflejan problemas recurrentes mencionados por los entrevistados, como la falta de alertas en tiempo real, la dependencia de reportes tardíos y la baja visibilidad de eventos críticos. Por ello, este persona permite orientar MineGuard hacia una solución IoT enfocada en anticipar riesgos, mejorar la respuesta operativa y apoyar decisiones basadas en datos reales.
+
 <p align="center">
     <img src="assets/Segmento 1 - Raúl Ramírez.png" alt="upc-logo" width="750px" height="900px"/>
 </p>
@@ -11,6 +13,8 @@
 <br>
 
 + **Segmento 2: Operadores y Conductores de Vehículos Livianos** 
+
+Las decisiones adoptadas para este User Persona se fundamentan en la información recopilada durante las entrevistas realizadas al segmento de Operadores y Conductores de Vehículos Livianos. La edad, experiencia, ocupación y contexto de trabajo representan el perfil predominante de los participantes, quienes realizan recorridos diarios por rutas internas de la mina y se encuentran expuestos a la interacción con maquinaria pesada y camiones autónomos. Asimismo, el uso de dispositivos móviles Android, sus habilidades y nivel de adopción tecnológica reflejan las características observadas en los entrevistados, quienes priorizan herramientas simples, intuitivas y de fácil acceso. Finalmente, las metas, motivaciones y frustraciones responden a necesidades recurrentes identificadas durante la investigación, como recibir alertas oportunas, reducir el riesgo de accidentes y contar con mayor visibilidad de los peligros presentes en su entorno, aspectos que guiaron el diseño de MineGuard y la priorización de sus funcionalidades.
 
 <p align="center">
     <img src="assets/Segmento 2 - Carlos Huamán.png" alt="upc-logo" width="750px" height="900px"/>
@@ -20,127 +24,27 @@
 
 ### 2.3.2. User Task Matrix
 
-<div align="center">
-    <table>
-    <thead>
-        <tr>
-        <th rowspan="2">Tareas</th>
-        <th colspan="2">Empresas Mineras</th>
-        <th colspan="2">Operadores y Conductores</th>
-        </tr>
-        <tr>
-        <th>Frecuencia</th>
-        <th>Importancia</th>
-        <th>Frecuencia</th>
-        <th>Importancia</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td>Supervisar el tránsito interno en la operación minera</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Baja</td>
-        <td>Media</td>
-        </tr>
-        <tr>
-        <td>Reconocer zonas de riesgo dentro de la mina</td>
-        <td>Media</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Verificar el cumplimiento de rutas autorizadas</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Media</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Reaccionar ante situaciones de peligro</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Coordinar acciones ante incidentes</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Baja</td>
-        <td>Media</td>
-        </tr>
-        <tr>
-        <td>Conducir respetando rutas establecidas</td>
-        <td>Baja</td>
-        <td>Media</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Evitar ingresar a zonas restringidas</td>
-        <td>Baja</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Mantener atención al entorno durante el desplazamiento</td>
-        <td>Baja</td>
-        <td>Media</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Cumplir protocolos de seguridad minera</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        <td>Alta</td>
-        </tr>
-        <tr>
-        <td>Reportar incidentes o situaciones de riesgo</td>
-        <td>Media</td>
-        <td>Alta</td>
-        <td>Media</td>
-        <td>Alta</td>
-        </tr>
-    </tbody>
-    </table>
-</div>
-
-<br>
+| Tarea (Task) | Felipe (Supervisor) — Frecuencia | Felipe — Importancia | Edgardo (Conductor) — Frecuencia | Edgardo — Importancia |
+|---|---|---|---|---|
+| Supervisar el tránsito interno de la operación | Alta | Alta | Baja | Media |
+| Reconocer zonas de riesgo dentro de la mina | Media | Alta | Alta | Alta |
+| Verificar el cumplimiento de rutas autorizadas | Alta | Alta | Media | Alta |
+| Reaccionar ante una situación de peligro | Alta | Alta | Alta | Alta |
+| Coordinar acciones ante un incidente | Alta | Alta | Baja | Media |
+| Conducir respetando rutas establecidas | Baja | Media | Alta | Alta |
+| Evitar ingresar a zonas restringidas | Baja | Alta | Alta | Alta |
+| Mantener atención al entorno durante el desplazamiento | Baja | Media | Alta | Alta |
+| Cumplir protocolos de seguridad minera | Alta | Alta | Alta | Alta |
+| Reportar incidentes o situaciones de riesgo | Media | Alta | Media | Alta |
+| Monitorear su propio estado de fatiga/cansancio | Baja | Media | Alta | Alta |
+| Solicitar auxilio ante una emergencia | Baja | Alta | Media | Alta |
+| Analizar incidentes pasados para mejorar la seguridad | Alta | Alta | Baja | Baja |
 
 #### Análisis de la Matriz
 
-Al observar las tareas que realizan los supervisores de operaciones mineras y los conductores de vehículos livianos en su entorno natural de trabajo, se identifican diferentes responsabilidades y prioridades relacionadas con la seguridad y continuidad operativa dentro de la mina.
+Las tareas con mayor frecuencia e importancia para Felipe son supervisar el tránsito, coordinar acciones ante incidentes y analizar incidentes pasados; para Edgardo son conducir respetando rutas, mantener atención al entorno, evitar zonas restringidas y monitorear su fatiga. 
 
-+ Tareas con mayor carga (Frecuencia e Importancia):
-
-    + Para las empresas mineras, las tareas más críticas son supervisar el tránsito interno, coordinar acciones ante incidentes y garantizar el cumplimiento de protocolos de seguridad. Estas actividades son fundamentales para mantener el control operativo y reducir riesgos dentro de la operación minera.
-
-    + Para los conductores, las tareas más relevantes son conducir respetando rutas establecidas, mantener atención constante al entorno y reaccionar rápidamente ante situaciones de peligro. Estas actividades son altamente frecuentes debido a la exposición directa a riesgos en campo.
-
-+ Principales Contradicciones:
-
-    + Las empresas mineras tienen un enfoque más estratégico y de supervisión, priorizando la coordinación y control de la operación.
-
-    + Las empresas mineras tienen un enfoque más estratégico y de supervisión, priorizando la coordinación y control de la operación.
-
-    + Mientras los supervisores necesitan visibilidad general de toda la operación, los conductores requieren información inmediata y clara para actuar rápidamente sin perder concentración.
-
-+ Principales Coincidencias:
-
-    + Ambos segmentos consideran crítica la capacidad de reaccionar ante situaciones de peligro.
-
-    + Existe una alta prioridad en el cumplimiento de protocolos de seguridad para prevenir accidentes.
-
-    + Tanto supervisores como conductores buscan reducir riesgos y mejorar la seguridad durante las operaciones diarias.
-
-+ Puntos de Dolor Identificados:
-
-La matriz evidencia que muchas de las tareas críticas dependen de la atención humana, la comunicación manual y la capacidad de reacción de los trabajadores. Factores como la fatiga, la visibilidad limitada, los puntos ciegos y la necesidad de coordinar acciones en tiempo real aumentan la complejidad de las operaciones y dificultan la prevención temprana de incidentes. Estos hallazgos permitieron identificar necesidades y oportunidades de mejora que serán consideradas durante el proceso de Needfinding.
+La principal coincidencia entre ambos es reaccionar ante un peligro y cumplir protocolos. La principal diferencia es el enfoque: Felipe necesita visión global y trazabilidad, mientras Edgardo necesita información inmediata y de baja carga cognitiva para actuar sin perder concentración. Los pain points transversales son la dependencia del factor humano, la visibilidad limitada y la fatiga.
 
 <br>
 
@@ -181,4 +85,4 @@ Este User Journey Map representa la experiencia de un conductor de vehículo liv
 <p align="center">
     <img src="assets/Empathy map 2.png" alt="upc-logo" width="850px" height="1300px"/>
 </p>
-
+<div style="break-after: page;"></div>

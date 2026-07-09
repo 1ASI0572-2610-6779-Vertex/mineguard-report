@@ -81,3 +81,4 @@ En la pantalla de inicio, el usuario puede visualizar su información básica, b
 
 En conjunto, MineGuard utiliza una navegación jerárquica y contextual. La Landing Page guía al visitante en el conocimiento del producto, la Web Application permite al supervisor monitorear y gestionar la operación minera, y la Mobile App facilita que el conductor realice acciones específicas durante su jornada. De esta manera, cada plataforma mantiene una navegación alineada con las metas de sus usuarios y con el contexto de seguridad minera en tiempo real.
 
+<div style="break-after: page;"></div>

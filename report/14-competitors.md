@@ -155,7 +155,7 @@ A partir de un estudio de mercado al cuál nos enfocamos, hemos podido identific
 **Estrategias de innovación y diferenciación**
 
 - desarrollo Continuo de Tecnología:
-    - Evolución del Software: Implementar actualidzdacddiddodnes dcodnsdtdantdes en el firmware de los dispositivos para mejorar el recocimiento de patrones mediante machine learning.
+    - Evolución del Software: Implementar actualizaciones constantes en el firmware de los dispositivos para mejorar el recocimiento de patrones mediante machine learning.
 
 - Inversión de desarrollo: 
     - Mejora de Precisión y funcionalidad: El foco es añadir funciones como el monitoreo de fatiga del operador mediante telemetría, integrándolo a la plataforma central.
@@ -164,3 +164,5 @@ A partir de un estudio de mercado al cuál nos enfocamos, hemos podido identific
 
 - Marketing digital especializado:
     - Presencia Multimedia: Crear contenido audiovisual que muestre el sistema funcionando en condiciones reales para generar confianza en la robustez del prodructo frente a competidores
+
+<div style="break-after: page;"></div>

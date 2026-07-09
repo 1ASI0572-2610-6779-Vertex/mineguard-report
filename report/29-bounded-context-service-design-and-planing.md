@@ -185,3 +185,4 @@ Este diagrama de base de datos representa el submodelo de persistencia exclusivo
 Asimismo, gestiona la flota operativa relacionando la tabla maestra `Drivers` con `Vehicles`, y asegurando la trazabilidad del hardware al vincular cada vehículo con un `Sensor` específico. Finalmente, la tabla `ZonePermission` actúa como un componente clave para la seguridad, cruzando la autorización de un conductor con una zona geográfica determinada. Este diseño relacional garantiza que toda la configuración previa a la operación esté validada y estructurada correctamente.
 
 <img src="report\assets\DatabaseDiagram_ServiceDesign.jpeg">
+<div style="break-after: page;"></div>

@@ -1,4 +1,4 @@
-### 3.3. Impact Mapping
+### 3.2. Impact Mapping
 Esta sección presenta el Impact Mapping para alinear los objetivos estratégicos de seguridad con las funcionalidades clave del sistema.
 A través de este mapa, se visualiza cómo cada requerimiento técnico genera un impacto directo en la reducción de riesgos para los dos segmentos críticos del proyecto.
 
@@ -12,3 +12,5 @@ A través de este mapa, se visualiza cómo cada requerimiento técnico genera un
 <p align="center">
     <img src="assets/impact-map-segmento-2.png" alt="segmento Operadores y Conductores de Vehículos Livianos"/>
 </p>
+
+<div style="break-after: page;"></div>

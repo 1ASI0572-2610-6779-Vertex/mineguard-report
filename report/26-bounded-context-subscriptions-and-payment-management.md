@@ -1,6 +1,4 @@
-<h2>4.2. Tactical-Level Domain-Driven Design</h2>
-
-<h3>4.2.1. Bounded Context: Subscriptions and Payment Management</h3>
+<h3>4.2.2. Bounded Context: Subscriptions and Payment Management</h3>
 Se encarga de gestionar las suscripciones de los usuarios y el procesamiento de pagos dentro del sistema. Incluye la administración de planes, ciclos de facturación, renovaciones automáticas, métodos de pago y manejo de transacciones. El objetivo principal de este Bounded Context es garantizar la continuidad del servicio mediante pagos confiables y una correcta gestión del ciclo de vida de las suscripciones.
 
 <h3>4.2.1.1. Domain layer</h3>
@@ -260,4 +258,4 @@ Representa la estructura interna del dominio, incluyendo el agregado Subscriptio
 <h4>4.2.1.6.2. Bounded Context Database Design Diagram</h4>
 
 <img src="assets/SPM_database_diagram.png">
-
+<div style="break-after: page;"></div>
