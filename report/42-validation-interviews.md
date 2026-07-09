@@ -106,7 +106,7 @@ Para esta etapa del proyecto se diseñaron entrevistas de validación orientadas
 
 ### 6.3.2. Registro de Entrevistas.
 
-Se puede ver el video consolidado con todas las entrevistas realizadas en el siguiente enlace: [Ver video en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202311558_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311558_upc_edu_pe%Documents%2Fupc-pre-202610-1asi0572-vertex-interviews%2Emp4%20%281%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWsZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E609e50e3-9359-4539-83e4-fd3ee68eb1fc).
+Se puede ver el video consolidado con todas las entrevistas realizadas en el siguiente enlace: [Ver video en Microsoft Stream](https://www.youtube.com/watch?v=WN8y5ZYKBfw).
 
 
 <div align="center">
