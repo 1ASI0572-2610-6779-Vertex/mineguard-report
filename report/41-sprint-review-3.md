@@ -407,7 +407,7 @@ A diferencia de los sprints anteriores, este Sprint se enfocó en verificar la d
 | Mobile Application | Preparado para ejecución local / build móvil | -|
 | Edge Service | Desplegado | https://mineguard-edgeservice.onrender.com/apidocs/#/ |
 | Embedded Application | Desplegado | - |
-| Prototype | Desplegado | - |
+| Prototype | Desplegado | https://wokwi.com/projects/467328858128287745  |
 
 
 
