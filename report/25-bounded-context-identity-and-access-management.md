@@ -69,7 +69,7 @@ Methods
 |getProfile()|User|Public| Obtiene el perfil del Usuario |
 |getId()|UUID|Public|Obtiene el identificador con el cuál está registrado el usuario|
 
-<h3>4.2.1.2. Infrastructure layer</h3>
+<h3>4.2.1.2. Interface layer</h3>
 
 Esta capa es resonsable de la recepción y formato de peticiones(API REST), validación básica del formato y los datos de entrada, manejo de errores a nivel de api.
 
@@ -89,8 +89,8 @@ Esta capa es resonsable de la recepción y formato de peticiones(API REST), vali
 
 |Ruta|Método|Descripción|
 |-|-|-|
-|/api/iam/authentication/sign-in|POST|Registra un nuevo usuario en el sistema|
-|/api/iam/authentication/sign-up|POST|Autentica un usuario con email y contraseña|
+|/api/iam/authentication/sign-up|POST|Registra un nuevo usuario en el sistema|
+|/api/iam/authentication/sign-in|POST|Autentica un usuario con email y contraseña|
 
 <h3>4.2.1.3. Application layer</h3>
 
@@ -107,7 +107,7 @@ En la capa de Application Layer se ubican los servicios que contienen la lógica
 - SignInCommand
 - SignUpCommand
 
-<h3>4.2.1.4. Integration layer</h3>
+<h3>4.2.1.4. Infrastructure layer</h3>
 
 
 En la capa de Infrastructure Layer, se encuentran los repositorios que permiten la persistencia de las entidades de usuarios y roles en la

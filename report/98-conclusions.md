@@ -44,3 +44,43 @@ El desarrollo del Trabajo Parcial permitió materializar la propuesta conceptual
 * Iniciar el desarrollo de la Mobile App y la Embedded Application, asegurando la coherencia visual y de navegación definida en la Sección 5.1 y 5.2.
 * Ejecutar pruebas de usabilidad con usuarios reales del sector minero (supervisores y conductores) para validar las decisiones de arquitectura de la información tomadas en este avance.
 * Establecer métricas operativas iniciales (latencia de alerta, precisión de detección, tiempo de respuesta del supervisor) que sirvan como línea base para futuras iteraciones del producto.
+
+---
+## Conclusiones AV2 (Capítulos 6.2 al 6.4)
+
+### Conclusión general
+
+El desarrollo del Avance 2 permitió transformar MineGuard de una propuesta conceptual y un conjunto de prototipos en un ecosistema tecnológico funcional compuesto por múltiples aplicaciones y servicios interconectados. A través de la implementación de la segunda versión de la aplicación web, la primera versión de la aplicación móvil, los Web Services, el Edge Service y la Embedded Application, fue posible materializar la arquitectura IoT planteada en etapas anteriores y validar la propuesta de valor con usuarios representativos del sector minero. Los resultados obtenidos evidencian que MineGuard responde a necesidades reales relacionadas con la prevención de colisiones, la gestión de alertas y la centralización de información operacional en entornos de minería de tajo abierto.
+
+### Conclusiones específicas
+
+* **Sobre Sprint 2 y la implementación del ecosistema MineGuard (Sección 6.2.2)**: El Sprint 2 permitió desarrollar los principales componentes funcionales definidos dentro del alcance del proyecto. La construcción simultánea de la aplicación web, la aplicación móvil, los Web Services, el Edge Service y la Embedded Application demostró la viabilidad de implementar una arquitectura distribuida capaz de soportar los procesos de monitoreo, visualización de eventos y gestión de alertas planteados para MineGuard. Este avance representa la transición desde una etapa centrada en diseño y planificación hacia una fase de construcción e integración tecnológica.
+
+* **Sobre la evolución de la Web Application (Sección 6.2.2.4)**: La segunda versión de la aplicación web permitió incorporar funcionalidades orientadas a supervisores y administradores de operaciones mineras, incluyendo visualización de eventos, gestión de alertas e información operativa. Esta evolución permitió acercar la solución a los flujos de trabajo reales identificados durante las entrevistas iniciales, proporcionando una plataforma más alineada con las necesidades de monitoreo y supervisión en tiempo real presentes en el entorno minero.
+
+* **Sobre el desarrollo de la Mobile Application (Sección 6.2.2.4)**: La implementación de la primera versión de la aplicación móvil permitió extender el alcance de MineGuard hacia los conductores de vehículos livianos, incorporando mecanismos para la visualización de alertas y consulta de eventos relevantes para la seguridad operacional. Este componente constituye un paso importante dentro de la estrategia de prevención de riesgos, ya que acerca la información directamente al personal que interactúa diariamente con los peligros presentes en la operación minera.
+
+* **Sobre la implementación de los Web Services, Edge Service y Embedded Application (Secciones 6.2.2.4 y 6.2.2.7)**: El desarrollo de los Web Services, junto con la implementación inicial del Edge Service y la Embedded Application, permitió establecer las bases técnicas necesarias para la integración de dispositivos IoT dentro de la solución. Estos componentes validan la factibilidad de la arquitectura propuesta y preparan el camino para futuras iteraciones orientadas a la captura, procesamiento y transmisión de información proveniente de sensores desplegados en campo.
+
+* **Sobre la validación con usuarios y la evaluación heurística (Sección 6.3)**: Las entrevistas realizadas con supervisores y conductores permitieron obtener evidencia favorable respecto a la utilidad percibida de la solución. Los participantes destacaron el valor de contar con una plataforma que centralice información operativa y facilite la identificación de eventos relevantes para la seguridad. Asimismo, la evaluación heurística permitió identificar oportunidades de mejora relacionadas con la presentación de alertas, la organización de la información y la experiencia de usuario, proporcionando una base sólida para la planificación de futuras iteraciones.
+
+## Recomendaciones para próximas iteraciones
+
+* Integrar completamente la aplicación web, la aplicación móvil, los Web Services, el Edge Service y la Embedded Application para validar el funcionamiento integral del ecosistema MineGuard.
+
+* Mejorar la experiencia de usuario de la plataforma web y móvil considerando los hallazgos obtenidos durante las entrevistas de validación y la evaluación heurística, especialmente en la visualización de alertas y organización de la información.
+
+* Realizar nuevas pruebas con supervisores y conductores del sector minero para obtener una mayor cantidad de retroalimentación y validar futuras mejoras del sistema.
+
+* Incorporar métricas operativas básicas, como tiempo de respuesta ante alertas y cantidad de eventos registrados, que permitan evaluar el desempeño de MineGuard en futuras iteraciones.
+
+
+## Conclusiones TF ()
+
+### Conclusión general
+
+### Conclusiones específicas
+
+## Recomendaciones para próximas iteraciones
+
+# Video About-the-team
