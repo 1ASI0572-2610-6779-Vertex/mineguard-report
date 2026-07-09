@@ -327,6 +327,8 @@ A continuación, se presentan las principales evidencias de ejecución correspon
 
   La figura muestra la interfaz de autenticación del supervisor, permitiendo el acceso seguro al centro de monitoreo mediante credenciales registradas. Esta funcionalidad corresponde a la implementación de la US31 – Inicio de sesión del supervisor.
 
+  ![evidence-login](../report/assets/evi-login.png)
+
 + Pantalla donde obliga a cambiar la contraseña:
 
   La figura presenta el flujo de actualización obligatoria de contraseña durante el primer acceso al sistema. Esta funcionalidad garantiza que las credenciales temporales sean reemplazadas por una contraseña segura antes de habilitar el acceso a las funcionalidades operativas (US41)
@@ -335,9 +337,6 @@ A continuación, se presentan las principales evidencias de ejecución correspon
 
   La figura muestra el proceso mediante el cual el conductor finaliza su jornada de trabajo, cerrando su sesión y desvinculándose del vehículo asignado. Esta funcionalidad asegura la correcta trazabilidad de las operaciones realizadas (US42).
 
-+ Comunicación entre supervisor y conductor:
-
-  La figura evidencia la funcionalidad de comunicación entre supervisor y conductor después de generarse una alerta operacional, permitiendo coordinar acciones inmediatas para reducir riesgos (US11).
 
 
 
